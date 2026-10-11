@@ -1,6 +1,6 @@
 {
- "generated_at": "2026-10-11T17:53:42.031621+03:00",
- "generated_label": "الأحد 11 أكتوبر 2026 — 17:53",
+ "generated_at": "2026-10-11T17:54:33.076234+03:00",
+ "generated_label": "الأحد 11 أكتوبر 2026 — 17:54",
  "currency": "SAR",
  "currency_label": "ر.س",
  "repo": "EHomaily/flight-radar",
@@ -8,10 +8,10 @@
  "telegram": {
   "token_set": true,
   "token_format_ok": true,
-  "chat_from": null,
+  "chat_from": "new",
   "getMe": "ok @EssamFareRadarBot",
-  "updates": 0,
-  "private_chats": 0
+  "updates": 2,
+  "private_chats": 1
  },
  "watches": [
   {
@@ -58,32 +58,32 @@
     "source": "aviasales",
     "origin": "RUH",
     "destination": "IST",
-    "depart": "2026-11-05",
-    "price": 600.0,
-    "ret": "2026-11-09",
+    "depart": "2026-12-17",
+    "price": 648.75,
+    "ret": "2026-12-21",
     "origin_airport": "RUH",
-    "destination_airport": "SAW",
-    "airline": "VF",
-    "flight_number": "214",
+    "destination_airport": "IST",
+    "airline": "F3",
+    "flight_number": "573",
     "transfers": 0,
     "return_transfers": 0,
-    "duration": 480,
-    "link": "https://www.aviasales.com/search/RUH0511IST09111?t=VF17938515001793865600000235RUHSAW17942643001794279000000245SAWRUH_b40efa4ee7d83735dfb62b9710db8600_13617&search_date=09102026&expected_price_uuid=01a11f49-1b6c-8040-a74d-27ccae7915b3&static_fare_key=TY%7CP0%7CH0%7CL0%7CCH1%7CR0%7CTBC0&itinerary_key=2HldAh28ANTRYx-hK0egxw&expected_price_source=share&expected_price_currency=usd&expected_price=160",
-    "google_link": "https://www.google.com/travel/flights/search?tfs=GhoSCjIwMjYtMTEtMDVqBRIDUlVIcgUSA1NBVxoaEgoyMDI2LTExLTA5agUSA1NBV3IFEgNSVUhCAQFIAZgBAQ==&hl=ar&curr=SAR",
+    "duration": 500,
+    "link": "https://www.aviasales.com/search/RUH1712IST21121?t=F317975223001797537600000255RUHIST17978865001797901200000245ISTRUH_42d1657333079cd3b0f782b60ccb34e3_14767&search_date=06102026&expected_price_uuid=01a111f6-c679-8040-67b5-320b2a21bbaa&static_fare_key=TY%7CP0%7CH1%7CL0%7CCH0%7CR0%7CTBC0&itinerary_key=k6lngEAxBmADuJ2c8vJ62A&expected_price_source=share&expected_price_currency=usd&expected_price=173",
+    "google_link": "https://www.google.com/travel/flights/search?tfs=GhoSCjIwMjYtMTItMTdqBRIDUlVIcgUSA0lTVBoaEgoyMDI2LTEyLTIxagUSA0lTVHIFEgNSVUhCAQFIAZgBAQ==&hl=ar&curr=SAR",
     "verified": false,
     "cached_price": null,
     "compare_links": [
      {
       "name": "Trip.com",
-      "url": "https://www.trip.com/flights/riyadh-to-istanbul/tickets-ruh-saw/?ddate=2026-11-05&rdate=2026-11-09&flighttype=d"
+      "url": "https://www.trip.com/flights/riyadh-to-istanbul/tickets-ruh-ist/?ddate=2026-12-17&rdate=2026-12-21&flighttype=d"
      },
      {
       "name": "Skyscanner",
-      "url": "https://www.skyscanner.net/transport/flights/ruh/saw/261105/261109/?adultsv2=1&cabinclass=economy"
+      "url": "https://www.skyscanner.net/transport/flights/ruh/ist/261217/261221/?adultsv2=1&cabinclass=economy"
      },
      {
       "name": "Kayak",
-      "url": "https://www.kayak.com/flights/RUH-SAW/2026-11-05/2026-11-09?sort=price_a"
+      "url": "https://www.kayak.com/flights/RUH-IST/2026-12-17/2026-12-21?sort=price_a"
      }
     ],
     "discount_name": null,
@@ -92,57 +92,14 @@
     "stay": 4,
     "origin_name": "الرياض",
     "destination_name": "إسطنبول",
-    "airline_name": "VF",
+    "airline_name": "طيران أديل",
     "stops": "مباشر",
-    "depart_label": "الخميس 5 نوفمبر 2026",
-    "ret_label": "الاثنين 9 نوفمبر 2026"
+    "depart_label": "الخميس 17 ديسمبر 2026",
+    "ret_label": "الاثنين 21 ديسمبر 2026"
    },
    "previous": null,
    "all_time_low": null,
    "top": [
-    {
-     "source": "aviasales",
-     "origin": "RUH",
-     "destination": "IST",
-     "depart": "2026-11-05",
-     "price": 600.0,
-     "ret": "2026-11-09",
-     "origin_airport": "RUH",
-     "destination_airport": "SAW",
-     "airline": "VF",
-     "flight_number": "214",
-     "transfers": 0,
-     "return_transfers": 0,
-     "duration": 480,
-     "link": "https://www.aviasales.com/search/RUH0511IST09111?t=VF17938515001793865600000235RUHSAW17942643001794279000000245SAWRUH_b40efa4ee7d83735dfb62b9710db8600_13617&search_date=09102026&expected_price_uuid=01a11f49-1b6c-8040-a74d-27ccae7915b3&static_fare_key=TY%7CP0%7CH0%7CL0%7CCH1%7CR0%7CTBC0&itinerary_key=2HldAh28ANTRYx-hK0egxw&expected_price_source=share&expected_price_currency=usd&expected_price=160",
-     "google_link": "https://www.google.com/travel/flights/search?tfs=GhoSCjIwMjYtMTEtMDVqBRIDUlVIcgUSA1NBVxoaEgoyMDI2LTExLTA5agUSA1NBV3IFEgNSVUhCAQFIAZgBAQ==&hl=ar&curr=SAR",
-     "verified": false,
-     "cached_price": null,
-     "compare_links": [
-      {
-       "name": "Trip.com",
-       "url": "https://www.trip.com/flights/riyadh-to-istanbul/tickets-ruh-saw/?ddate=2026-11-05&rdate=2026-11-09&flighttype=d"
-      },
-      {
-       "name": "Skyscanner",
-       "url": "https://www.skyscanner.net/transport/flights/ruh/saw/261105/261109/?adultsv2=1&cabinclass=economy"
-      },
-      {
-       "name": "Kayak",
-       "url": "https://www.kayak.com/flights/RUH-SAW/2026-11-05/2026-11-09?sort=price_a"
-      }
-     ],
-     "discount_name": null,
-     "discount_price": null,
-     "discount_for_alerts": false,
-     "stay": 4,
-     "origin_name": "الرياض",
-     "destination_name": "إسطنبول",
-     "airline_name": "VF",
-     "stops": "مباشر",
-     "depart_label": "الخميس 5 نوفمبر 2026",
-     "ret_label": "الاثنين 9 نوفمبر 2026"
-    },
     {
      "source": "aviasales",
      "origin": "RUH",
@@ -529,6 +486,49 @@
      "stops": "مباشر",
      "depart_label": "الأحد 20 ديسمبر 2026",
      "ret_label": "الخميس 24 ديسمبر 2026"
+    },
+    {
+     "source": "aviasales",
+     "origin": "RUH",
+     "destination": "IST",
+     "depart": "2027-01-17",
+     "price": 862.5,
+     "ret": "2027-01-23",
+     "origin_airport": "RUH",
+     "destination_airport": "IST",
+     "airline": "F3",
+     "flight_number": "573",
+     "transfers": 0,
+     "return_transfers": 0,
+     "duration": 500,
+     "link": "https://www.aviasales.com/search/RUH1701IST23011?t=F318002007001800216000000255RUHIST18007443001800759000000245SAWRUH_9e9872cdd5d378cc0ab2f9fcec0f127b_19720&search_date=06102026&expected_price_uuid=01a11075-0a3b-8040-21f2-40aa06c7f194&static_fare_key=TY%7CP0%7CH0%7CL0%7CCH0%7CR0%7CTBC0&itinerary_key=SWRZ6bzvK0IUs2-C9hTVfw&expected_price_source=share&expected_price_currency=usd&expected_price=230",
+     "google_link": "https://www.google.com/travel/flights/search?tfs=GhoSCjIwMjctMDEtMTdqBRIDUlVIcgUSA0lTVBoaEgoyMDI3LTAxLTIzagUSA0lTVHIFEgNSVUhCAQFIAZgBAQ==&hl=ar&curr=SAR",
+     "verified": false,
+     "cached_price": null,
+     "compare_links": [
+      {
+       "name": "Trip.com",
+       "url": "https://www.trip.com/flights/riyadh-to-istanbul/tickets-ruh-ist/?ddate=2027-01-17&rdate=2027-01-23&flighttype=d"
+      },
+      {
+       "name": "Skyscanner",
+       "url": "https://www.skyscanner.net/transport/flights/ruh/ist/270117/270123/?adultsv2=1&cabinclass=economy"
+      },
+      {
+       "name": "Kayak",
+       "url": "https://www.kayak.com/flights/RUH-IST/2027-01-17/2027-01-23?sort=price_a"
+      }
+     ],
+     "discount_name": null,
+     "discount_price": null,
+     "discount_for_alerts": false,
+     "stay": 6,
+     "origin_name": "الرياض",
+     "destination_name": "إسطنبول",
+     "airline_name": "طيران أديل",
+     "stops": "مباشر",
+     "depart_label": "الأحد 17 يناير 2027",
+     "ret_label": "السبت 23 يناير 2027"
     }
    ],
    "destinations_table": [
@@ -536,32 +536,32 @@
      "source": "aviasales",
      "origin": "RUH",
      "destination": "IST",
-     "depart": "2026-11-05",
-     "price": 600.0,
-     "ret": "2026-11-09",
+     "depart": "2026-12-17",
+     "price": 648.75,
+     "ret": "2026-12-21",
      "origin_airport": "RUH",
-     "destination_airport": "SAW",
-     "airline": "VF",
-     "flight_number": "214",
+     "destination_airport": "IST",
+     "airline": "F3",
+     "flight_number": "573",
      "transfers": 0,
      "return_transfers": 0,
-     "duration": 480,
-     "link": "https://www.aviasales.com/search/RUH0511IST09111?t=VF17938515001793865600000235RUHSAW17942643001794279000000245SAWRUH_b40efa4ee7d83735dfb62b9710db8600_13617&search_date=09102026&expected_price_uuid=01a11f49-1b6c-8040-a74d-27ccae7915b3&static_fare_key=TY%7CP0%7CH0%7CL0%7CCH1%7CR0%7CTBC0&itinerary_key=2HldAh28ANTRYx-hK0egxw&expected_price_source=share&expected_price_currency=usd&expected_price=160",
-     "google_link": "https://www.google.com/travel/flights/search?tfs=GhoSCjIwMjYtMTEtMDVqBRIDUlVIcgUSA1NBVxoaEgoyMDI2LTExLTA5agUSA1NBV3IFEgNSVUhCAQFIAZgBAQ==&hl=ar&curr=SAR",
+     "duration": 500,
+     "link": "https://www.aviasales.com/search/RUH1712IST21121?t=F317975223001797537600000255RUHIST17978865001797901200000245ISTRUH_42d1657333079cd3b0f782b60ccb34e3_14767&search_date=06102026&expected_price_uuid=01a111f6-c679-8040-67b5-320b2a21bbaa&static_fare_key=TY%7CP0%7CH1%7CL0%7CCH0%7CR0%7CTBC0&itinerary_key=k6lngEAxBmADuJ2c8vJ62A&expected_price_source=share&expected_price_currency=usd&expected_price=173",
+     "google_link": "https://www.google.com/travel/flights/search?tfs=GhoSCjIwMjYtMTItMTdqBRIDUlVIcgUSA0lTVBoaEgoyMDI2LTEyLTIxagUSA0lTVHIFEgNSVUhCAQFIAZgBAQ==&hl=ar&curr=SAR",
      "verified": false,
      "cached_price": null,
      "compare_links": [
       {
        "name": "Trip.com",
-       "url": "https://www.trip.com/flights/riyadh-to-istanbul/tickets-ruh-saw/?ddate=2026-11-05&rdate=2026-11-09&flighttype=d"
+       "url": "https://www.trip.com/flights/riyadh-to-istanbul/tickets-ruh-ist/?ddate=2026-12-17&rdate=2026-12-21&flighttype=d"
       },
       {
        "name": "Skyscanner",
-       "url": "https://www.skyscanner.net/transport/flights/ruh/saw/261105/261109/?adultsv2=1&cabinclass=economy"
+       "url": "https://www.skyscanner.net/transport/flights/ruh/ist/261217/261221/?adultsv2=1&cabinclass=economy"
       },
       {
        "name": "Kayak",
-       "url": "https://www.kayak.com/flights/RUH-SAW/2026-11-05/2026-11-09?sort=price_a"
+       "url": "https://www.kayak.com/flights/RUH-IST/2026-12-17/2026-12-21?sort=price_a"
       }
      ],
      "discount_name": null,
@@ -570,10 +570,10 @@
      "stay": 4,
      "origin_name": "الرياض",
      "destination_name": "إسطنبول",
-     "airline_name": "VF",
+     "airline_name": "طيران أديل",
      "stops": "مباشر",
-     "depart_label": "الخميس 5 نوفمبر 2026",
-     "ret_label": "الاثنين 9 نوفمبر 2026"
+     "depart_label": "الخميس 17 ديسمبر 2026",
+     "ret_label": "الاثنين 21 ديسمبر 2026"
     }
    ],
    "calendar": [
@@ -664,10 +664,10 @@
       },
       {
        "date": "2026-11-05",
-       "price": 600.0,
+       "price": 1649.0,
        "destination": "IST",
        "destination_name": "إسطنبول",
-       "verified": false,
+       "verified": true,
        "ret": "2026-11-09",
        "link": "https://www.aviasales.com/search/RUH0511IST09111?t=VF17938515001793865600000235RUHSAW17942643001794279000000245SAWRUH_b40efa4ee7d83735dfb62b9710db8600_13617&search_date=09102026&expected_price_uuid=01a11f49-1b6c-8040-a74d-27ccae7915b3&static_fare_key=TY%7CP0%7CH0%7CL0%7CCH1%7CR0%7CTBC0&itinerary_key=2HldAh28ANTRYx-hK0egxw&expected_price_source=share&expected_price_currency=usd&expected_price=160",
        "google_link": "https://www.google.com/travel/flights/search?tfs=GhoSCjIwMjYtMTEtMDVqBRIDUlVIcgUSA1NBVxoaEgoyMDI2LTExLTA5agUSA1NBV3IFEgNSVUhCAQFIAZgBAQ==&hl=ar&curr=SAR"
@@ -724,9 +724,9 @@
       }
      ],
      "cheapest": {
-      "date": "2026-11-05",
-      "label": "الخميس 5 نوفمبر 2026",
-      "price": 600.0
+      "date": "2026-11-15",
+      "label": "الأحد 15 نوفمبر 2026",
+      "price": 697.5
      }
     },
     {
@@ -858,9 +858,9 @@
      "p": 581.25
     }
    ],
-   "live_checked": 3,
+   "live_checked": 4,
    "live_errors": [
-    "RUH→SAW 2026-11-05: FlightsNotFound: no flights found; received error"
+    "RUH→IST 2026-12-17: IndexError: list index out of range"
    ],
    "errors": []
   },
@@ -2181,7 +2181,7 @@
    ],
    "live_checked": 3,
    "live_errors": [
-    "RUH→DXB 2026-10-16: IndexError: list index out of range",
+    "RUH→DXB 2026-10-16: FlightsNotFound: no flights found; received error",
     "RUH→DXB 2026-12-25: IndexError: list index out of range",
     "RUH→DXB 2026-11-01: IndexError: list index out of range"
    ],
@@ -4461,8 +4461,8 @@
    ],
    "live_checked": 3,
    "live_errors": [
-    "JED→AHB 2026-10-26: IndexError: list index out of range",
-    "RUH→CAI 2026-10-14: FlightsNotFound: no flights found; received error"
+    "JED→AHB 2026-10-26: FlightsNotFound: no flights found; received error",
+    "RUH→CAI 2026-10-14: IndexError: list index out of range"
    ],
    "errors": []
   },
@@ -6819,7 +6819,7 @@
    ],
    "live_checked": 3,
    "live_errors": [
-    "JED→TUU 2026-11-17: FlightsNotFound: no flights found; received error",
+    "JED→TUU 2026-11-17: IndexError: list index out of range",
     "DMM→MED 2026-10-30: IndexError: list index out of range"
    ],
    "errors": []
