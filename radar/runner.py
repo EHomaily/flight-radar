@@ -137,6 +137,7 @@ def run_daily(cfg: Config, tp: TravelpayoutsClient, tg: Telegram, paths: Paths,
     except Exception as e:  # الأسماء تحسين فقط
         log.info("city names: %s", e)
 
+    alerts_before = dict(state.get("alerts", {}))
     results, alerts, prev_map, atl_map = [], [], {}, {}
     for w in cfg.watches:
         log.info("مراقبة: %s", w.name)
@@ -185,6 +186,9 @@ def run_daily(cfg: Config, tp: TravelpayoutsClient, tg: Telegram, paths: Paths,
 
     # -------- الإرسال
     by_id = {w.id: w for w in cfg.watches}
+    if not getattr(tg, "enabled", True):
+        # تيليجرام غير جاهز: لا نسجّل التنبيهات كمرسلة حتى تصلك في أول تشغيل بعد الربط
+        state["alerts"] = alerts_before
     for a in alerts:
         tg.send(M.alert_message(a, by_id[a.watch_id].name, cur, by_id[a.watch_id].adults))
     if special_new:
