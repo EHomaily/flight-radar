@@ -35,7 +35,7 @@ jobs:
           TRAVELPAYOUTS_TOKEN: ${{ secrets.TRAVELPAYOUTS_TOKEN }}
           TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
           TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
-          ENABLE_PAGES: ${{ vars.ENABLE_PAGES }}
+          ENABLE_PAGES: ${{ vars.ENABLE_PAGES || 'true' }}
           DASHBOARD_URL: ${{ vars.DASHBOARD_URL }}
         run: python run.py -v daily
 
@@ -53,15 +53,16 @@ jobs:
             git push
           fi
 
+      # اللوحة تُنشر دائماً (حتى لو فشل جلب الأسعار). لإيقافها: متغير ENABLE_PAGES = false
       - name: Package dashboard
-        if: vars.ENABLE_PAGES == 'true'
+        if: ${{ always() && vars.ENABLE_PAGES != 'false' }}
         uses: actions/upload-pages-artifact@v3
         with:
           path: docs
 
   deploy:
     needs: radar
-    if: vars.ENABLE_PAGES == 'true'
+    if: ${{ !cancelled() && vars.ENABLE_PAGES != 'false' }}
     runs-on: ubuntu-latest
     environment:
       name: github-pages

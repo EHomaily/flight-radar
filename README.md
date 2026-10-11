@@ -53,10 +53,9 @@
 | `TELEGRAM_BOT_TOKEN` | رمز البوت |
 | `TELEGRAM_CHAT_ID` | رقم المحادثة |
 
-### 5) فعّل لوحة الويب (اختياري لكن أنصح به)
+### 5) فعّل لوحة الويب
 1. **Settings ← Pages ← Source:** اختر **GitHub Actions**.
-2. **Settings ← Secrets and variables ← Actions ← تبويب Variables ← New variable:**
-   الاسم `ENABLE_PAGES` والقيمة `true`.
+2. (لإيقاف اللوحة لاحقاً: أضف متغيراً `ENABLE_PAGES` بقيمة `false` في Settings ← Secrets and variables ← Actions ← Variables.)
 3. رابط اللوحة سيكون: `https://<اسم-حسابك>.github.io/flight-radar/` — أضفه للشاشة الرئيسية في الآيفون (Safari ← مشاركة ← Add to Home Screen).
 
 ### 6) شغّله أول مرة
