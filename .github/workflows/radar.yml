@@ -49,7 +49,8 @@ jobs:
             echo "لا تغييرات"
           else
             git commit -m "تحديث الأسعار $(date -u +%F)"
-            git pull --rebase --autostash
+            # عند التعارض تفوز بيانات هذا التشغيل (الأحدث)
+            git pull --rebase -X theirs --autostash || { git rebase --abort; git reset --hard origin/main; echo "تعذّر دمج البيانات — تم تجاهل هذا الحفظ"; exit 0; }
             git push
           fi
 
