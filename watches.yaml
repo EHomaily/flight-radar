@@ -62,3 +62,12 @@ watches:
   - HBE
   - KWI
   top: 12
+- name: مدن أوروبا وآسيا
+  origins: [RUH, JED, DMM]
+  reference_origin: RUH
+  destinations: [LIS, BCN, BUD, PRG, KRK, MAD, GVA, VIE, MUC, GYD, SZG, ZAG, SJJ, DPS, JKT]
+  dates: {from: 2026-12-01, to: 2027-06}
+  trip: round-trip
+  stay_days: [3, 14]
+  adults: 1
+  top: 15

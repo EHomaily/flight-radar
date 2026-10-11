@@ -98,8 +98,12 @@ def test_collect_any_destination(cfg):
     assert [o.price for o in dests] == sorted(o.price for o in dests)
     per = {}
     for o in r.offers:
-        per[o.destination] = per.get(o.destination, 0) + 1
+        per[(o.origin, o.destination)] = per.get((o.origin, o.destination), 0) + 1
     assert max(per.values()) <= 5
+    # سعر الرياض (مطار المرجع الافتراضي = أول مطار) محفوظ لكل وجهة
+    assert w.reference_origin == "RUH"
+    refs = r.reference_by_destination()
+    assert refs and all(o.origin == "RUH" for o in refs.values())
 
 
 def test_live_verification_replaces_price(cfg):
@@ -473,3 +477,15 @@ def test_telegram_chat_autodetect():
     assert tg2.ensure_chat(state) == "saved" and tg2.chat_id == "555"
     tg3 = Telegram("tok", "999", http=h)
     assert tg3.ensure_chat({}) == "secret" and tg3.chat_id == "999"
+
+
+def test_reference_origin_shown_in_digest(cfg):
+    w = parse_watch({"name": "eu", "origins": ["RUH", "JED", "DMM"], "destinations": ["IST", "CAI"],
+                     "dates": {"from": "2026-12-01", "to": "2027-01"}, "trip": "round-trip"}, today=TODAY)
+    assert w.reference_origin == "RUH" and w.months == ["2026-12", "2027-01"]
+    r = E.collect(w, tp(), cfg.settings, TODAY, live_fn=None)
+    assert all(o.depart >= dt.date(2026, 12, 1) for o in r.offers)
+    refs = r.reference_by_destination()
+    assert set(refs) == {"IST", "CAI"} and all(o.origin == "RUH" for o in refs.values())
+    txt = M.digest([r], {}, "SAR", None, [])
+    assert "أرخص الوجهات" in txt and "(من " in txt

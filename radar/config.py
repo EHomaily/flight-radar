@@ -52,6 +52,7 @@ class Watch:
     date_from: dt.date | None = None
     date_to: dt.date | None = None
     adults: int = 1
+    reference_origin: str | None = None   # مطار يُعرض سعره دائماً لكل وجهة (مثل الرياض)
 
     @property
     def id(self) -> str:
@@ -252,9 +253,14 @@ def parse_watch(raw: dict, today: dt.date | None = None) -> Watch:
     adults = int(raw.get("adults", 1) or 1)
     if not 1 <= adults <= 9:
         raise ConfigError(f"[{name}] عدد الأشخاص يجب أن يكون بين 1 و 9")
+    origins = _codes(raw.get("origins"), "origins")
+    ref = raw.get("reference_origin")
+    ref = _codes(ref, "reference_origin")[0] if ref else (origins[0] if len(origins) > 1 else None)
+    if ref and ref not in origins:
+        raise ConfigError(f"[{name}] reference_origin يجب أن يكون أحد مطارات المغادرة")
     return Watch(
         name=name,
-        origins=_codes(raw.get("origins"), "origins"),
+        origins=origins,
         destinations=_codes(raw.get("destinations", [ANY]), "destinations", allow_any=True),
         months=sorted(set(months)),
         trip=trip,
@@ -266,6 +272,7 @@ def parse_watch(raw: dict, today: dt.date | None = None) -> Watch:
         date_from=date_from,
         date_to=date_to,
         adults=adults,
+        reference_origin=ref,
     )
 
 

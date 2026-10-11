@@ -61,7 +61,15 @@ def discount_line(o: Offer, cur: str) -> str | None:
     return f"💳 مع {esc(o.discount_name)}: ~{N.fmt_price(o.discount_price, cur)} (تقدير)"
 
 
-def alert_message(a: Alert, watch_name: str, cur: str, adults: int = 1) -> str:
+def ref_line(o: Offer, ref: Offer | None, cur: str) -> str | None:
+    """سطر سعر مطار المرجع (الرياض) إن كان الأفضل من مطار آخر."""
+    if not ref or ref is o or ref.origin == o.origin:
+        return None
+    when = N.fmt_date(ref.depart, with_weekday=False)
+    return f"📍 من {esc(N.city(ref.origin))}: <b>{N.fmt_price(ref.price, cur)}</b> · {when}"
+
+
+def alert_message(a: Alert, watch_name: str, cur: str, adults: int = 1, ref: Offer | None = None) -> str:
     if a.kind == "threshold":
         o = a.payload["offer"]
         head = [f"🚨 <b>نزل السعر تحت حدّك!</b>", f"📌 {esc(watch_name)}",
@@ -69,7 +77,8 @@ def alert_message(a: Alert, watch_name: str, cur: str, adults: int = 1) -> str:
         if a.payload.get("drop"):
             head.append(f"🔥 أقل من المعتاد بـ {a.payload['drop']}٪ "
                         f"(المعتاد {N.fmt_price(a.payload['baseline'], cur)})")
-        return "\n".join(head + [""] + offer_lines(o, cur, adults))
+        rl = ref_line(o, ref, cur)
+        return "\n".join(head + [""] + offer_lines(o, cur, adults) + ([rl] if rl else []))
     if a.kind == "deal":
         o = a.payload["offer"]
         head = [f"🔥 <b>سعر أقل من المعتاد بـ {a.payload['drop']}٪</b>", f"📌 {esc(watch_name)}",
@@ -139,10 +148,17 @@ def digest(results: list[WatchResult], prev: dict[str, float | None], cur: str,
         d = discount_line(b, cur)
         if d:
             out.append("   " + d)
-        if w.is_any:
-            tops = r.by_destination()[:5]
-            out.append("   أرخص الوجهات: " + "، ".join(
-                f"{esc(N.city(o.destination))} {N.fmt_price(o.price, cur)}" for o in tops))
+        if w.is_any or len(w.destinations) > 1:
+            refs = r.reference_by_destination()
+            out.append("   أرخص الوجهات:")
+            for o in r.by_destination()[:8]:
+                line = f"   • {esc(N.city(o.destination))}: {N.fmt_price(o.price, cur)}"
+                if len(w.origins) > 1:
+                    line += f" (من {esc(N.city(o.origin))})"
+                ref = refs.get(o.destination)
+                if ref and ref.origin != o.origin:
+                    line += f" · {esc(N.city(ref.origin))} {N.fmt_price(ref.price, cur)}"
+                out.append(line)
         else:
             for m, o in r.cheapest_per_month().items():
                 out.append(f"   📆 أرخص يوم في {N.fmt_month(m)}: {N.fmt_date(o.depart)} — {N.fmt_price(o.price, cur)}")
@@ -165,6 +181,7 @@ def search_message(r: WatchResult, cur: str) -> str:
     out.append("")
     out.append("<b>أفضل الأسعار:</b>")
     picks = r.by_destination()[:10] if w.is_any or len(w.destinations) > 1 else r.offers[:6]
+    refs = r.reference_by_destination()
     for o in picks:
         when = N.fmt_date(o.depart)
         if o.ret:
@@ -173,6 +190,9 @@ def search_message(r: WatchResult, cur: str) -> str:
         g = f' · <a href="{esc(o.google_link)}">Google</a>' if o.google_link else ""
         out.append(f"• {esc(N.city(o.destination))}: <b>{N.fmt_price(o.price, cur)}</b>{flag} — {when}"
                    f" · {esc(N.stops_label(o.transfers))}{g}")
+        ref = refs.get(o.destination)
+        if ref and ref.origin != o.origin:
+            out.append(f"   ↳ من {esc(N.city(ref.origin))}: {N.fmt_price(ref.price, cur)} — {N.fmt_date(ref.depart, False)}")
     if not w.is_any:
         out.append("")
         for m, o in r.cheapest_per_month().items():

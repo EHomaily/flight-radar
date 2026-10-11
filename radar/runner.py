@@ -99,6 +99,7 @@ def watch_view(r: E.WatchResult, history: dict, prev: float | None, atl: float |
                          "price": cheapest.price} if cheapest else None,
         })
     multi = w.is_any or len(w.destinations) > 1
+    refs = r.reference_by_destination()
     return {
         "id": w.id, "name": w.name, "origins": w.origins, "destinations": w.destinations,
         "origins_names": [N.city(c) for c in w.origins],
@@ -111,7 +112,11 @@ def watch_view(r: E.WatchResult, history: dict, prev: float | None, atl: float |
         "best": offer_view(r.best, cur) if r.best else None,
         "previous": prev, "all_time_low": atl,
         "top": [offer_view(o, cur) for o in r.offers[:10]],
-        "destinations_table": [offer_view(o, cur) for o in r.by_destination()[:w.top]] if multi else [],
+        "reference_origin": w.reference_origin,
+        "reference_name": N.city(w.reference_origin) if w.reference_origin else None,
+        "destinations_table": [dict(offer_view(o, cur), ref=(offer_view(refs[o.destination], cur)
+                                    if o.destination in refs and refs[o.destination].origin != o.origin else None))
+                               for o in r.by_destination()[:max(w.top, len(w.destinations))]] if multi else [],
         "calendar": months,
         "history": [{"d": e["d"], "p": e["p"]} for e in history.get(w.id, [])],
         "live_checked": r.live_checked,
@@ -189,8 +194,10 @@ def run_daily(cfg: Config, tp: TravelpayoutsClient, tg: Telegram, paths: Paths,
     if not getattr(tg, "enabled", True):
         # تيليجرام غير جاهز: لا نسجّل التنبيهات كمرسلة حتى تصلك في أول تشغيل بعد الربط
         state["alerts"] = alerts_before
+    res_by_id = {r.watch.id: r for r in results}
     for a in alerts:
-        tg.send(M.alert_message(a, by_id[a.watch_id].name, cur, by_id[a.watch_id].adults))
+        ref = res_by_id[a.watch_id].reference_by_destination().get(a.payload["offer"].destination)
+        tg.send(M.alert_message(a, by_id[a.watch_id].name, cur, by_id[a.watch_id].adults, ref=ref))
     if special_new:
         tg.send(M.special_offers_message(special_new, cur))
     if news_new:

@@ -140,6 +140,7 @@ section.block > h2 { font-size: 18px; margin: 0 0 12px; }
 .best-line .what b { font-size: 15px; }
 .links { display: flex; gap: 6px; flex-wrap: wrap; }
 .verified { color: var(--good-ink); font-size: 12px; }
+.refp { font-size: 12px; font-weight: 500; color: var(--ink-2); white-space: nowrap; }
 .disc { font-size: 12px; color: var(--accent-ink); font-weight: 600; }
 .mini-link.cmp, .btn.solid.cmp { background: transparent; border: 1px solid var(--line); }
 .cached { color: var(--ink-3); font-size: 12px; }
@@ -511,7 +512,7 @@ footer { padding: 26px 0 40px; color: var(--ink-3); font-size: 12px; border-top:
     const destTable = w.destinations_table?.length ? `<div class="tbl-wrap"><div class="panel-title"><h4>${w.is_any ? "أرخص الوجهات" : "مقارنة الوجهات"}</h4></div>
       <table><thead><tr><th>الوجهة</th><th>السعر</th><th>التاريخ</th><th>التوقفات</th><th></th></tr></thead><tbody>
       ${w.destinations_table.map(o => `<tr><td><b>${esc(o.destination_name)}</b> <span class="muted num">${esc(o.destination)}</span><br><span class="muted">من ${esc(o.origin_name)}</span></td>
-        <td class="price">${money(o.price)}${o.verified ? " ✅" : ""}${o.discount_price != null ? `<br>${discount(o)}` : ""}</td><td>${when(o)}</td><td>${esc(o.stops)}</td><td><div class="links">${linkBtns(o)}</div></td></tr>`).join("")}
+        <td class="price">${money(o.price)}${o.verified ? " ✅" : ""}${o.discount_price != null ? `<br>${discount(o)}` : ""}${o.ref ? `<br><span class="refp">📍 ${esc(o.ref.origin_name)}: ${money(o.ref.price)}</span>` : ""}</td><td>${when(o)}</td><td>${esc(o.stops)}</td><td><div class="links">${linkBtns(o)}</div></td></tr>`).join("")}
       </tbody></table></div>` : "";
 
     const top = w.top?.length ? `<details class="more"><summary>أفضل ${w.top.length} عروض</summary><div class="tbl-wrap">
@@ -528,7 +529,7 @@ footer { padding: 26px 0 40px; color: var(--ink-3); font-size: 12px; border-top:
       <div class="card-head"><div><h3>${esc(w.name)}</h3><div class="chips">${chips}</div>${editLinks(w)}</div>${hero}</div>
       ${bestLine}
       <div class="grid2">
-        <div><div class="panel-title"><h4>تقويم أرخص الأيام</h4>${tabs}</div><div class="calbox">${months.length ? renderCalendar(months[0], w.is_any) : ""}</div></div>
+        <div><div class="panel-title"><h4>تقويم أرخص الأيام</h4>${tabs}</div><div class="calbox">${months.length ? renderCalendar(months[0], w.is_any || w.destinations.length > 1) : ""}</div></div>
         <div><div class="panel-title"><h4>أفضل سعر يومياً</h4><span class="muted">${w.history?.length || 0} يوم</span></div>${renderChart(w)}</div>
       </div>
       ${destTable}${top}${errs}
@@ -558,7 +559,7 @@ footer { padding: 26px 0 40px; color: var(--ink-3); font-size: 12px; border-top:
   function bindCard(card, w) {
     card.querySelectorAll(".tab").forEach(t => t.addEventListener("click", () => {
       card.querySelectorAll(".tab").forEach(x => x.setAttribute("aria-selected", x === t));
-      card.querySelector(".calbox").innerHTML = renderCalendar(w.calendar[+t.dataset.i], w.is_any);
+      card.querySelector(".calbox").innerHTML = renderCalendar(w.calendar[+t.dataset.i], w.is_any || w.destinations.length > 1);
     }));
     card.addEventListener("pointerover", e => {
       const a = e.target.closest(".day.has"); if (!a) return;

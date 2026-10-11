@@ -51,6 +51,17 @@ class WatchResult:
                 best[o.destination] = o
         return sorted(best.values(), key=lambda o: o.price)
 
+    def reference_by_destination(self) -> dict[str, Offer]:
+        """أرخص سعر لكل وجهة من مطار المرجع (مثل الرياض)."""
+        ref = self.watch.reference_origin
+        out: dict[str, Offer] = {}
+        if not ref:
+            return out
+        for o in self.offers:
+            if ref in (o.origin, o.origin_airport) and (o.destination not in out or o.price < out[o.destination].price):
+                out[o.destination] = o
+        return out
+
 
 # ------------------------------------------------------------------ collect
 def _passes(o: Offer, w: Watch, today: dt.date) -> bool:
@@ -129,15 +140,16 @@ def collect(w: Watch, tp: TravelpayoutsClient, settings: Settings, today: dt.dat
     offers = sorted(uniq.values(), key=lambda o: o.price)
     if w.is_any:
         # لأي وجهة: نحتفظ بأرخص 5 تواريخ لكل وجهة لتخفيف الحجم
-        per: dict[str, int] = {}
+        per: dict[tuple, int] = {}
         kept = []
-        for o in offers:
-            per[o.destination] = per.get(o.destination, 0) + 1
-            if per[o.destination] <= 5:
+        for o in offers:   # لكل (مطار مغادرة، وجهة) حتى يبقى سعر الرياض محفوظاً دائماً
+            k = (o.origin, o.destination)
+            per[k] = per.get(k, 0) + 1
+            if per[k] <= 5:
                 kept.append(o)
         offers = kept
 
-    for o in offers[:300]:
+    for o in offers[:1500]:
         o.google_link = gf.search_url(o.origin_airport or o.origin, o.destination_airport or o.destination,
                                       o.depart, o.ret, w.adults, settings.currency, w.direct_only)
 
@@ -182,7 +194,7 @@ def collect(w: Watch, tp: TravelpayoutsClient, settings: Settings, today: dt.dat
             offers.sort(key=lambda o: o.price)
         res.live_errors = gf.ERRORS[err_start:]
 
-    for o in offers[:300]:
+    for o in offers[:1500]:
         o.compare_links = L.build(sites or [], o, w.adults, settings.currency)
     for o in offers:
         apply_discounts(o, discounts or [], today)
