@@ -1,0 +1,62 @@
+name: بحث سريع
+
+# شغّله من GitHub (حتى من تطبيق الآيفون): Actions ← بحث سريع ← Run workflow
+# النتيجة تصلك على تيليجرام خلال دقيقة إلى دقيقتين.
+on:
+  workflow_dispatch:
+    inputs:
+      from:
+        description: "مطار/مطارات المغادرة (مثال: RUH أو RUH,JED)"
+        required: true
+        default: "RUH"
+      to:
+        description: "الوجهة (مثال: IST أو IST,SAW) — أو ANY لأي وجهة"
+        required: true
+        default: "ANY"
+      month:
+        description: "الشهر (مثال: 2026-12 أو 2026-11,2026-12)"
+        required: true
+      trip:
+        description: "نوع الرحلة"
+        type: choice
+        options: [one-way, round-trip]
+        default: one-way
+      stay:
+        description: "مدة الإقامة للذهاب والعودة (مثال: 3-7) — اتركه فارغاً لأي مدة"
+        required: false
+        default: ""
+      direct:
+        description: "مباشر فقط"
+        type: boolean
+        default: false
+
+permissions:
+  contents: read
+
+jobs:
+  search:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+      - run: pip install -r requirements.txt
+      - name: Search
+        env:
+          TRAVELPAYOUTS_TOKEN: ${{ secrets.TRAVELPAYOUTS_TOKEN }}
+          TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+          TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
+          IN_FROM: ${{ inputs.from }}
+          IN_TO: ${{ inputs.to }}
+          IN_MONTH: ${{ inputs.month }}
+          IN_TRIP: ${{ inputs.trip }}
+          IN_STAY: ${{ inputs.stay }}
+          IN_DIRECT: ${{ inputs.direct }}
+        run: |
+          ARGS=(search --from "$IN_FROM" --to "$IN_TO" --month "$IN_MONTH" --trip "$IN_TRIP")
+          if [ -n "$IN_STAY" ]; then ARGS+=(--stay "$IN_STAY"); fi
+          if [ "$IN_DIRECT" = "true" ]; then ARGS+=(--direct); fi
+          python run.py -v "${ARGS[@]}"

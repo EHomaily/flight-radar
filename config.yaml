@@ -1,0 +1,130 @@
+# ============================================================
+#  رادار أسعار التذاكر — ملف الإعدادات
+#  عدّل هذا الملف من GitHub مباشرة (حتى من تطبيق GitHub على الآيفون)
+#  وأي تعديل يُطبَّق في التشغيل التالي تلقائياً.
+# ============================================================
+
+settings:
+  currency: SAR            # SAR أو USD أو AED
+  adults: 1                # عدد البالغين (للتحقق الحي من Google Flights)
+  market: ""               # سوق بيانات Aviasales (اتركه فارغاً ليُحدَّد تلقائياً من مطار المغادرة)
+  google_live_check: true  # التحقق الحي من أرخص التواريخ عبر Google Flights
+  google_checks_per_watch: 3   # كم تاريخاً يُتحقق منه حياً لكل مراقبة
+  daily_digest: true       # ملخص يومي على تيليجرام حتى لو لم يحدث تنبيه
+  deal_drop_percent: 15    # نبّهني إذا نزل السعر 15٪ أو أكثر عن متوسطه في آخر 30 يوماً
+  alert_cooldown_days: 3   # لا تكرر نفس التنبيه قبل 3 أيام إلا إذا نزل السعر أكثر
+
+# ------------------------------------------------------------
+#  المراقبات: أضف ما تشاء. لكل مراقبة:
+#   origins:       مطار أو أكثر للمغادرة (رموز IATA)
+#   destinations:  وجهة أو أكثر، أو [ANY] لأي وجهة
+#   months:        شهر أو أكثر بصيغة YYYY-MM
+#     أو بدلاً منها dates: {from: 2026-12-01, to: 2026-12-20}
+#   trip:          one-way (ذهاب فقط) أو round-trip (ذهاب وعودة)
+#   stay_days:     [أقل, أكثر] عدد أيام الإقامة — للذهاب والعودة فقط
+#   direct_only:   true للرحلات المباشرة فقط
+#   max_price:     حدّك السعري — ينبّهك إذا نزل السعر عنه أو ساواه
+#   top:           (لأي وجهة) كم وجهة تُعرض
+#   exclude:       (لأي وجهة) وجهات تريد استبعادها
+# ------------------------------------------------------------
+watches:
+  - name: الرياض ← إسطنبول (ديسمبر)
+    origins: [RUH]
+    destinations: [IST, SAW]
+    months: [2026-12]
+    trip: round-trip
+    stay_days: [4, 10]
+    direct_only: false
+    max_price: 1400
+
+  - name: الرياض ← دبي (ذهاب فقط)
+    origins: [RUH]
+    destinations: [DXB]
+    months: [2026-11, 2026-12]
+    trip: one-way
+    max_price: 350
+
+  - name: أي وجهة من الرياض أو جدة
+    origins: [RUH, JED]
+    destinations: [ANY]
+    months: [2026-11, 2026-12]
+    trip: round-trip
+    stay_days: [3, 7]
+    max_price: 800
+    top: 12
+
+# ------------------------------------------------------------
+#  تتبّع خصومات المواقع
+# ------------------------------------------------------------
+deals:
+  special_offers: true     # عروض الأسعار غير المعتادة من Aviasales لمطارات المغادرة أعلاه
+  news_lookback_days: 3
+  # بحث أخبار Google عن إعلانات التخفيضات (يعمل حتى مع المواقع التي تمنع الزحف)
+  news_queries:
+    - طيران ناس عرض خصم تذاكر
+    - طيران أديل عرض تذاكر
+    - الخطوط السعودية تخفيض تذاكر
+    - flynas sale fares
+    - flyadeal offer fares
+    - Saudia discount flights
+    # عروض التطبيقات ومواقع الحجز
+    - المسافر عرض خصم طيران
+    - المسافر كود خصم
+    - Almosafer promo code flights
+    - Trip.com Saudi Arabia flight sale
+    - ويقو عروض طيران
+    # عروض البطاقات البنكية على مواقع الحجز
+    - عرض بطاقات خصم تذاكر طيران المسافر بنك
+  news_keywords: ["خصم", "تخفيض", "عرض", "عروض", "كود", "كوبون", "%", "sale", "off", "discount", "offer", "deal", "promo", "code"]
+  # صفحات ويب ثابتة تريد مراقبة تغيّرها (الصفحات المبنية بجافاسكربت لن تعمل هنا)
+  pages:
+    - name: أكواد خصم Trip.com
+      url: https://www.trip.com/blog/latest-trip-com-promo-codes
+      keywords: ["code", "off", "%", "flight"]
+  #  - name: صفحة عروض أخرى
+  #    url: https://example.com/offers
+  #    keywords: ["خصم", "sale", "%"]
+
+# ------------------------------------------------------------
+#  روابط المقارنة: كل تنبيه يحمل رابطاً يفتح نفس الرحلة في كل موقع/تطبيق
+#  (على الآيفون يفتح داخل التطبيق إن كان مثبتاً ويدعم ذلك)
+#  المتغيرات المتاحة:
+#   {FROM} {TO}            رموز المطارات بحروف كبيرة   RUH DXB
+#   {from} {to}            بحروف صغيرة                  ruh dxb
+#   {from_slug} {to_slug}  اسم المدينة بالإنجليزية      riyadh dubai
+#   {depart} {return}      2026-12-05
+#   {depart_yymmdd} {return_yymmdd}       261205
+#   {depart_ddmmyyyy} {return_ddmmyyyy}   05-12-2026
+#   {adults} {currency}
+#  لإضافة المسافر أو Wego: ابحث عن رحلة في موقعهم، انسخ الرابط، واستبدل
+#  الرموز والتواريخ بالمتغيرات أعلاه.
+# ------------------------------------------------------------
+compare_sites:
+  - name: Trip.com
+    one_way: "https://www.trip.com/flights/{from_slug}-to-{to_slug}/tickets-{from}-{to}/?ddate={depart}&flighttype=s"
+    round_trip: "https://www.trip.com/flights/{from_slug}-to-{to_slug}/tickets-{from}-{to}/?ddate={depart}&rdate={return}&flighttype=d"
+  - name: Skyscanner
+    one_way: "https://www.skyscanner.net/transport/flights/{from}/{to}/{depart_yymmdd}/?adultsv2={adults}&cabinclass=economy"
+    round_trip: "https://www.skyscanner.net/transport/flights/{from}/{to}/{depart_yymmdd}/{return_yymmdd}/?adultsv2={adults}&cabinclass=economy"
+  - name: Kayak
+    one_way: "https://www.kayak.com/flights/{FROM}-{TO}/{depart}?sort=price_a"
+    round_trip: "https://www.kayak.com/flights/{FROM}-{TO}/{depart}/{return}?sort=price_a"
+
+# ------------------------------------------------------------
+#  خصومات تعرفها (كود تطبيق، عرض بطاقة بنكية…)
+#  يعرض الرادار السعر التقديري بعد الخصم بجانب السعر الأصلي.
+#   percent:  نسبة الخصم        max: أقصى مبلغ خصم       until: تاريخ الانتهاء
+#   airlines: [XY, SV]  لشركات معينة فقط (اتركه لكل الشركات)
+#   min_price: حد أدنى للحجز
+#   use_for_alerts: true  ← احسب السعر بعد الخصم عند مقارنته بحدّك
+# ------------------------------------------------------------
+discounts: []
+#  - name: كود تطبيق المسافر
+#    percent: 15
+#    max: 300
+#    until: 2026-12-31
+#  - name: بطاقة الراجحي على المسافر
+#    percent: 10
+#    max: 1000
+#    until: 2026-11-30
+#    use_for_alerts: true

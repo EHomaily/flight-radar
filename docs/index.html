@@ -1,0 +1,558 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>رادار التذاكر</title>
+<meta name="robots" content="noindex">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root {
+  color-scheme: light;
+  --bg: #f4f3ef;
+  --surface: #fcfcfb;
+  --surface-2: #f0efec;
+  --line: #e2e0da;
+  --ink: #0b0b0b;
+  --ink-2: #52514e;
+  --ink-3: #807e78;
+  --accent: #2a78d6;
+  --accent-ink: #1c5cab;
+  --good: #0ca30c;
+  --good-ink: #006300;
+  --critical: #d03b3b;
+  --warn-bg: #fff6e0;
+  --head: #0d366b;
+  --head-ink: #f4f7fc;
+  /* تقويم الأسعار: أزرق متدرج — الأغمق = الأرخص */
+  --h1: #cde2fb; --h2: #9ec5f4; --h3: #6da7ec; --h4: #3987e5; --h5: #256abf; --h6: #104281;
+  --h-ink-light: #0b0b0b; --h-ink-dark: #ffffff;
+  --shadow: 0 1px 2px rgba(0,0,0,.04), 0 4px 16px rgba(0,0,0,.04);
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    color-scheme: dark;
+    --bg: #121211; --surface: #1a1a19; --surface-2: #232321; --line: #33332f;
+    --ink: #f0efec; --ink-2: #c3c2b7; --ink-3: #8f8e86;
+    --accent: #5598e7; --accent-ink: #86b6ef; --good-ink: #4fd04f; --critical: #e66767;
+    --warn-bg: #3a2f12; --head: #0b2a52; --head-ink: #f0efec;
+    --h1: #1c2d45; --h2: #184f95; --h3: #256abf; --h4: #3987e5; --h5: #6da7ec; --h6: #b7d3f6;
+    --h-ink-light: #f0efec; --h-ink-dark: #0b0b0b;
+    --shadow: none;
+  }
+}
+:root[data-theme="dark"] {
+  color-scheme: dark;
+  --bg: #121211; --surface: #1a1a19; --surface-2: #232321; --line: #33332f;
+  --ink: #f0efec; --ink-2: #c3c2b7; --ink-3: #8f8e86;
+  --accent: #5598e7; --accent-ink: #86b6ef; --good-ink: #4fd04f; --critical: #e66767;
+  --warn-bg: #3a2f12; --head: #0b2a52; --head-ink: #f0efec;
+  --h1: #1c2d45; --h2: #184f95; --h3: #256abf; --h4: #3987e5; --h5: #6da7ec; --h6: #b7d3f6;
+  --h-ink-light: #f0efec; --h-ink-dark: #0b0b0b;
+  --shadow: none;
+}
+* { box-sizing: border-box; }
+html, body { margin: 0; }
+body {
+  background: var(--bg); color: var(--ink);
+  font-family: "IBM Plex Sans Arabic", system-ui, -apple-system, "Segoe UI", Tahoma, sans-serif;
+  font-size: 15px; line-height: 1.6; -webkit-font-smoothing: antialiased;
+}
+a { color: var(--accent-ink); }
+.num { font-variant-numeric: tabular-nums; direction: ltr; unicode-bidi: isolate; display: inline-block; }
+.wrap { max-width: 1080px; margin: 0 auto; padding: 0 16px; }
+
+/* ---------- header ---------- */
+header.top { background: var(--head); color: var(--head-ink); padding: 28px 0 22px; }
+.top .wrap { display: flex; flex-wrap: wrap; gap: 16px; align-items: flex-end; justify-content: space-between; }
+.brand { display: flex; align-items: center; gap: 12px; }
+.brand svg { flex: none; }
+.brand h1 { margin: 0; font-size: 26px; font-weight: 700; letter-spacing: 0; }
+.brand p { margin: 2px 0 0; opacity: .8; font-size: 13px; }
+.actions { display: flex; gap: 8px; flex-wrap: wrap; }
+.btn {
+  display: inline-flex; align-items: center; gap: 6px; border-radius: 999px; padding: 7px 14px;
+  font: inherit; font-size: 13px; font-weight: 500; text-decoration: none; cursor: pointer;
+  border: 1px solid rgba(255,255,255,.28); color: var(--head-ink); background: rgba(255,255,255,.08);
+}
+.btn:hover { background: rgba(255,255,255,.16); }
+.btn.solid { border-color: var(--line); background: var(--surface-2); color: var(--ink); }
+.btn.solid:hover { border-color: var(--accent); }
+.btn.primary { background: var(--accent); border-color: var(--accent); color: #fff; }
+
+/* ---------- layout ---------- */
+main { padding: 20px 0 48px; }
+.toolbar { display: flex; gap: 10px; align-items: center; margin: 4px 0 16px; flex-wrap: wrap; }
+.toolbar input {
+  flex: 1 1 220px; min-width: 0; font: inherit; padding: 9px 14px; border-radius: 10px;
+  border: 1px solid var(--line); background: var(--surface); color: var(--ink);
+}
+.toolbar input:focus { outline: 2px solid var(--accent); outline-offset: 1px; }
+.muted { color: var(--ink-3); font-size: 13px; }
+section.block { margin-top: 28px; }
+section.block > h2 { font-size: 18px; margin: 0 0 12px; }
+
+.alerts { display: grid; gap: 8px; margin-bottom: 18px; }
+.alert {
+  display: flex; gap: 12px; align-items: center; flex-wrap: wrap; background: var(--surface);
+  border: 1px solid var(--line); border-inline-start: 4px solid var(--critical);
+  border-radius: 12px; padding: 10px 14px; box-shadow: var(--shadow);
+}
+.alert b { font-weight: 600; }
+
+.card {
+  background: var(--surface); border: 1px solid var(--line); border-radius: 16px;
+  box-shadow: var(--shadow); padding: 20px; margin-bottom: 18px;
+}
+.card-head { display: flex; justify-content: space-between; gap: 16px; flex-wrap: wrap; }
+.card h3 { margin: 0 0 6px; font-size: 18px; }
+.chips { display: flex; gap: 6px; flex-wrap: wrap; }
+.chip { font-size: 12px; padding: 2px 10px; border-radius: 999px; background: var(--surface-2); color: var(--ink-2); }
+
+.hero { text-align: start; min-width: 200px; }
+.hero .price { font-size: 34px; font-weight: 700; line-height: 1.1; }
+.hero .price small { font-size: 15px; font-weight: 500; color: var(--ink-2); margin-inline-start: 4px; }
+.hero .sub { font-size: 13px; color: var(--ink-2); margin-top: 4px; display: flex; gap: 10px; flex-wrap: wrap; }
+.delta-down { color: var(--good-ink); font-weight: 600; }
+.delta-up { color: var(--critical); font-weight: 600; }
+.status { display: inline-flex; align-items: center; gap: 4px; font-weight: 600; }
+.status.ok { color: var(--good-ink); }
+.status.no { color: var(--ink-2); }
+
+.best-line {
+  margin-top: 14px; padding: 12px 14px; border-radius: 12px; background: var(--surface-2);
+  display: flex; gap: 14px; flex-wrap: wrap; align-items: center; justify-content: space-between;
+}
+.best-line .what { display: flex; flex-direction: column; gap: 2px; }
+.best-line .what b { font-size: 15px; }
+.links { display: flex; gap: 6px; flex-wrap: wrap; }
+.verified { color: var(--good-ink); font-size: 12px; }
+.disc { font-size: 12px; color: var(--accent-ink); font-weight: 600; }
+.mini-link.cmp, .btn.solid.cmp { background: transparent; border: 1px solid var(--line); }
+.cached { color: var(--ink-3); font-size: 12px; }
+
+.grid2 { display: grid; grid-template-columns: 1.15fr 1fr; gap: 20px; margin-top: 18px; }
+@media (max-width: 860px) { .grid2 { grid-template-columns: 1fr; } }
+.panel-title { display: flex; align-items: baseline; justify-content: space-between; gap: 8px; margin-bottom: 8px; }
+.panel-title h4 { margin: 0; font-size: 14px; color: var(--ink-2); font-weight: 600; }
+
+/* ---------- calendar ---------- */
+.tabs { display: flex; gap: 4px; flex-wrap: wrap; }
+.tab {
+  font: inherit; font-size: 12px; padding: 3px 10px; border-radius: 999px; cursor: pointer;
+  border: 1px solid var(--line); background: transparent; color: var(--ink-2);
+}
+.tab[aria-selected="true"] { background: var(--ink); color: var(--surface); border-color: var(--ink); }
+.cal { display: grid; grid-template-columns: repeat(7, 1fr); gap: 3px; }
+.cal .dow { font-size: 11px; color: var(--ink-3); text-align: center; padding-bottom: 2px; }
+.day {
+  position: relative; aspect-ratio: 1 / 0.92; border-radius: 6px; padding: 3px 4px;
+  display: flex; flex-direction: column; justify-content: space-between;
+  background: var(--surface-2); color: var(--ink-3); font-size: 11px; text-decoration: none;
+  min-width: 0; overflow: hidden;
+}
+.day .d { font-size: 10px; opacity: .85; }
+.day .p { font-size: 12px; font-weight: 600; text-align: center; white-space: nowrap; }
+.day .dest { font-size: 9px; text-align: center; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; opacity: .9; }
+.day.blank { background: transparent; }
+.day.has { cursor: pointer; }
+.day.has:hover, .day.has:focus-visible { outline: 2px solid var(--ink); outline-offset: 1px; z-index: 1; }
+.day.min { box-shadow: 0 0 0 2px var(--surface), 0 0 0 4px var(--good); }
+.day.min::after {
+  content: "الأرخص"; position: absolute; top: 2px; inset-inline-end: 3px; font-size: 8px; font-weight: 700;
+  background: var(--good); color: #fff; border-radius: 4px; padding: 0 3px; line-height: 1.5;
+}
+.legend { display: flex; align-items: center; gap: 6px; font-size: 11px; color: var(--ink-3); margin-top: 8px; }
+.legend .ramp { display: flex; gap: 2px; }
+.legend .ramp i { width: 18px; height: 10px; border-radius: 2px; display: block; }
+.cheapest-note { margin-top: 8px; font-size: 13px; }
+@media (max-width: 480px) { .day .dest { display: none; } .day .p { font-size: 10px; } .day.min::after { display: none; } }
+
+/* ---------- chart ---------- */
+.chart { position: relative; }
+.chart svg { display: block; width: 100%; height: auto; overflow: visible; direction: ltr; }
+.chart .gridline { stroke: var(--line); stroke-width: 1; }
+.chart .axis-label { fill: var(--ink-3); font-size: 11px; font-family: inherit; }
+.chart .series { fill: none; stroke: var(--accent); stroke-width: 2; stroke-linejoin: round; stroke-linecap: round; }
+.chart .area { fill: var(--accent); opacity: .08; }
+.chart .limit { stroke: var(--critical); stroke-width: 1.5; stroke-dasharray: 5 4; }
+.chart .limit-label { fill: var(--critical); font-size: 11px; font-family: inherit; }
+.chart .dot { fill: var(--accent); stroke: var(--surface); stroke-width: 2; }
+.chart .cross { stroke: var(--ink-3); stroke-width: 1; }
+.empty-chart {
+  border: 1px dashed var(--line); border-radius: 10px; padding: 26px 12px; text-align: center;
+  color: var(--ink-3); font-size: 13px;
+}
+.tip {
+  position: fixed; pointer-events: none; z-index: 50; background: var(--ink); color: var(--surface);
+  font-size: 12px; padding: 6px 9px; border-radius: 8px; line-height: 1.45; max-width: 240px;
+  opacity: 0; transition: opacity .08s; box-shadow: 0 4px 14px rgba(0,0,0,.18);
+}
+.tip.show { opacity: 1; }
+
+/* ---------- tables ---------- */
+.tbl-wrap { overflow-x: auto; margin-top: 18px; }
+table { width: 100%; border-collapse: collapse; font-size: 13px; }
+th { text-align: start; color: var(--ink-3); font-weight: 500; font-size: 12px; padding: 6px 8px; border-bottom: 1px solid var(--line); white-space: nowrap; }
+td { padding: 8px; border-bottom: 1px solid var(--line); vertical-align: middle; }
+tr:last-child td { border-bottom: 0; }
+td.price { font-weight: 600; white-space: nowrap; }
+.mini-link { font-size: 12px; text-decoration: none; padding: 2px 8px; border-radius: 999px; background: var(--surface-2); color: var(--ink); white-space: nowrap; }
+.mini-link:hover { outline: 1px solid var(--accent); }
+@media (max-width: 600px) {
+  .tbl-wrap table, .tbl-wrap tbody, .tbl-wrap tr, .tbl-wrap td { display: block; width: 100%; }
+  .tbl-wrap thead { display: none; }
+  .tbl-wrap tr { padding: 10px 0; border-bottom: 1px solid var(--line); display: grid; grid-template-columns: 1fr auto; gap: 2px 12px; }
+  .tbl-wrap tr:last-child { border-bottom: 0; }
+  .tbl-wrap td { border: 0; padding: 0; }
+  .tbl-wrap td.price { grid-column: 2; grid-row: 1; text-align: end; }
+  .tbl-wrap td:nth-child(n+3) { grid-column: 1 / -1; font-size: 12px; color: var(--ink-2); }
+  .tbl-wrap td:last-child { margin-top: 4px; }
+}
+details.more { margin-top: 14px; }
+details.more summary { cursor: pointer; color: var(--accent-ink); font-size: 13px; }
+.errors { margin-top: 12px; background: var(--warn-bg); border-radius: 10px; padding: 8px 12px; font-size: 12px; color: var(--ink-2); }
+
+.news { list-style: none; padding: 0; margin: 0; display: grid; gap: 8px; }
+.news li { background: var(--surface); border: 1px solid var(--line); border-radius: 12px; padding: 10px 14px; }
+.news a { text-decoration: none; color: var(--ink); font-weight: 500; }
+.news a:hover { color: var(--accent-ink); }
+.empty { background: var(--surface); border: 1px dashed var(--line); border-radius: 16px; padding: 40px 16px; text-align: center; color: var(--ink-2); }
+footer { padding: 26px 0 40px; color: var(--ink-3); font-size: 12px; border-top: 1px solid var(--line); }
+.sr { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); }
+</style>
+</head>
+<body>
+<header class="top">
+  <div class="wrap">
+    <div class="brand">
+      <svg width="40" height="40" viewBox="0 0 40 40" aria-hidden="true">
+        <circle cx="20" cy="20" r="18" fill="none" stroke="currentColor" stroke-opacity=".35"/>
+        <circle cx="20" cy="20" r="11" fill="none" stroke="currentColor" stroke-opacity=".55"/>
+        <path d="M20 20 L33 9" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+        <circle cx="27" cy="14" r="2.5" fill="#86b6ef"/>
+        <circle cx="20" cy="20" r="2" fill="currentColor"/>
+      </svg>
+      <div>
+        <h1>رادار التذاكر</h1>
+        <p id="updated">جاري التحميل…</p>
+      </div>
+    </div>
+    <div class="actions" id="actions"></div>
+  </div>
+</header>
+
+<main class="wrap">
+  <div class="toolbar">
+    <label class="sr" for="q">تصفية المراقبات</label>
+    <input id="q" type="search" placeholder="ابحث في المراقبات أو الوجهات… (مثال: إسطنبول)">
+    <button class="btn solid" id="theme" type="button" aria-label="تبديل المظهر">◐ المظهر</button>
+  </div>
+  <div class="alerts" id="alerts"></div>
+  <div id="watches"></div>
+  <section class="block" id="deals"></section>
+</main>
+
+<footer>
+  <div class="wrap">
+    مصادر البيانات: ذاكرة بحث Aviasales (Travelpayouts Data API) مع تحقق حي من أرخص التواريخ عبر Google Flights.
+    الأسعار غير المؤكدة ✅ قد تكون تغيّرت — تأكد دائماً قبل الحجز.
+  </div>
+</footer>
+
+<div class="tip" id="tip" role="tooltip"></div>
+
+<script>
+(() => {
+  "use strict";
+  const $ = (s, el = document) => el.querySelector(s);
+  const esc = (s) => String(s ?? "").replace(/[&<>"']/g, c => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[c]));
+  const WD = ["الأحد", "الاثنين", "الثلاثاء", "الأربعاء", "الخميس", "الجمعة", "السبت"];
+  const WD_SHORT = ["أحد", "اثنين", "ثلاثاء", "أربعاء", "خميس", "جمعة", "سبت"];
+  const MO = ["يناير", "فبراير", "مارس", "أبريل", "مايو", "يونيو", "يوليو", "أغسطس", "سبتمبر", "أكتوبر", "نوفمبر", "ديسمبر"];
+  let DATA = null, CUR = "ر.س";
+
+  // ---------- theme ----------
+  const themeBtn = $("#theme");
+  try { const t = localStorage.getItem("radar-theme"); if (t) document.documentElement.dataset.theme = t; } catch (e) {}
+  themeBtn.addEventListener("click", () => {
+    const root = document.documentElement;
+    const isDark = root.dataset.theme ? root.dataset.theme === "dark" : matchMedia("(prefers-color-scheme: dark)").matches;
+    root.dataset.theme = isDark ? "light" : "dark";
+    try { localStorage.setItem("radar-theme", root.dataset.theme); } catch (e) {}
+  });
+
+  // ---------- helpers ----------
+  const fmt = (p) => p == null ? "—" : Math.round(p).toLocaleString("en-US");
+  const money = (p) => `<span class="num">${fmt(p)}</span> ${CUR}`;
+  const parse = (iso) => { const [y, m, d] = iso.slice(0, 10).split("-").map(Number); return new Date(Date.UTC(y, m - 1, d)); };
+  const dateLabel = (iso, wd = true) => { if (!iso) return ""; const d = parse(iso); return `${wd ? WD[d.getUTCDay()] + " " : ""}${d.getUTCDate()} ${MO[d.getUTCMonth()]}`; };
+  const linkBtns = (o, cls = "mini-link") => [
+    o.google_link ? `<a class="${cls}" href="${esc(o.google_link)}" target="_blank" rel="noopener">Google Flights</a>` : "",
+    o.link ? `<a class="${cls}" href="${esc(o.link)}" target="_blank" rel="noopener">Aviasales</a>` : "",
+    ...(o.compare_links || []).map(c => `<a class="${cls} cmp" href="${esc(c.url)}" target="_blank" rel="noopener">${esc(c.name)}</a>`)
+  ].join("");
+  const discount = (o) => o.discount_price != null
+    ? `<span class="disc">💳 ${money(o.discount_price)} مع ${esc(o.discount_name)} <span class="muted">(تقدير)</span></span>` : "";
+  const when = (o) => o.ret ? `${dateLabel(o.depart)} ← ${dateLabel(o.ret)} <span class="muted">(${o.stay} أيام)</span>` : dateLabel(o.depart);
+  const trust = (o) => o.verified ? `<span class="verified">✅ مؤكد حياً</span>` : `<span class="cached">من ذاكرة البحث</span>`;
+
+  // ---------- tooltip ----------
+  const tip = $("#tip");
+  function showTip(html, x, y) {
+    tip.innerHTML = html; tip.classList.add("show");
+    const r = tip.getBoundingClientRect();
+    let left = x - r.width / 2, top = y - r.height - 12;
+    left = Math.max(8, Math.min(left, innerWidth - r.width - 8));
+    if (top < 8) top = y + 16;
+    tip.style.left = left + "px"; tip.style.top = top + "px";
+  }
+  const hideTip = () => tip.classList.remove("show");
+
+  // ---------- header ----------
+  function renderHeader(d) {
+    $("#updated").textContent = `آخر تحديث: ${d.generated_label || ""} (بتوقيت الرياض)`;
+    const a = [];
+    if (d.repo) {
+      const gh = `https://github.com/${d.repo}`;
+      a.push(`<a class="btn" href="${gh}/actions/workflows/search.yml" target="_blank" rel="noopener">🔎 بحث سريع</a>`);
+      a.push(`<a class="btn" href="${gh}/edit/main/config.yaml" target="_blank" rel="noopener">✏️ تعديل المراقبات</a>`);
+      a.push(`<a class="btn" href="${gh}/actions/workflows/radar.yml" target="_blank" rel="noopener">↻ تشغيل الآن</a>`);
+    }
+    $("#actions").innerHTML = a.join("");
+  }
+
+  function renderAlerts(d) {
+    const el = $("#alerts");
+    if (!d.alerts?.length) { el.innerHTML = ""; return; }
+    el.innerHTML = d.alerts.map(a => {
+      const o = a.offer;
+      const head = a.kind === "deal" ? `🔥 أقل من المعتاد بـ ${a.drop}٪` : "🚨 تحت حدّك";
+      return `<div class="alert" role="status"><b>${head}</b>
+        <span>${esc(a.watch)}: ${esc(o.origin_name)} ← ${esc(o.destination_name)} · ${dateLabel(o.depart)} · <b>${money(o.price)}</b></span>
+        <span class="links">${linkBtns(o)}</span></div>`;
+    }).join("");
+  }
+
+  // ---------- calendar heatmap ----------
+  function heatBin(price, min, max) {
+    if (max <= min) return 6;
+    const t = (max - price) / (max - min);          // 1 = الأرخص
+    return Math.min(6, Math.max(1, 1 + Math.round(t * 5)));
+  }
+  function renderCalendar(month, isAny) {
+    const days = new Map(month.days.map(d => [d.date, d]));
+    const prices = month.days.map(d => d.price);
+    const min = Math.min(...prices), max = Math.max(...prices);
+    const [y, m] = month.month.split("-").map(Number);
+    const first = new Date(Date.UTC(y, m - 1, 1)).getUTCDay();
+    const n = new Date(Date.UTC(y, m, 0)).getUTCDate();
+    let cells = WD_SHORT.map(w => `<div class="dow">${w}</div>`).join("");
+    for (let i = 0; i < first; i++) cells += `<div class="day blank"></div>`;
+    for (let day = 1; day <= n; day++) {
+      const iso = `${month.month}-${String(day).padStart(2, "0")}`;
+      const o = days.get(iso);
+      if (!o) { cells += `<div class="day"><span class="d num">${day}</span></div>`; continue; }
+      const bin = heatBin(o.price, min, max);
+      const ink = bin >= 4 ? "var(--h-ink-dark)" : "var(--h-ink-light)";
+      const isMin = month.cheapest && month.cheapest.date === iso;
+      const href = o.google_link || o.link || "#";
+      cells += `<a class="day has${isMin ? " min" : ""}" href="${esc(href)}" target="_blank" rel="noopener"
+          style="background:var(--h${bin});color:${ink}" data-tip="${esc(JSON.stringify(o))}"
+          aria-label="${dateLabel(iso)}: ${fmt(o.price)} ${CUR}">
+          <span class="d num">${day}</span>
+          <span class="p num">${fmt(o.price)}</span>
+          ${isAny ? `<span class="dest">${esc(o.destination_name)}</span>` : "<span></span>"}
+        </a>`;
+    }
+    const legend = `<div class="legend"><span>أغلى</span><span class="ramp">${[1,2,3,4,5,6].map(i => `<i style="background:var(--h${i})"></i>`).join("")}</span><span>أرخص</span>
+      <span style="margin-inline-start:auto">اضغط أي يوم لفتح البحث</span></div>`;
+    const note = month.cheapest ? `<div class="cheapest-note">📆 أرخص يوم في ${esc(month.label)}: <b>${esc(month.cheapest.label)}</b> — <b>${money(month.cheapest.price)}</b></div>`
+                                : `<div class="cheapest-note muted">لا توجد أسعار لهذا الشهر بعد.</div>`;
+    return `<div class="cal">${cells}</div>${legend}${note}`;
+  }
+
+  // ---------- history chart ----------
+  function renderChart(w) {
+    const pts = (w.history || []).map(h => ({ d: h.d, p: h.p }));
+    if (pts.length < 2) return `<div class="empty-chart">يظهر منحنى السعر بعد يومين من التشغيل اليومي.<br>${pts.length ? "سُجّل اليوم الأول ✓" : ""}</div>`;
+    const narrow = innerWidth < 600;
+    const W = narrow ? 340 : 520, H = narrow ? 200 : 210, padL = 8, padR = 44, padT = 14, padB = 26;
+    const vals = pts.map(p => p.p).concat(w.max_price ? [w.max_price] : []);
+    let lo = Math.min(...vals), hi = Math.max(...vals);
+    const span = Math.max(1, hi - lo); lo -= span * .12; hi += span * .12;
+    // في RTL يكون الزمن من اليمين (الأقدم) إلى اليسار (الأحدث)
+    const x = i => W - padR - (i / (pts.length - 1)) * (W - padL - padR);
+    const y = v => padT + (1 - (v - lo) / (hi - lo)) * (H - padT - padB);
+    const ticks = 4, grid = [];
+    for (let i = 0; i <= ticks; i++) {
+      const v = lo + (hi - lo) * i / ticks;
+      grid.push(`<line class="gridline" x1="${padL}" x2="${W - padR}" y1="${y(v)}" y2="${y(v)}"/>
+        <text class="axis-label" x="${W - padR + 6}" y="${y(v) + 4}" text-anchor="start">${fmt(v)}</text>`);
+    }
+    const path = pts.map((p, i) => `${i ? "L" : "M"}${x(i).toFixed(1)},${y(p.p).toFixed(1)}`).join("");
+    const area = `${path}L${x(pts.length - 1)},${H - padB}L${x(0)},${H - padB}Z`;
+    const limit = w.max_price ? `<line class="limit" x1="${padL}" x2="${W - padR}" y1="${y(w.max_price)}" y2="${y(w.max_price)}"/>
+       <text class="limit-label" x="${padL + 2}" y="${y(w.max_price) - 5}">حدّك ${fmt(w.max_price)}</text>` : "";
+    const xl = [0, pts.length - 1].map(i => `<text class="axis-label" x="${x(i)}" y="${H - 6}" text-anchor="middle" style="direction:rtl">${dateLabel(pts[i].d, false)}</text>`).join("");
+    const last = pts[pts.length - 1];
+    return `<div class="chart" data-pts='${esc(JSON.stringify(pts))}'>
+      <svg viewBox="0 0 ${W} ${H}" role="img" aria-label="منحنى أفضل سعر يومي">
+        ${grid.join("")}${limit}
+        <path class="area" d="${area}"/><path class="series" d="${path}"/>
+        <circle class="dot" r="4.5" cx="${x(pts.length - 1)}" cy="${y(last.p)}"/>
+        ${xl}
+        <line class="cross" x1="0" x2="0" y1="${padT}" y2="${H - padB}" style="display:none"/>
+        <circle class="dot hover" r="4.5" style="display:none"/>
+        <rect class="hit" x="${padL}" y="0" width="${W - padL - padR}" height="${H}" fill="transparent"/>
+      </svg></div>`;
+  }
+  function bindChart(root) {
+    root.querySelectorAll(".chart").forEach(ch => {
+      const pts = JSON.parse(ch.dataset.pts);
+      const svg = ch.querySelector("svg"), hit = ch.querySelector(".hit");
+      const cross = ch.querySelector(".cross"), dot = ch.querySelector(".dot.hover");
+      const vb = svg.viewBox.baseVal;
+      const series = ch.querySelector(".series").getAttribute("d").slice(1).split("L").map(s => s.split(",").map(Number));
+      hit.addEventListener("pointermove", e => {
+        const r = svg.getBoundingClientRect();
+        const px = (e.clientX - r.left) / r.width * vb.width;
+        let best = 0; series.forEach((s, i) => { if (Math.abs(s[0] - px) < Math.abs(series[best][0] - px)) best = i; });
+        const [sx, sy] = series[best];
+        cross.setAttribute("x1", sx); cross.setAttribute("x2", sx); cross.style.display = "";
+        dot.setAttribute("cx", sx); dot.setAttribute("cy", sy); dot.style.display = "";
+        const prev = best > 0 ? pts[best].p - pts[best - 1].p : null;
+        const ch2 = prev == null ? "" : `<br>${prev < 0 ? "🔻" : prev > 0 ? "🔺" : "="} ${fmt(Math.abs(prev))} عن اليوم السابق`;
+        showTip(`<b>${money(pts[best].p)}</b><br>${dateLabel(pts[best].d)}${ch2}`,
+          r.left + sx / vb.width * r.width, r.top + sy / vb.height * r.height);
+      });
+      hit.addEventListener("pointerleave", () => { cross.style.display = "none"; dot.style.display = "none"; hideTip(); });
+    });
+  }
+
+  // ---------- watch card ----------
+  function renderWatch(w) {
+    const b = w.best;
+    const chips = [
+      `${w.origins_names.join("، ")} ← ${w.destinations_names.join("، ")}`,
+      w.trip === "round-trip" ? `ذهاب وعودة${w.stay_days ? ` · ${w.stay_days[0]}–${w.stay_days[1]} أيام` : ""}` : "ذهاب فقط",
+      w.direct_only ? "مباشر فقط" : "",
+      w.calendar.map(m => m.label).join("، "),
+    ].filter(Boolean).map(c => `<span class="chip">${esc(c)}</span>`).join("");
+
+    let hero = `<div class="hero"><div class="price">—</div><div class="sub">لا توجد أسعار حالياً</div></div>`;
+    if (b) {
+      const diff = w.previous != null ? b.price - w.previous : null;
+      const delta = diff == null ? "" : Math.abs(diff) < 1 ? `<span class="muted">بدون تغيّر عن أمس</span>`
+        : diff < 0 ? `<span class="delta-down">▼ ${money(-diff)} عن أمس</span>` : `<span class="delta-up">▲ ${money(diff)} عن أمس</span>`;
+      const status = w.max_price == null ? "" : b.price <= w.max_price
+        ? `<span class="status ok">✓ تحت حدّك (${fmt(w.max_price)})</span>`
+        : `<span class="status no">فوق حدّك بـ ${money(b.price - w.max_price)}</span>`;
+      const atl = w.all_time_low != null && b.price < w.all_time_low ? `<span class="delta-down">★ أدنى سعر منذ بدء المراقبة</span>` : "";
+      hero = `<div class="hero"><div class="price"><span class="num">${fmt(b.price)}</span><small>${CUR}</small></div>
+        <div class="sub">${status}${delta}${atl}</div></div>`;
+    }
+    const bestLine = b ? `<div class="best-line">
+        <div class="what"><b>${esc(b.origin_name)} ← ${esc(b.destination_name)} <span class="muted num">${esc((b.origin_airport || b.origin) + "→" + (b.destination_airport || b.destination))}</span></b>
+        <span>${when(b)}</span>
+        <span class="muted">${esc([b.stops, b.airline_name].filter(Boolean).join(" · "))} · ${trust(b)}</span>
+        ${discount(b)}</div>
+        <div class="links">${linkBtns(b, "btn solid")}</div></div>` : "";
+
+    const months = w.calendar;
+    const tabs = months.length > 1 ? `<div class="tabs" role="tablist">${months.map((m, i) =>
+      `<button class="tab" role="tab" aria-selected="${i === 0}" data-i="${i}">${esc(m.label)}</button>`).join("")}</div>` : `<span class="muted">${esc(months[0]?.label || "")}</span>`;
+
+    const destTable = w.destinations_table?.length ? `<div class="tbl-wrap"><div class="panel-title"><h4>${w.is_any ? "أرخص الوجهات" : "مقارنة الوجهات"}</h4></div>
+      <table><thead><tr><th>الوجهة</th><th>السعر</th><th>التاريخ</th><th>التوقفات</th><th></th></tr></thead><tbody>
+      ${w.destinations_table.map(o => `<tr><td><b>${esc(o.destination_name)}</b> <span class="muted num">${esc(o.destination)}</span><br><span class="muted">من ${esc(o.origin_name)}</span></td>
+        <td class="price">${money(o.price)}${o.verified ? " ✅" : ""}${o.discount_price != null ? `<br>${discount(o)}` : ""}</td><td>${when(o)}</td><td>${esc(o.stops)}</td><td><div class="links">${linkBtns(o)}</div></td></tr>`).join("")}
+      </tbody></table></div>` : "";
+
+    const top = w.top?.length ? `<details class="more"><summary>أفضل ${w.top.length} عروض</summary><div class="tbl-wrap">
+      <table><thead><tr><th>المسار</th><th>السعر</th><th>التاريخ</th><th>الناقل</th><th></th></tr></thead><tbody>
+      ${w.top.map(o => `<tr><td>${esc(o.origin_name)} ← ${esc(o.destination_name)}</td><td class="price">${money(o.price)}${o.verified ? " ✅" : ""}</td>
+        <td>${when(o)}</td><td>${esc([o.stops, o.airline_name].filter(Boolean).join(" · "))}</td><td><div class="links">${linkBtns(o)}</div></td></tr>`).join("")}
+      </tbody></table></div></details>` : "";
+
+    const errs = w.errors?.length ? `<div class="errors">⚠️ ${w.errors.slice(0, 3).map(esc).join("<br>")}</div>` : "";
+    const search = [w.name, ...w.origins, ...w.destinations, ...w.origins_names, ...w.destinations_names,
+      ...(w.destinations_table || []).map(o => o.destination_name)].join(" ").toLowerCase();
+
+    return `<article class="card" data-search="${esc(search)}" data-id="${esc(w.id)}">
+      <div class="card-head"><div><h3>${esc(w.name)}</h3><div class="chips">${chips}</div></div>${hero}</div>
+      ${bestLine}
+      <div class="grid2">
+        <div><div class="panel-title"><h4>تقويم أرخص الأيام</h4>${tabs}</div><div class="calbox">${months.length ? renderCalendar(months[0], w.is_any) : ""}</div></div>
+        <div><div class="panel-title"><h4>أفضل سعر يومياً</h4><span class="muted">${w.history?.length || 0} يوم</span></div>${renderChart(w)}</div>
+      </div>
+      ${destTable}${top}${errs}
+    </article>`;
+  }
+
+  // ---------- deals ----------
+  function renderDeals(d) {
+    const el = $("#deals"), s = d.deals?.special || [], n = d.deals?.news || [], pg = d.deals?.pages || [];
+    if (!s.length && !n.length && !pg.length) { el.innerHTML = ""; return; }
+    let h = `<h2>🏷️ الخصومات والعروض</h2>`;
+    if (s.length) h += `<div class="card"><div class="panel-title"><h4>أسعار منخفضة بشكل غير معتاد (Aviasales)</h4></div><div class="tbl-wrap" style="margin-top:0">
+      <table><thead><tr><th>المسار</th><th>السعر</th><th>التاريخ</th><th>الناقل</th><th></th></tr></thead><tbody>
+      ${s.map(i => `<tr><td>${esc(i.origin_name)} ← ${esc(i.destination_name)}${i.relevant ? ' <span class="chip">يطابق مراقباتك</span>' : ""}</td>
+        <td class="price">${money(i.price)}</td><td>${dateLabel(i.depart)}${i.ret ? " ← " + dateLabel(i.ret) : ""}</td>
+        <td>${esc(i.airline_title || i.airline || "")}</td><td>${i.link ? `<a class="mini-link" href="${esc(i.link)}" target="_blank" rel="noopener">افتح</a>` : ""}</td></tr>`).join("")}
+      </tbody></table></div></div>`;
+    if (n.length) h += `<div class="panel-title" style="margin-top:8px"><h4>إعلانات تخفيضات شركات الطيران (آخر أيام)</h4></div>
+      <ul class="news">${n.map(i => `<li><a href="${esc(i.link)}" target="_blank" rel="noopener">${esc(i.title)}</a>
+        <div class="muted">${esc(i.source || "")}${i.published ? " · " + dateLabel(i.published) : ""}</div></li>`).join("")}</ul>`;
+    if (pg.length) h += `<div class="panel-title" style="margin-top:16px"><h4>صفحات مراقبة</h4></div>
+      <ul class="news">${pg.map(p => `<li><a href="${esc(p.url)}" target="_blank" rel="noopener">${esc(p.name)}</a> <span class="muted">— ${p.ok ? "✓" : "⚠️"} ${esc(p.note)}</span></li>`).join("")}</ul>`;
+    el.innerHTML = h;
+  }
+
+  // ---------- wire ----------
+  function bindCard(card, w) {
+    card.querySelectorAll(".tab").forEach(t => t.addEventListener("click", () => {
+      card.querySelectorAll(".tab").forEach(x => x.setAttribute("aria-selected", x === t));
+      card.querySelector(".calbox").innerHTML = renderCalendar(w.calendar[+t.dataset.i], w.is_any);
+    }));
+    card.addEventListener("pointerover", e => {
+      const a = e.target.closest(".day.has"); if (!a) return;
+      const o = JSON.parse(a.dataset.tip), r = a.getBoundingClientRect();
+      showTip(`<b>${money(o.price)}</b>${o.verified ? " ✅" : ""}<br>${dateLabel(o.date)}${o.ret ? " ← " + dateLabel(o.ret) : ""}${w.is_any || w.destinations.length > 1 ? "<br>" + esc(o.destination_name) : ""}`,
+        r.left + r.width / 2, r.top);
+    });
+    card.addEventListener("pointerout", e => { if (e.target.closest(".day.has")) hideTip(); });
+    bindChart(card);
+  }
+
+  function render(d) {
+    DATA = d; CUR = d.currency_label || d.currency || "ر.س";
+    renderHeader(d); renderAlerts(d);
+    const box = $("#watches");
+    if (!d.watches?.length) { box.innerHTML = `<div class="empty">لا توجد مراقبات بعد — أضفها في config.yaml</div>`; }
+    else {
+      box.innerHTML = d.watches.map(renderWatch).join("");
+      d.watches.forEach(w => bindCard(box.querySelector(`[data-id="${w.id}"]`), w));
+    }
+    renderDeals(d);
+  }
+
+  $("#q").addEventListener("input", e => {
+    const q = e.target.value.trim().toLowerCase();
+    document.querySelectorAll("#watches .card").forEach(c => { c.style.display = !q || c.dataset.search.includes(q) ? "" : "none"; });
+  });
+  addEventListener("scroll", hideTip, { passive: true });
+
+  fetch("data/latest.json?t=" + Date.now())
+    .then(r => { if (!r.ok) throw new Error(r.status); return r.json(); })
+    .then(render)
+    .catch(() => {
+      $("#updated").textContent = "لم يعمل الرادار بعد";
+      $("#watches").innerHTML = `<div class="empty">لا توجد بيانات بعد.<br>شغّل سير العمل <b>Flight Radar</b> من تبويب Actions في GitHub، ثم حدّث الصفحة.</div>`;
+    });
+})();
+</script>
+</body>
+</html>
