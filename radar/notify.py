@@ -2,6 +2,7 @@
 from __future__ import annotations
 
 import logging
+import re
 import time
 
 import requests
@@ -26,7 +27,8 @@ def split(text: str, limit: int = LIMIT) -> list[str]:
 
 class Telegram:
     def __init__(self, token: str, chat_id: str, http=None):
-        self.token, self.chat_id = token, chat_id
+        self.token, self.chat_id = (token or "").strip(), (chat_id or "").strip()
+        self.diag: dict = {}
         self.http = http or requests
         self.sent: list[str] = []
 
@@ -71,8 +73,38 @@ class Telegram:
                 out[str(chat["id"])] = chat.get("first_name") or chat.get("title") or ""
         return list(out.items())
 
+    def diagnose(self) -> dict:
+        """فحص الرمز وآخر الرسائل (بدون كشف الرمز) — يُحفظ في بيانات اللوحة."""
+        d = {"token_set": bool(self.token),
+             "token_format_ok": bool(re.fullmatch(r"\d{6,}:[\w-]{30,}", self.token or "")),
+             "chat_from": None}
+        if not self.token:
+            return d
+        try:
+            me = self.http.get(f"https://api.telegram.org/bot{self.token}/getMe", timeout=20)
+            j = me.json()
+            d["getMe"] = "ok @" + j["result"].get("username", "") if j.get("ok") else f"error {me.status_code}: {j.get('description')}"
+            up = self.http.get(f"https://api.telegram.org/bot{self.token}/getUpdates", timeout=20)
+            j = up.json()
+            if j.get("ok"):
+                res = j.get("result", [])
+                d["updates"] = len(res)
+                d["private_chats"] = len({(u.get("message") or {}).get("chat", {}).get("id") for u in res
+                                          if (u.get("message") or {}).get("chat", {}).get("type") == "private"})
+            else:
+                d["getUpdates"] = f"error {up.status_code}: {j.get('description')}"
+        except Exception as e:  # noqa: BLE001
+            d["error"] = f"{type(e).__name__}: {str(e)[:150]}"
+        return d
+
     def ensure_chat(self, state: dict) -> str | None:
         """إن لم يُحدَّد TELEGRAM_CHAT_ID: نكتشف محادثتك من أول رسالة أرسلتها للبوت ونحفظها."""
+        self.diag = self.diagnose()
+        result = self._ensure_chat(state)
+        self.diag["chat_from"] = result
+        return result
+
+    def _ensure_chat(self, state: dict) -> str | None:
         if not self.token:
             return None
         if self.chat_id:
