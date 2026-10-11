@@ -24,6 +24,7 @@ class WatchResult:
     offers: list[Offer] = field(default_factory=list)      # كل العروض الصالحة، مرتبة بالسعر
     errors: list[str] = field(default_factory=list)
     live_checked: int = 0
+    live_errors: list[str] = field(default_factory=list)
 
     @property
     def best(self) -> Offer | None:
@@ -59,8 +60,10 @@ def _passes(o: Offer, w: Watch, today: dt.date) -> bool:
         return False
     if w.direct_only and ((o.transfers or 0) > 0 or (o.return_transfers or 0) > 0):
         return False
-    if w.is_any and (o.destination in w.exclude or (o.destination_airport or "") in w.exclude):
-        return False
+    if w.is_any:
+        dests = {o.destination, o.destination_airport or ""}
+        if dests & set(w.exclude) or dests & set(w.origins):
+            return False   # لا نعرض الرحلات بين مطارات المغادرة نفسها (مثل الرياض ↔ جدة)
     return True
 
 
@@ -150,6 +153,7 @@ def collect(w: Watch, tp: TravelpayoutsClient, settings: Settings, today: dt.dat
             if len(candidates) >= settings.google_checks_per_watch:
                 break
         tried: set[str] = set()
+        err_start = len(gf.ERRORS)
 
         def verify(o: Offer) -> None:
             tried.add(o.key())
@@ -176,6 +180,7 @@ def collect(w: Watch, tp: TravelpayoutsClient, settings: Settings, today: dt.dat
                 break
             verify(top)
             offers.sort(key=lambda o: o.price)
+        res.live_errors = gf.ERRORS[err_start:]
 
     for o in offers[:300]:
         o.compare_links = L.build(sites or [], o, settings.adults, settings.currency)

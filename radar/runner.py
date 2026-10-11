@@ -112,6 +112,7 @@ def watch_view(r: E.WatchResult, history: dict, prev: float | None, atl: float |
         "calendar": months,
         "history": [{"d": e["d"], "p": e["p"]} for e in history.get(w.id, [])],
         "live_checked": r.live_checked,
+        "live_errors": r.live_errors[:5],
         "errors": r.errors,
     }
 

@@ -12,6 +12,7 @@ import logging
 from .models import Offer
 
 log = logging.getLogger(__name__)
+ERRORS: list[str] = []   # أسباب فشل التحقق الحي (تُحفظ في بيانات اللوحة للتشخيص)
 
 try:
     from fast_flights import FlightQuery, Passengers, create_query, get_flights
@@ -61,9 +62,13 @@ def live_price(origin: str, dest: str, depart: dt.date, ret: dt.date | None, adu
         with cf.ThreadPoolExecutor(max_workers=1) as ex:
             results = ex.submit(_run).result(timeout=timeout)
     except Exception as e:
-        log.info("Google Flights %s→%s %s: %s", origin, dest, depart, e)
+        msg = f"{origin}→{dest} {depart}: {type(e).__name__}: {str(e)[:200]}"
+        log.info("Google Flights %s", msg)
+        ERRORS.append(msg)
         return None
 
+    if not results:
+        ERRORS.append(f"{origin}→{dest} {depart}: لا نتائج")
     best = None
     for f in results or []:
         price = getattr(f, "price", None)
@@ -80,4 +85,6 @@ def live_price(origin: str, dest: str, depart: dt.date, ret: dt.date | None, adu
                 duration=sum(getattr(l, "duration", 0) or 0 for l in legs) or None,
                 google_link=q.url(),
             )
+    if results and best is None:
+        ERRORS.append(f"{origin}→{dest} {depart}: {len(results)} نتيجة بدون أسعار")
     return best

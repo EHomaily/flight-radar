@@ -23,9 +23,34 @@ def _hash(s: str) -> str:
     return hashlib.sha1(s.encode("utf-8")).hexdigest()[:16]
 
 
+_AR_PREFIXES = ("وبال", "فال", "وال", "بال", "كال", "لل", "ال", "و", "ب", "ل", "ف")
+
+
+def _words(text: str) -> set[str]:
+    out = set()
+    for w in re.findall(r"[\w%]+", text.lower()):
+        out.add(w)
+        for p in _AR_PREFIXES:
+            if w.startswith(p) and len(w) - len(p) >= 3:
+                out.add(w[len(p):])
+    return out
+
+
 def _has_keyword(text: str, keywords: list[str]) -> bool:
-    t = text.lower()
-    return not keywords or any(str(k).lower() in t for k in keywords)
+    """تطابق بداية الكلمة (خصم ← خصومات، بخصم) وليس أي جزء منها (عرض ≠ تعرض)."""
+    if not keywords:
+        return True
+    words = _words(text)
+    for k in (str(k).lower() for k in keywords):
+        if not re.fullmatch(r"\w+", k):          # رموز مثل %
+            if k in text:
+                return True
+        elif len(k) <= 3:                          # كلمات قصيرة: تطابق كامل فقط (off ≠ official)
+            if k in words:
+                return True
+        elif any(w.startswith(k) for w in words):
+            return True
+    return False
 
 
 # ---------------------------------------------------------------- news RSS

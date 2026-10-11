@@ -294,3 +294,33 @@ def test_discount_triggers_threshold_when_enabled(cfg):
     assert [a.kind for a in alerts] == ["threshold"]
     msg = M.alert_message(alerts[0], "t", "SAR")
     assert "💳 مع كود" in msg
+
+
+def test_any_excludes_own_origins(cfg):
+    w = parse_watch({"name": "a", "origins": ["RUH", "JED"], "destinations": ["ANY"], "months": ["2026-11"]})
+    class H(FakeHTTP):
+        def get(self, url, params=None, headers=None, timeout=None):
+            r = super().get(url, params, headers, timeout)
+            if params and "prices_for_dates" in url and not params.get("destination"):
+                other = "JED" if params["origin"] == "RUH" else "RUH"
+                r._data["data"].append(self._item(params["origin"], other, dt.date(2026, 11, 5), False, 0))
+            return r
+    r = E.collect(w, tp(H()), cfg.settings, TODAY, live_fn=None)
+    assert r.offers and not {o.destination for o in r.offers} & {"RUH", "JED"}
+
+
+def test_news_keywords_word_start():
+    from radar.deals import _has_keyword as h
+    kw = ["خصم", "عرض", "%", "off", "sale"]
+    assert not h("مطار الملك خالد تعرض يوم", kw)
+    assert h("المسافر: كود بخصم إضافي", kw) and h("Up to 40% off", kw)
+    assert not h("Official statement", kw)
+
+
+def test_live_errors_recorded(cfg):
+    from radar import google_flights as gf
+    def failing(*a):
+        gf.ERRORS.append("RUH→DXB: blocked")
+        return None
+    r = E.collect(cfg.watches[1], tp(), cfg.settings, TODAY, live_fn=failing)
+    assert r.live_errors and "blocked" in r.live_errors[0]
