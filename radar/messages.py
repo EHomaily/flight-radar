@@ -151,14 +151,21 @@ def digest(results: list[WatchResult], prev: dict[str, float | None], cur: str,
         if w.is_any or len(w.destinations) > 1:
             refs = r.reference_by_destination()
             out.append("   أرخص الوجهات:")
-            for o in r.by_destination()[:8]:
+            for o in r.by_destination()[:15 if not w.is_any else 8]:
                 line = f"   • {esc(N.city(o.destination))}: {N.fmt_price(o.price, cur)}"
                 if len(w.origins) > 1:
                     line += f" (من {esc(N.city(o.origin))})"
                 ref = refs.get(o.destination)
                 if ref and ref.origin != o.origin:
                     line += f" · {esc(N.city(ref.origin))} {N.fmt_price(ref.price, cur)}"
+                elif w.reference_origin and not ref and w.reference_origin != o.origin:
+                    line += f" · {esc(N.city(w.reference_origin))}: لا يوجد سعر محفوظ"
                 out.append(line)
+            if not w.is_any:
+                found = {o.destination for o in r.offers}
+                missing = [N.city(c) for c in w.destinations if c not in found]
+                if missing:
+                    out.append(f"   ⚪ بلا أسعار حالياً: {esc('، '.join(missing))}")
         else:
             for m, o in r.cheapest_per_month().items():
                 out.append(f"   📆 أرخص يوم في {N.fmt_month(m)}: {N.fmt_date(o.depart)} — {N.fmt_price(o.price, cur)}")

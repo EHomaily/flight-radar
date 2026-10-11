@@ -512,7 +512,9 @@ footer { padding: 26px 0 40px; color: var(--ink-3); font-size: 12px; border-top:
     const destTable = w.destinations_table?.length ? `<div class="tbl-wrap"><div class="panel-title"><h4>${w.is_any ? "أرخص الوجهات" : "مقارنة الوجهات"}</h4></div>
       <table><thead><tr><th>الوجهة</th><th>السعر</th><th>التاريخ</th><th>التوقفات</th><th></th></tr></thead><tbody>
       ${w.destinations_table.map(o => `<tr><td><b>${esc(o.destination_name)}</b> <span class="muted num">${esc(o.destination)}</span><br><span class="muted">من ${esc(o.origin_name)}</span></td>
-        <td class="price">${money(o.price)}${o.verified ? " ✅" : ""}${o.discount_price != null ? `<br>${discount(o)}` : ""}${o.ref ? `<br><span class="refp">📍 ${esc(o.ref.origin_name)}: ${money(o.ref.price)}</span>` : ""}</td><td>${when(o)}</td><td>${esc(o.stops)}</td><td><div class="links">${linkBtns(o)}</div></td></tr>`).join("")}
+        <td class="price">${money(o.price)}${o.verified ? " ✅" : ""}${o.discount_price != null ? `<br>${discount(o)}` : ""}${o.ref ? (o.ref.missing
+          ? `<br><a class="refp" href="${esc(o.ref.google_link)}" target="_blank" rel="noopener">📍 ${esc(o.ref.origin_name)}: ابحث ↗</a>`
+          : `<br><span class="refp">📍 ${esc(o.ref.origin_name)}: ${money(o.ref.price)}</span>`) : ""}</td><td>${when(o)}</td><td>${esc(o.stops)}</td><td><div class="links">${linkBtns(o)}</div></td></tr>`).join("")}
       </tbody></table></div>` : "";
 
     const top = w.top?.length ? `<details class="more"><summary>أفضل ${w.top.length} عروض</summary><div class="tbl-wrap">
@@ -521,6 +523,7 @@ footer { padding: 26px 0 40px; color: var(--ink-3); font-size: 12px; border-top:
         <td>${when(o)}</td><td>${esc([o.stops, o.airline_name].filter(Boolean).join(" · "))}</td><td><div class="links">${linkBtns(o)}</div></td></tr>`).join("")}
       </tbody></table></div></details>` : "";
 
+    const missing = w.missing_destinations?.length ? `<div class="muted" style="margin-top:8px">⚪ بلا أسعار في البيانات حالياً: ${w.missing_destinations.map(esc).join("، ")}</div>` : "";
     const errs = w.errors?.length ? `<div class="errors">⚠️ ${w.errors.slice(0, 3).map(esc).join("<br>")}</div>` : "";
     const search = [w.name, ...w.origins, ...w.destinations, ...w.origins_names, ...w.destinations_names,
       ...(w.destinations_table || []).map(o => o.destination_name)].join(" ").toLowerCase();
@@ -532,7 +535,7 @@ footer { padding: 26px 0 40px; color: var(--ink-3); font-size: 12px; border-top:
         <div><div class="panel-title"><h4>تقويم أرخص الأيام</h4>${tabs}</div><div class="calbox">${months.length ? renderCalendar(months[0], w.is_any || w.destinations.length > 1) : ""}</div></div>
         <div><div class="panel-title"><h4>أفضل سعر يومياً</h4><span class="muted">${w.history?.length || 0} يوم</span></div>${renderChart(w)}</div>
       </div>
-      ${destTable}${top}${errs}
+      ${destTable}${missing}${top}${errs}
     </article>`;
   }
 

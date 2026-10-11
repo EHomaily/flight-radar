@@ -80,6 +80,18 @@ def offer_view(o, cur) -> dict:
     return d
 
 
+def _ref_view(o, refs: dict, w, cur) -> dict | None:
+    """سعر مطار المرجع (الرياض) لنفس الوجهة — أو رابط بحث منه إن لم يتوفر سعر محفوظ."""
+    ref_code = w.reference_origin
+    if not ref_code or ref_code in (o.origin, o.origin_airport):
+        return None
+    if o.destination in refs:
+        return offer_view(refs[o.destination], cur)
+    return {"missing": True, "origin_name": N.city(ref_code),
+            "google_link": E.gf.search_url(ref_code, o.destination_airport or o.destination,
+                                           o.depart, o.ret, w.adults, cur, w.direct_only)}
+
+
 def watch_view(r: E.WatchResult, history: dict, prev: float | None, atl: float | None,
                cur: str) -> dict:
     w = r.watch
@@ -114,9 +126,10 @@ def watch_view(r: E.WatchResult, history: dict, prev: float | None, atl: float |
         "top": [offer_view(o, cur) for o in r.offers[:10]],
         "reference_origin": w.reference_origin,
         "reference_name": N.city(w.reference_origin) if w.reference_origin else None,
-        "destinations_table": [dict(offer_view(o, cur), ref=(offer_view(refs[o.destination], cur)
-                                    if o.destination in refs and refs[o.destination].origin != o.origin else None))
+        "destinations_table": [dict(offer_view(o, cur), ref=_ref_view(o, refs, w, cur))
                                for o in r.by_destination()[:max(w.top, len(w.destinations))]] if multi else [],
+        "missing_destinations": [N.city(c) for c in w.destinations
+                                 if not w.is_any and c not in {o.destination for o in r.offers}],
         "calendar": months,
         "history": [{"d": e["d"], "p": e["p"]} for e in history.get(w.id, [])],
         "live_checked": r.live_checked,
