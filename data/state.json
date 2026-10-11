@@ -1,5 +1,21 @@
 {
- "alerts": {},
+ "alerts": {
+  "229ec73c4c:threshold": {
+   "price": 648.75,
+   "ts": "2026-10-11T18:18:46.695495+03:00",
+   "offer": "RUH-IST-2026-12-17-2026-12-21"
+  },
+  "3d1a1e58e3:threshold": {
+   "price": 217.5,
+   "ts": "2026-10-11T18:18:46.695495+03:00",
+   "offer": "RUH-DXB-2026-10-16-"
+  },
+  "662db0b778:threshold": {
+   "price": 386.25,
+   "ts": "2026-10-11T18:18:46.695495+03:00",
+   "offer": "JED-AHB-2026-10-26-2026-10-31"
+  }
+ },
  "special_seen": [
   "0d1b52a08f354d14ec03181f65b515ba",
   "16b5310b0988e681fdf01f845d96f85e",
@@ -12,6 +28,7 @@
   "4ebedddc7dd341b91a753cfa333bde41",
   "625ba32c7d32c0d7119181370146ec95",
   "6334ec018bf4ce5baf2fa8bee38bfa74",
+  "7c2e576b38bc8a78bc34dde0ac3bc8a7",
   "84e7f08b5f96224de3a405071c2cc99d",
   "97f5cf476d5e164cf8d3be99224ce724",
   "a1025545041766ec28adce7ed7c53e48",
@@ -28,6 +45,7 @@
   "e2b4e2dd03d47c44bc1c93ecfd60b865",
   "e72223475174f0c420713a26036fc4e2",
   "f6ace582253ea6a6d81964606c99c1c3",
+  "f7b081ad014c1c10073d33cac7df2357",
   "fc61ced62920ddf98ad39e4d85a5239b"
  ],
  "news_seen": [
