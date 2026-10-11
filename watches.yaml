@@ -2,26 +2,63 @@
 # يمكنك تعديله يدوياً أيضاً، وبنفس الصيغة الموجودة في config.yaml.
 watches:
 - name: الرياض ← إسطنبول
-  origins: [RUH]
-  destinations: [IST, SAW]
-  dates: {to: 2027-06}
+  origins:
+  - RUH
+  destinations:
+  - IST
+  - SAW
+  dates:
+    to: 2027-06
   trip: round-trip
-  stay_days: [4, 10]
+  stay_days:
+  - 4
+  - 10
   adults: 1
   max_price: 1400
 - name: الرياض ← دبي (ذهاب فقط)
-  origins: [RUH]
-  destinations: [DXB]
-  dates: {to: 2027-06}
+  origins:
+  - RUH
+  destinations:
+  - DXB
+  dates:
+    to: 2027-06
   trip: one-way
   adults: 1
   max_price: 350
 - name: أي وجهة من الرياض أو جدة
-  origins: [RUH, JED]
-  destinations: [ANY]
-  dates: {to: 2027-06}
+  origins:
+  - RUH
+  - JED
+  destinations:
+  - ANY
+  dates:
+    to: 2027-06
   trip: round-trip
-  stay_days: [3, 7]
+  stay_days:
+  - 3
+  - 7
   adults: 1
   max_price: 800
+  top: 12
+- name: اجازة النص
+  origins:
+  - RUH
+  - JED
+  - DMM
+  destinations:
+  - ANY
+  dates:
+    to: '2027-06-30'
+  trip: round-trip
+  stay_days:
+  - 8
+  - 16
+  adults: 2
+  exclude:
+  - DXB
+  - BAH
+  - DOH
+  - CAI
+  - HBE
+  - KWI
   top: 12
