@@ -18,13 +18,20 @@ def route(o: Offer) -> str:
     return f"{esc(N.city(o.origin))} ← {esc(N.city(o.destination))} <code>{a}→{b}</code>"
 
 
-def offer_lines(o: Offer, cur: str) -> list[str]:
+def price_text(o: Offer, cur: str, adults: int = 1) -> str:
+    t = f"<b>{N.fmt_price(o.price, cur)}</b> للشخص"
+    if adults > 1:
+        t += f" · الإجمالي لـ {adults}: <b>{N.fmt_price(o.price * adults, cur)}</b>"
+    return t
+
+
+def offer_lines(o: Offer, cur: str, adults: int = 1) -> list[str]:
     when = N.fmt_date(o.depart)
     if o.ret:
         when += f" ← {N.fmt_date(o.ret)} ({o.stay} أيام)"
     meta = " · ".join(x for x in [N.stops_label(o.transfers), N.airline(o.airline)] if x)
     trust = "✅ سعر مؤكد الآن من Google Flights" if o.verified else "ℹ️ سعر من ذاكرة بحث Aviasales (آخر 48 ساعة)"
-    lines = [f"✈️ {route(o)}", f"💰 <b>{N.fmt_price(o.price, cur)}</b> للشخص", f"📅 {when}"]
+    lines = [f"✈️ {route(o)}", f"💰 {price_text(o, cur, adults)}", f"📅 {when}"]
     if meta:
         lines.append(f"🛫 {esc(meta)}")
     lines.append(trust)
@@ -54,7 +61,7 @@ def discount_line(o: Offer, cur: str) -> str | None:
     return f"💳 مع {esc(o.discount_name)}: ~{N.fmt_price(o.discount_price, cur)} (تقدير)"
 
 
-def alert_message(a: Alert, watch_name: str, cur: str) -> str:
+def alert_message(a: Alert, watch_name: str, cur: str, adults: int = 1) -> str:
     if a.kind == "threshold":
         o = a.payload["offer"]
         head = [f"🚨 <b>نزل السعر تحت حدّك!</b>", f"📌 {esc(watch_name)}",
@@ -62,12 +69,12 @@ def alert_message(a: Alert, watch_name: str, cur: str) -> str:
         if a.payload.get("drop"):
             head.append(f"🔥 أقل من المعتاد بـ {a.payload['drop']}٪ "
                         f"(المعتاد {N.fmt_price(a.payload['baseline'], cur)})")
-        return "\n".join(head + [""] + offer_lines(o, cur))
+        return "\n".join(head + [""] + offer_lines(o, cur, adults))
     if a.kind == "deal":
         o = a.payload["offer"]
         head = [f"🔥 <b>سعر أقل من المعتاد بـ {a.payload['drop']}٪</b>", f"📌 {esc(watch_name)}",
                 f"📊 المعتاد (آخر 30 يوماً): {N.fmt_price(a.payload['baseline'], cur)}"]
-        return "\n".join(head + [""] + offer_lines(o, cur))
+        return "\n".join(head + [""] + offer_lines(o, cur, adults))
     raise ValueError(a.kind)
 
 
@@ -123,7 +130,8 @@ def digest(results: list[WatchResult], prev: dict[str, float | None], cur: str,
             continue
         limit = f" · حدّك {N.fmt_price(w.max_price, cur)}" if w.max_price else ""
         flag = " ✅" if b.verified else ""
-        out.append(f"   الأفضل: <b>{N.fmt_price(b.price, cur)}</b>{flag}{trend(b.price, prev.get(w.id), cur)}{limit}")
+        total = f" (الإجمالي لـ {w.adults}: {N.fmt_price(b.price * w.adults, cur)})" if w.adults > 1 else ""
+        out.append(f"   الأفضل: <b>{N.fmt_price(b.price, cur)}</b> للشخص{flag}{total}{trend(b.price, prev.get(w.id), cur)}{limit}")
         when = N.fmt_date(b.depart)
         if b.ret:
             when += f" ← {N.fmt_date(b.ret, with_weekday=False)}"

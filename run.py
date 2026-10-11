@@ -50,22 +50,35 @@ def main(argv=None) -> int:
     s.add_argument("--direct", action="store_true")
     s.add_argument("--dry-run", action="store_true")
 
+    mg = sub.add_parser("manage", help="تطبيق نموذج إضافة/تعديل/حذف مراقبة")
+    mg.add_argument("--body-file", required=True)
+    mg.add_argument("--comment-file", required=True)
+    mg.add_argument("--changed-file", required=True)
+
     sub.add_parser("telegram-chat-id")
     sub.add_parser("check-config")
     a = p.parse_args(argv)
 
     logging.basicConfig(level=logging.INFO if a.verbose else logging.WARNING,
                         format="%(levelname)s %(message)s")
+    if a.cmd == "manage":
+        from radar.manage import apply_form
+        changed, msg = apply_form(Path(a.body_file).read_text(encoding="utf-8"), Path(a.config).parent)
+        Path(a.comment_file).write_text(msg, encoding="utf-8")
+        Path(a.changed_file).write_text("yes" if changed else "no", encoding="utf-8")
+        print(msg)
+        return 0
+
     try:
         cfg = load_config(a.config)
     except ConfigError as e:
-        print(f"❌ خطأ في config.yaml: {e}")
+        print(f"❌ خطأ في الإعدادات: {e}")
         return 2
 
     if a.cmd == "check-config":
         print(f"✅ الإعدادات سليمة — {len(cfg.watches)} مراقبة:")
         for w in cfg.watches:
-            print(f"  • {w.name}: {','.join(w.origins)} → {','.join(w.destinations)} | {', '.join(w.months)} | {w.trip}")
+            print(f"  • {w.name}: {','.join(w.origins)} → {','.join(w.destinations)} | {w.months[0] if w.months else '-'}…{w.months[-1] if w.months else ''} | {w.trip} | {w.adults} شخص")
         return 0
 
     if a.cmd == "telegram-chat-id":

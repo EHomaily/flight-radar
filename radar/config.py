@@ -51,11 +51,12 @@ class Watch:
     exclude: list[str] = field(default_factory=list)
     date_from: dt.date | None = None
     date_to: dt.date | None = None
+    adults: int = 1
 
     @property
     def id(self) -> str:
-        key = "|".join([",".join(self.origins), ",".join(self.destinations), self.trip])
-        return hashlib.sha1(f"{self.name}|{key}".encode()).hexdigest()[:10]
+        # مبني على الاسم فقط حتى يبقى سجل الأسعار عند تعديل المراقبة
+        return hashlib.sha1(self.name.strip().encode()).hexdigest()[:10]
 
     @property
     def is_any(self) -> bool:
@@ -183,17 +184,30 @@ def _months_between(a: dt.date, b: dt.date) -> list[str]:
     return months
 
 
-def _to_date(v, label) -> dt.date:
+def _to_date(v, label, end_of_month: bool = False, today: dt.date | None = None) -> dt.date:
+    """يقبل YYYY-MM-DD أو YYYY-MM (أول/آخر الشهر) أو today/اليوم."""
+    if isinstance(v, dt.datetime):
+        return v.date()
     if isinstance(v, dt.date):
         return v
+    t = str(v).strip()
+    if t.lower() in ("today", "now", "اليوم", "الآن", "الان"):
+        return today or dt.date.today()
+    if MONTH_RE.match(t):
+        y, m = map(int, t.split("-"))
+        if end_of_month:
+            nxt = dt.date(y + (m == 12), m % 12 + 1, 1)
+            return nxt - dt.timedelta(days=1)
+        return dt.date(y, m, 1)
     try:
-        return dt.date.fromisoformat(str(v))
+        return dt.date.fromisoformat(t)
     except ValueError as e:
-        raise ConfigError(f"تاريخ غير صالح في {label}: {v}") from e
+        raise ConfigError(f"تاريخ غير صالح في {label}: {v} (الصيغة 2027-06-30 أو 2027-06)") from e
 
 
-def parse_watch(raw: dict) -> Watch:
-    name = str(raw.get("name") or "مراقبة بدون اسم")
+def parse_watch(raw: dict, today: dt.date | None = None) -> Watch:
+    today = today or dt.date.today()
+    name = str(raw.get("name") or "مراقبة بدون اسم").strip()
     trip = str(raw.get("trip", "one-way")).strip().lower()
     if trip not in ("one-way", "round-trip"):
         raise ConfigError(f"[{name}] trip يجب أن يكون one-way أو round-trip")
@@ -201,11 +215,17 @@ def parse_watch(raw: dict) -> Watch:
     date_from = date_to = None
     if raw.get("dates"):
         d = raw["dates"]
-        date_from = _to_date(d.get("from"), "dates.from")
-        date_to = _to_date(d.get("to"), "dates.to")
-        if date_to < date_from:
-            raise ConfigError(f"[{name}] dates.to قبل dates.from")
-        months = _months_between(date_from, date_to)
+        if not d.get("to"):
+            raise ConfigError(f"[{name}] حدّد نهاية الفترة dates.to")
+        # بداية الفترة اختيارية: بدونها = من اليوم (فترة متحركة)
+        date_from = _to_date(d["from"], "dates.from", today=today) if d.get("from") else None
+        date_to = _to_date(d["to"], "dates.to", end_of_month=True, today=today)
+        start = max(date_from or today, today)
+        if date_to < (date_from or today):
+            raise ConfigError(f"[{name}] نهاية الفترة قبل بدايتها")
+        if (date_to - start).days > 366:
+            raise ConfigError(f"[{name}] الفترة أطول من سنة — بيانات الأسعار لا تغطي أبعد من ذلك")
+        months = _months_between(start, date_to)
     else:
         months_raw = raw.get("months")
         if not months_raw:
@@ -229,6 +249,9 @@ def parse_watch(raw: dict) -> Watch:
             raise ConfigError(f"[{name}] stay_days غير منطقي: {stay}")
 
     max_price = raw.get("max_price")
+    adults = int(raw.get("adults", 1) or 1)
+    if not 1 <= adults <= 9:
+        raise ConfigError(f"[{name}] عدد الأشخاص يجب أن يكون بين 1 و 9")
     return Watch(
         name=name,
         origins=_codes(raw.get("origins"), "origins"),
@@ -242,11 +265,21 @@ def parse_watch(raw: dict) -> Watch:
         exclude=[c.upper() for c in raw.get("exclude", []) or []],
         date_from=date_from,
         date_to=date_to,
+        adults=adults,
     )
 
 
-def load_config(path: str | Path = "config.yaml") -> Config:
-    data = yaml.safe_load(Path(path).read_text(encoding="utf-8")) or {}
+def load_watches_file(path: Path) -> list[dict]:
+    if not path.exists():
+        return []
+    data = yaml.safe_load(path.read_text(encoding="utf-8")) or {}
+    return list(data.get("watches", []) or [])
+
+
+def load_config(path: str | Path = "config.yaml", today: dt.date | None = None,
+                watches_path: str | Path | None = None) -> Config:
+    path = Path(path)
+    data = yaml.safe_load(path.read_text(encoding="utf-8")) or {}
     s = data.get("settings", {}) or {}
     settings = Settings(**{k: v for k, v in s.items() if k in Settings.__dataclass_fields__})
     settings.currency = str(settings.currency).upper()
@@ -254,10 +287,16 @@ def load_config(path: str | Path = "config.yaml") -> Config:
         raise ConfigError(f"العملة {settings.currency} غير مدعومة — استخدم: {', '.join(USD_RATES)}")
     settings.market = (settings.market or "").strip().lower()
 
-    watches = [parse_watch(w) for w in data.get("watches", []) or []]
-    ids = [w.id for w in watches]
-    if len(ids) != len(set(ids)):
-        raise ConfigError("يوجد مراقبتان بنفس الاسم والمسار — غيّر اسم إحداهما")
+    raw_watches = list(data.get("watches", []) or [])
+    wp = Path(watches_path) if watches_path else path.with_name("watches.yaml")
+    raw_watches += load_watches_file(wp)
+    for w in raw_watches:   # الإعداد العام لعدد الأشخاص إن لم يُحدَّد للمراقبة
+        w.setdefault("adults", settings.adults)
+    watches = [parse_watch(w, today=today) for w in raw_watches]
+    names = [w.name for w in watches]
+    dup = {n for n in names if names.count(n) > 1}
+    if dup:
+        raise ConfigError(f"يوجد أكثر من مراقبة بنفس الاسم: {'، '.join(dup)}")
 
     d = data.get("deals", {}) or {}
     deals = DealsConfig(**{k: v for k, v in d.items() if k in DealsConfig.__dataclass_fields__})

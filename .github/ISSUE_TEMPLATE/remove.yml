@@ -1,0 +1,11 @@
+name: 🗑️ حذف مراقبة
+description: احذف مراقبة باسمها
+title: "حذف مراقبة: "
+body:
+  - type: input
+    id: name
+    attributes:
+      label: اسم المراقبة المراد حذفها
+      description: اكتب الاسم كما يظهر في لوحة الرادار
+    validations:
+      required: true

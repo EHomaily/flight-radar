@@ -3,6 +3,7 @@ from __future__ import annotations
 
 import datetime as dt
 import json
+import re
 from pathlib import Path
 
 CITIES_AR = {
@@ -120,3 +121,39 @@ def stops_label(n: int | None) -> str:
     if n is None:
         return ""
     return {0: "مباشر", 1: "توقف واحد", 2: "توقفان"}.get(n, f"{n} توقفات")
+
+
+# ------------------------------------------------------------ تحويل الأسماء إلى رموز
+def _norm(s: str) -> str:
+    s = s.strip().lower()
+    for a, b in (("أ", "ا"), ("إ", "ا"), ("آ", "ا"), ("ة", "ه"), ("ى", "ي"), ("ـ", "")):
+        s = s.replace(a, b)
+    s = re.sub(r"\(.*?\)", "", s)          # "إسطنبول (صبيحة)" → "إسطنبول"
+    s = re.sub(r"[^\w\s]", " ", s)
+    return re.sub(r"\s+", " ", s).strip()
+
+
+def _reverse_map() -> dict[str, str]:
+    rev: dict[str, str] = {}
+    for source in (CITIES_AR, _extra_cities):
+        for code, name in source.items():
+            if "(" in name:              # أسماء المطارات الفرعية لا تطغى على المدينة
+                continue
+            rev.setdefault(_norm(name), code)
+    return rev
+
+
+def resolve_code(text: str, extra_names: dict[str, str] | None = None) -> str:
+    """'RUH' أو 'الرياض' أو 'Riyadh' → 'RUH'. يرفع ValueError إن لم يُعرف."""
+    t = text.strip()
+    if re.fullmatch(r"[A-Za-z]{3}", t):
+        return t.upper()
+    n = _norm(t)
+    rev = _reverse_map()
+    for cand in (n, n[2:] if n.startswith("ال") else None, "ال" + n):
+        if cand and cand in rev:
+            return rev[cand]
+    for code, name in (extra_names or {}).items():   # الأسماء الإنجليزية
+        if _norm(name) == n:
+            return code
+    raise ValueError(t)

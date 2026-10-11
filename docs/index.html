@@ -119,6 +119,7 @@ section.block > h2 { font-size: 18px; margin: 0 0 12px; }
 .card-head { display: flex; justify-content: space-between; gap: 16px; flex-wrap: wrap; }
 .card h3 { margin: 0 0 6px; font-size: 18px; }
 .chips { display: flex; gap: 6px; flex-wrap: wrap; }
+.card-actions { margin-top: 8px; }
 .chip { font-size: 12px; padding: 2px 10px; border-radius: 999px; background: var(--surface-2); color: var(--ink-2); }
 
 .hero { text-align: start; min-width: 200px; }
@@ -327,8 +328,9 @@ footer { padding: 26px 0 40px; color: var(--ink-3); font-size: 12px; border-top:
     const a = [];
     if (d.repo) {
       const gh = `https://github.com/${d.repo}`;
+      a.push(`<a class="btn primary" href="${gh}/issues/new?template=watch.yml" target="_blank" rel="noopener">➕ إضافة مراقبة</a>`);
       a.push(`<a class="btn" href="${gh}/actions/workflows/search.yml" target="_blank" rel="noopener">🔎 بحث سريع</a>`);
-      a.push(`<a class="btn" href="${gh}/edit/main/config.yaml" target="_blank" rel="noopener">✏️ تعديل المراقبات</a>`);
+      a.push(`<a class="btn" href="${gh}/edit/main/config.yaml" target="_blank" rel="noopener">⚙️ الإعدادات</a>`);
       a.push(`<a class="btn" href="${gh}/actions/workflows/radar.yml" target="_blank" rel="noopener">↻ تشغيل الآن</a>`);
     }
     $("#actions").innerHTML = a.join("");
@@ -442,6 +444,34 @@ footer { padding: 26px 0 40px; color: var(--ink-3); font-size: 12px; border-top:
     });
   }
 
+  function periodLabel(w) {
+    const end = w.date_to ? dateLabel(w.date_to, false) + " " + w.date_to.slice(0, 4)
+                          : (w.calendar.length ? w.calendar[w.calendar.length - 1].label : "");
+    const start = w.date_from ? dateLabel(w.date_from, false) : "اليوم";
+    return `${start} ← ${end}`;
+  }
+
+  // ---------- edit links (نموذج GitHub معبأ مسبقاً) ----------
+  function editLinks(w) {
+    if (!DATA.repo) return "";
+    const gh = `https://github.com/${DATA.repo}/issues/new`;
+    const q = (o) => Object.entries(o).filter(([, v]) => v != null && v !== "")
+      .map(([k, v]) => `${k}=${encodeURIComponent(v)}`).join("&");
+    const edit = gh + "?" + q({
+      template: "watch.yml", title: "مراقبة: " + w.name, name: w.name,
+      origins_extra: w.origins.join(", "),
+      destinations: w.is_any ? "" : w.destinations.join(", "),
+      date_from: w.date_from || "", date_to: w.date_to || (w.months.length ? w.months[w.months.length - 1] : ""),
+      stay: w.stay_days ? `${w.stay_days[0]}-${w.stay_days[1]}` : "",
+      max_price: w.max_price != null ? Math.round(w.max_price) : "",
+      exclude: (w.exclude || []).join(", "),
+    });
+    const del = gh + "?" + q({ template: "remove.yml", title: "حذف مراقبة: " + w.name, name: w.name });
+    return `<div class="links card-actions">
+      <a class="mini-link" href="${esc(edit)}" target="_blank" rel="noopener">✏️ تعديل</a>
+      <a class="mini-link" href="${esc(del)}" target="_blank" rel="noopener">🗑️ حذف</a></div>`;
+  }
+
   // ---------- watch card ----------
   function renderWatch(w) {
     const b = w.best;
@@ -449,7 +479,8 @@ footer { padding: 26px 0 40px; color: var(--ink-3); font-size: 12px; border-top:
       `${w.origins_names.join("، ")} ← ${w.destinations_names.join("، ")}`,
       w.trip === "round-trip" ? `ذهاب وعودة${w.stay_days ? ` · ${w.stay_days[0]}–${w.stay_days[1]} أيام` : ""}` : "ذهاب فقط",
       w.direct_only ? "مباشر فقط" : "",
-      w.calendar.map(m => m.label).join("، "),
+      w.adults > 1 ? `${w.adults} أشخاص` : "شخص واحد",
+      periodLabel(w),
     ].filter(Boolean).map(c => `<span class="chip">${esc(c)}</span>`).join("");
 
     let hero = `<div class="hero"><div class="price">—</div><div class="sub">لا توجد أسعار حالياً</div></div>`;
@@ -461,7 +492,9 @@ footer { padding: 26px 0 40px; color: var(--ink-3); font-size: 12px; border-top:
         ? `<span class="status ok">✓ تحت حدّك (${fmt(w.max_price)})</span>`
         : `<span class="status no">فوق حدّك بـ ${money(b.price - w.max_price)}</span>`;
       const atl = w.all_time_low != null && b.price < w.all_time_low ? `<span class="delta-down">★ أدنى سعر منذ بدء المراقبة</span>` : "";
-      hero = `<div class="hero"><div class="price"><span class="num">${fmt(b.price)}</span><small>${CUR}</small></div>
+      const total = w.adults > 1 ? `<span class="muted">الإجمالي لـ ${w.adults}: ${money(b.price * w.adults)}</span>` : "";
+      hero = `<div class="hero"><div class="price"><span class="num">${fmt(b.price)}</span><small>${CUR} للشخص</small></div>
+        ${total ? `<div class="sub">${total}</div>` : ""}
         <div class="sub">${status}${delta}${atl}</div></div>`;
     }
     const bestLine = b ? `<div class="best-line">
@@ -492,7 +525,7 @@ footer { padding: 26px 0 40px; color: var(--ink-3); font-size: 12px; border-top:
       ...(w.destinations_table || []).map(o => o.destination_name)].join(" ").toLowerCase();
 
     return `<article class="card" data-search="${esc(search)}" data-id="${esc(w.id)}">
-      <div class="card-head"><div><h3>${esc(w.name)}</h3><div class="chips">${chips}</div></div>${hero}</div>
+      <div class="card-head"><div><h3>${esc(w.name)}</h3><div class="chips">${chips}</div>${editLinks(w)}</div>${hero}</div>
       ${bestLine}
       <div class="grid2">
         <div><div class="panel-title"><h4>تقويم أرخص الأيام</h4>${tabs}</div><div class="calbox">${months.length ? renderCalendar(months[0], w.is_any) : ""}</div></div>

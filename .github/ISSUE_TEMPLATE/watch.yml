@@ -1,0 +1,102 @@
+name: ✈️ إضافة أو تعديل مراقبة
+description: أضف مراقبة جديدة، أو عدّل مراقبة موجودة بكتابة نفس اسمها
+title: "مراقبة: "
+body:
+  - type: markdown
+    attributes:
+      value: |
+        املأ الحقول ثم اضغط **Submit new issue**. خلال دقيقة يُحدَّث الرادار ويرد عليك هنا، وتصلك النتيجة على تيليجرام.
+        الوجهات تُكتب بالعربي أو برمز المطار: `إسطنبول، دبي` أو `IST, DXB` — واتركها فارغة لـ **أي وجهة**.
+  - type: input
+    id: name
+    attributes:
+      label: اسم المراقبة
+      description: إن كان الاسم موجوداً تُعدَّل المراقبة، وإلا تُضاف جديدة
+      placeholder: "مثال: إجازة الربيع"
+    validations:
+      required: true
+  - type: dropdown
+    id: origins
+    attributes:
+      label: مطارات المغادرة
+      description: يمكنك اختيار أكثر من مطار
+      multiple: true
+      options:
+        - RUH — الرياض
+        - JED — جدة
+        - DMM — الدمام
+        - MED — المدينة المنورة
+        - GIZ — جازان
+        - AHB — أبها
+        - TIF — الطائف
+        - ELQ — القصيم
+        - TUU — تبوك
+        - HAS — حائل
+  - type: input
+    id: origins_extra
+    attributes:
+      label: مطارات مغادرة أخرى
+      description: لمطار غير موجود في القائمة أعلاه (اختر من القائمة أو اكتب هنا، أو الاثنين)
+      placeholder: "مثال: دبي أو DXB"
+  - type: input
+    id: destinations
+    attributes:
+      label: الوجهات
+      description: اتركه فارغاً للبحث عن أرخص الأسعار لأي وجهة
+      placeholder: "مثال: إسطنبول، دبي، كوالالمبور"
+  - type: input
+    id: date_from
+    attributes:
+      label: بداية الفترة
+      description: اتركه فارغاً لتبدأ من اليوم دائماً
+      placeholder: "مثال: 2026-12-01"
+  - type: input
+    id: date_to
+    attributes:
+      label: نهاية الفترة
+      description: تاريخ أو شهر — الشهر يعني حتى آخر يوم فيه (أقصى مدة سنة)
+      placeholder: "مثال: 2027-06 أو 2027-06-30"
+    validations:
+      required: true
+  - type: dropdown
+    id: trip
+    attributes:
+      label: نوع الرحلة
+      options:
+        - ذهاب وعودة
+        - ذهاب فقط
+      default: 0
+    validations:
+      required: true
+  - type: input
+    id: stay
+    attributes:
+      label: مدة الإقامة بالأيام
+      description: للذهاب والعودة فقط — اتركه فارغاً لأي مدة
+      placeholder: "مثال: 4-10"
+  - type: dropdown
+    id: adults
+    attributes:
+      label: عدد الأشخاص
+      options: ["1", "2", "3", "4", "5", "6", "7", "8", "9"]
+      default: 0
+    validations:
+      required: true
+  - type: input
+    id: max_price
+    attributes:
+      label: حدّك السعري للشخص
+      description: بالريال — ينبّهك فوراً إذا نزل السعر عنه. اتركه فارغاً للملخص اليومي فقط
+      placeholder: "مثال: 900"
+  - type: input
+    id: exclude
+    attributes:
+      label: وجهات تستبعدها
+      description: اختياري — عند البحث لأي وجهة فقط
+      placeholder: "مثال: البحرين، دبي"
+  - type: checkboxes
+    id: options
+    attributes:
+      label: خيارات
+      options:
+        - label: مباشر فقط

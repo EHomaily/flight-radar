@@ -21,7 +21,7 @@ NOW = dt.datetime(2026, 10, 11, 6, 15, tzinfo=dt.timezone(dt.timedelta(hours=3))
 
 @pytest.fixture
 def cfg():
-    return load_config(ROOT / "tests" / "sample_config.yaml")
+    return load_config(ROOT / "tests" / "sample_config.yaml", today=TODAY)
 
 
 def tp(http=None, rate=3.75):
@@ -324,3 +324,152 @@ def test_live_errors_recorded(cfg):
         return None
     r = E.collect(cfg.watches[1], tp(), cfg.settings, TODAY, live_fn=failing)
     assert r.live_errors and "blocked" in r.live_errors[0]
+
+
+# ---------------------------------------------------------------- form management
+FORM = """### اسم المراقبة
+
+إجازة الربيع
+
+### مطارات المغادرة
+
+RUH — الرياض, JED — جدة
+
+### مطارات مغادرة أخرى
+
+_No response_
+
+### الوجهات
+
+إسطنبول، كوالالمبور
+
+### بداية الفترة
+
+_No response_
+
+### نهاية الفترة
+
+2027-06
+
+### نوع الرحلة
+
+ذهاب وعودة
+
+### مدة الإقامة بالأيام
+
+٥-١٠
+
+### عدد الأشخاص
+
+2
+
+### حدّك السعري للشخص
+
+1,200
+
+### وجهات تستبعدها
+
+_No response_
+
+### خيارات
+
+- [X] مباشر فقط
+"""
+
+
+def _repo(tmp_path):
+    shutil.copy(ROOT / "tests" / "sample_config.yaml", tmp_path / "config.yaml")
+    import yaml as _y
+    cfg = _y.safe_load((tmp_path / "config.yaml").read_text(encoding="utf-8"))
+    cfg["watches"] = []
+    (tmp_path / "config.yaml").write_text(_y.safe_dump(cfg, allow_unicode=True), encoding="utf-8")
+    return tmp_path
+
+
+def test_form_template_labels_match_parser():
+    import yaml as _y
+    from radar.manage import REMOVE_LABEL, WATCH_LABELS
+    t = _y.safe_load((ROOT / ".github/ISSUE_TEMPLATE/watch.yml").read_text(encoding="utf-8"))
+    labels = {b["attributes"]["label"] for b in t["body"] if b["type"] != "markdown"}
+    assert labels == set(WATCH_LABELS)
+    r = _y.safe_load((ROOT / ".github/ISSUE_TEMPLATE/remove.yml").read_text(encoding="utf-8"))
+    assert r["body"][0]["attributes"]["label"] == REMOVE_LABEL
+
+
+def test_form_add_edit_remove(tmp_path):
+    from radar.manage import apply_form
+    import yaml as _y
+    root = _repo(tmp_path)
+    changed, msg = apply_form(FORM, root, today=TODAY)
+    assert changed and "تم إضافة" in msg, msg
+    w = _y.safe_load((root / "watches.yaml").read_text(encoding="utf-8"))["watches"][0]
+    assert w["origins"] == ["RUH", "JED"] and w["destinations"] == ["IST", "KUL"]
+    assert w["dates"] == {"to": "2027-06"} and w["stay_days"] == [5, 10]
+    assert w["adults"] == 2 and w["max_price"] == 1200 and w["direct_only"] is True
+    cfg = load_config(root / "config.yaml", today=TODAY)
+    pw = cfg.watches[0]
+    assert pw.months[0] == "2026-10" and pw.months[-1] == "2027-06" and pw.date_to == dt.date(2027, 6, 30)
+
+    # تعديل بنفس الاسم: لأي وجهة، ذهاب فقط، شخص واحد
+    form2 = FORM.replace("إسطنبول، كوالالمبور", "_No response_").replace("ذهاب وعودة", "ذهاب فقط") \
+                .replace("### عدد الأشخاص\n\n2", "### عدد الأشخاص\n\n1")
+    changed, msg = apply_form(form2, root, today=TODAY)
+    assert changed and "تم تعديل" in msg
+    ws = _y.safe_load((root / "watches.yaml").read_text(encoding="utf-8"))["watches"]
+    assert len(ws) == 1 and ws[0]["destinations"] == ["ANY"] and ws[0]["trip"] == "one-way" and "stay_days" not in ws[0]
+
+    changed, msg = apply_form("### اسم المراقبة المراد حذفها\n\nغير موجودة\n", root, today=TODAY)
+    assert not changed and "لا توجد" in msg
+    changed, msg = apply_form("### اسم المراقبة المراد حذفها\n\nإجازة الربيع\n", root, today=TODAY)
+    assert changed and _y.safe_load((root / "watches.yaml").read_text(encoding="utf-8"))["watches"] == []
+
+
+def test_form_errors_do_not_save(tmp_path):
+    from radar.manage import apply_form
+    root = _repo(tmp_path)
+    bad_city = FORM.replace("إسطنبول، كوالالمبور", "مدينة الأحلام")
+    changed, msg = apply_form(bad_city, root, today=TODAY)
+    assert not changed and "مدينة الأحلام" in msg and not (root / "watches.yaml").exists()
+    too_long = FORM.replace("2027-06", "2028-12")
+    changed, msg = apply_form(too_long, root, today=TODAY)
+    assert not changed and "سنة" in msg
+    no_origin = FORM.replace("RUH — الرياض, JED — جدة", "_No response_")
+    assert not apply_form(no_origin, root, today=TODAY)[0]
+
+
+def test_dates_rolling_and_month_end():
+    w = parse_watch({"name": "x", "origins": ["RUH"], "dates": {"to": "2027-02"}}, today=TODAY)
+    assert w.date_from is None and w.date_to == dt.date(2027, 2, 28)
+    assert w.months == ["2026-10", "2026-11", "2026-12", "2027-01", "2027-02"]
+    assert w.date_ok(dt.date(2027, 2, 28), TODAY) and not w.date_ok(dt.date(2027, 3, 1), TODAY)
+
+
+def test_adults_in_messages(cfg):
+    w = parse_watch({"name": "t", "origins": ["RUH"], "destinations": ["DXB"], "months": ["2026-11"],
+                     "adults": 3, "max_price": 10000}, today=TODAY)
+    r = E.collect(w, tp(), cfg.settings, TODAY, live_fn=None, sites=cfg.compare_sites)
+    a = E.evaluate(r, {}, {}, cfg.settings, NOW)[0]
+    msg = M.alert_message(a, w.name, "SAR", w.adults)
+    assert "الإجمالي لـ 3" in msg
+    assert "adultsv2=3" in " ".join(c["url"] for c in r.best.compare_links)
+
+
+def test_telegram_chat_autodetect():
+    from radar.notify import Telegram
+    from tests.fakes import Resp
+    class H:
+        def __init__(self): self.posts = []
+        def get(self, url, timeout=None):
+            return Resp({"ok": True, "result": [
+                {"message": {"chat": {"id": -100, "type": "group", "title": "g"}}},
+                {"message": {"chat": {"id": 555, "type": "private", "first_name": "Essam"}}},
+                {"message": {"chat": {"id": 777, "type": "private", "first_name": "Other"}}}]})
+        def post(self, url, json=None, timeout=None):
+            self.posts.append(json); return Resp({"ok": True})
+    h = H(); tg = Telegram("tok", "", http=h); state = {}
+    assert not tg.enabled and tg.ensure_chat(state) == "new"
+    assert tg.chat_id == "555" and state["telegram_chat_id"] == "555" and tg.enabled
+    tg2 = Telegram("tok", "", http=h)
+    assert tg2.ensure_chat(state) == "saved" and tg2.chat_id == "555"
+    tg3 = Telegram("tok", "999", http=h)
+    assert tg3.ensure_chat({}) == "secret" and tg3.chat_id == "999"

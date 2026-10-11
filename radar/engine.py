@@ -139,7 +139,7 @@ def collect(w: Watch, tp: TravelpayoutsClient, settings: Settings, today: dt.dat
 
     for o in offers[:300]:
         o.google_link = gf.search_url(o.origin_airport or o.origin, o.destination_airport or o.destination,
-                                      o.depart, o.ret, settings.adults, settings.currency, w.direct_only)
+                                      o.depart, o.ret, w.adults, settings.currency, w.direct_only)
 
     # التحقق الحي من أرخص المرشحين (تواريخ/وجهات مختلفة)
     if live_fn and settings.google_live_check and offers:
@@ -158,7 +158,7 @@ def collect(w: Watch, tp: TravelpayoutsClient, settings: Settings, today: dt.dat
         def verify(o: Offer) -> None:
             tried.add(o.key())
             live = live_fn(o.origin_airport or o.origin, o.destination_airport or o.destination,
-                           o.depart, o.ret, settings.adults, settings.currency, w.direct_only)
+                           o.depart, o.ret, w.adults, settings.currency, w.direct_only)
             res.live_checked += 1
             if live and live.price > 0:
                 o.cached_price = o.price
@@ -183,7 +183,7 @@ def collect(w: Watch, tp: TravelpayoutsClient, settings: Settings, today: dt.dat
         res.live_errors = gf.ERRORS[err_start:]
 
     for o in offers[:300]:
-        o.compare_links = L.build(sites or [], o, settings.adults, settings.currency)
+        o.compare_links = L.build(sites or [], o, w.adults, settings.currency)
     for o in offers:
         apply_discounts(o, discounts or [], today)
     res.offers = offers

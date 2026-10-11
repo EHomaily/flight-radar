@@ -105,6 +105,9 @@ def watch_view(r: E.WatchResult, history: dict, prev: float | None, atl: float |
         "destinations_names": ["أي وجهة"] if w.is_any else [N.city(c) for c in w.destinations],
         "months": w.months, "trip": w.trip, "stay_days": list(w.stay_days) if w.stay_days else None,
         "direct_only": w.direct_only, "max_price": w.max_price, "is_any": w.is_any,
+        "adults": w.adults, "exclude": w.exclude,
+        "date_from": w.date_from.isoformat() if w.date_from else None,
+        "date_to": w.date_to.isoformat() if w.date_to else None,
         "best": offer_view(r.best, cur) if r.best else None,
         "previous": prev, "all_time_low": atl,
         "top": [offer_view(o, cur) for o in r.offers[:10]],
@@ -125,7 +128,10 @@ def run_daily(cfg: Config, tp: TravelpayoutsClient, tg: Telegram, paths: Paths,
     cur = cfg.settings.currency
     history = load(paths.history, {})
     state = load(paths.state, {})
-    first_run = not state
+    first_run = not state.get("alerts") and not state.get("special_seen")
+    linked = tg.ensure_chat(state) if hasattr(tg, "ensure_chat") else None
+    if linked == "new":
+        tg.send("✅ <b>تم ربط رادار التذاكر بهذه المحادثة</b>\nمن الآن تصلك هنا التنبيهات والملخص اليومي.")
     try:
         ensure_city_names(tp, paths)
     except Exception as e:  # الأسماء تحسين فقط
@@ -180,7 +186,7 @@ def run_daily(cfg: Config, tp: TravelpayoutsClient, tg: Telegram, paths: Paths,
     # -------- الإرسال
     by_id = {w.id: w for w in cfg.watches}
     for a in alerts:
-        tg.send(M.alert_message(a, by_id[a.watch_id].name, cur))
+        tg.send(M.alert_message(a, by_id[a.watch_id].name, cur, by_id[a.watch_id].adults))
     if special_new:
         tg.send(M.special_offers_message(special_new, cur))
     if news_new:
@@ -234,6 +240,8 @@ def run_search(watch: Watch, cfg: Config, tp: TravelpayoutsClient, tg: Telegram,
             ensure_city_names(tp, paths)
         except Exception:
             pass
+        if hasattr(tg, "ensure_chat"):
+            tg.ensure_chat(load(paths.state, {}))
     r = E.collect(watch, tp, cfg.settings, today, live_fn=live_fn,
                   sites=cfg.compare_sites, discounts=cfg.discounts)
     tg.send(M.search_message(r, cfg.settings.currency))

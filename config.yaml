@@ -6,7 +6,7 @@
 
 settings:
   currency: SAR            # SAR أو USD أو AED
-  adults: 1                # عدد البالغين (للتحقق الحي من Google Flights)
+  adults: 1                # عدد الأشخاص الافتراضي (كل مراقبة يمكنها تحديد عددها)
   market: ""               # سوق بيانات Aviasales (اتركه فارغاً ليُحدَّد تلقائياً من مطار المغادرة)
   google_live_check: true  # التحقق الحي من أرخص التواريخ عبر Google Flights
   google_checks_per_watch: 3   # كم تاريخاً يُتحقق منه حياً لكل مراقبة
@@ -15,43 +15,10 @@ settings:
   alert_cooldown_days: 3   # لا تكرر نفس التنبيه قبل 3 أيام إلا إذا نزل السعر أكثر
 
 # ------------------------------------------------------------
-#  المراقبات: أضف ما تشاء. لكل مراقبة:
-#   origins:       مطار أو أكثر للمغادرة (رموز IATA)
-#   destinations:  وجهة أو أكثر، أو [ANY] لأي وجهة
-#   months:        شهر أو أكثر بصيغة YYYY-MM
-#     أو بدلاً منها dates: {from: 2026-12-01, to: 2026-12-20}
-#   trip:          one-way (ذهاب فقط) أو round-trip (ذهاب وعودة)
-#   stay_days:     [أقل, أكثر] عدد أيام الإقامة — للذهاب والعودة فقط
-#   direct_only:   true للرحلات المباشرة فقط
-#   max_price:     حدّك السعري — ينبّهك إذا نزل السعر عنه أو ساواه
-#   top:           (لأي وجهة) كم وجهة تُعرض
-#   exclude:       (لأي وجهة) وجهات تريد استبعادها
+#  المراقبات موجودة في ملف watches.yaml
+#  أسهل طريقة لإضافتها أو تعديلها أو حذفها: من نموذج GitHub
+#  (Issues ← New issue ← إضافة أو تعديل مراقبة) أو زر «➕ إضافة مراقبة» في اللوحة.
 # ------------------------------------------------------------
-watches:
-  - name: الرياض ← إسطنبول (ديسمبر)
-    origins: [RUH]
-    destinations: [IST, SAW]
-    months: [2026-12]
-    trip: round-trip
-    stay_days: [4, 10]
-    direct_only: false
-    max_price: 1400
-
-  - name: الرياض ← دبي (ذهاب فقط)
-    origins: [RUH]
-    destinations: [DXB]
-    months: [2026-11, 2026-12]
-    trip: one-way
-    max_price: 350
-
-  - name: أي وجهة من الرياض أو جدة
-    origins: [RUH, JED]
-    destinations: [ANY]
-    months: [2026-11, 2026-12]
-    trip: round-trip
-    stay_days: [3, 7]
-    max_price: 800
-    top: 12
 
 # ------------------------------------------------------------
 #  تتبّع خصومات المواقع
