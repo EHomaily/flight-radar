@@ -7,13 +7,13 @@
   },
   "3d1a1e58e3:threshold": {
    "price": 198.75,
-   "ts": "2026-10-25T11:20:08.646857+03:00",
-   "offer": "RUH-DXB-2026-11-09-"
+   "ts": "2026-10-28T12:33:54.189441+03:00",
+   "offer": "RUH-DXB-2026-11-01-"
   },
   "662db0b778:threshold": {
-   "price": 458.0,
-   "ts": "2026-10-26T11:48:08.632907+03:00",
-   "offer": "RUH-MED-2026-11-12-2026-11-15"
+   "price": 439.0,
+   "ts": "2026-10-28T12:33:54.189441+03:00",
+   "offer": "JED-DMM-2026-12-11-2026-12-16"
   }
  },
  "special_seen": [
@@ -99,6 +99,7 @@
   "664989eb5e47cd21d1e8d180788d6dd2",
   "670e6932d3fa32b3d7ea1f207e70d0cf",
   "69818fa3f62345177fdcb4cb199bd3ed",
+  "6abf1333978089d2d04f9ce05763c0fa",
   "6b653ccfa1ae57a3002877b7e0ed5ebe",
   "6cc9d70e8072ac3aebdc0b927fb1ee20",
   "70fa96c00935a08a63455a6e0659a5d4",
@@ -115,10 +116,12 @@
   "7f101b914144d1c660be0f5f74f92699",
   "8205ed5ffe36fc1b20b679be7be091ea",
   "829146631ba6e9fa031bd084574659df",
+  "8408da2d84d8fe9d601fbb2fe6d2fcf0",
   "84e7f08b5f96224de3a405071c2cc99d",
   "8571be9252962656a4ee235ab35d521a",
   "874612a1ca4b6565fda737b7f3455e6c",
   "8d3a991c98fda060e1eabbfc53b29029",
+  "8ebd2292ebec2258c7b05a757e44ddc4",
   "8f77b93d2de34b87876d59cceae10262",
   "8feec08277de7b068e932d11235f61c4",
   "9042fc781be9e3e08fea8d65ed484b69",
@@ -185,6 +188,7 @@
   "d800f754a9d56dbb9034de3cdab0656e",
   "d8486a36bcf3c396a33cdcad80fc46a2",
   "d8b5e7fe993cd5c76b0e8dbad4fa423a",
+  "d9ad4960395f0401f1736108ff866038",
   "da076e2c3f039e582d2af1ddc6c3c6b7",
   "db00b6d338a530937ad7b8c91eb41e39",
   "db3a1861a7c4e8e27dc5eccf39073346",
@@ -243,7 +247,8 @@
   "17dce8464c354c57",
   "3d5b28376e90c38b",
   "5dfe0274a345b86e",
-  "7f13754d1d913662"
+  "7f13754d1d913662",
+  "9c85a6792c2906b4"
  ],
  "pages": {
   "https://www.trip.com/blog/latest-trip-com-promo-codes": [
