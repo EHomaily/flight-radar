@@ -1,0 +1,135 @@
+{
+ "query": {
+  "name": "KUL → RUH,JED,DMM (2026-11-04:2026-11-07)",
+  "origins": [
+   "KUL"
+  ],
+  "destinations": [
+   "RUH",
+   "JED",
+   "DMM"
+  ],
+  "trip": "one-way",
+  "stay_days": null,
+  "direct_only": false,
+  "top": 10,
+  "dates": {
+   "from": "2026-11-04",
+   "to": "2026-11-07"
+  }
+ },
+ "errors": [],
+ "offers": [
+  {
+   "source": "aviasales",
+   "origin": "KUL",
+   "destination": "JED",
+   "depart": "2026-11-06",
+   "price": 1626.0,
+   "ret": null,
+   "origin_airport": "KUL",
+   "destination_airport": "JED",
+   "airline": "G9",
+   "flight_number": "801",
+   "transfers": 2,
+   "return_transfers": 0,
+   "duration": 1145,
+   "link": "https://www.aviasales.com/search/KUL0611JED1?t=G917939586001794009300001145KULSHJJED_d25ee10677856af84a9f02a7859c0d5e_32094&search_date=01112026&expected_price_uuid=01a197a7-74cb-8030-ac5d-63052849a0a7&static_fare_key=TY%7CP1%7CH1%7CL0%7CCH1%7CR0%7CTBC0&itinerary_key=QvTydOGIDHtWpm8wqo7lBQ&expected_price_source=share&expected_price_currency=usd&expected_price=400",
+   "google_link": "https://www.google.com/travel/flights/search?tfs=GhoSCjIwMjYtMTEtMDZqBRIDS1VMcgUSA0pFREIBAUgBmAEC&hl=ar&curr=SAR",
+   "verified": true,
+   "cached_price": 1500.0,
+   "compare_links": [
+    {
+     "name": "Trip.com",
+     "url": "https://www.trip.com/flights/kuala-lumpur-to-jeddah/tickets-kul-jed/?ddate=2026-11-06&flighttype=s"
+    },
+    {
+     "name": "Skyscanner",
+     "url": "https://www.skyscanner.net/transport/flights/kul/jed/261106/?adultsv2=1&cabinclass=economy"
+    },
+    {
+     "name": "Kayak",
+     "url": "https://www.kayak.com/flights/KUL-JED/2026-11-06?sort=price_a"
+    }
+   ],
+   "discount_name": null,
+   "discount_price": null,
+   "discount_for_alerts": false,
+   "stay": null
+  },
+  {
+   "source": "aviasales",
+   "origin": "KUL",
+   "destination": "JED",
+   "depart": "2026-11-04",
+   "price": 2712.0,
+   "ret": null,
+   "origin_airport": "KUL",
+   "destination_airport": "JED",
+   "airline": "D7",
+   "flight_number": "604",
+   "transfers": 1,
+   "return_transfers": 0,
+   "duration": 2600,
+   "link": "https://www.aviasales.com/search/KUL0411JED1?t=D717937840001793922000002600KULSAWISTJED_2aa6d4a1b4f498a348d725739286f6b0_36500&search_date=01112026&expected_price_uuid=01a197aa-9408-8030-6ca4-6384f86554b7&static_fare_key=TY%7CP0%7CH1%7CL0%7CCH0%7CR0%7CTBC0&itinerary_key=aqKAJyCuMK7y-yZnNryauQ&expected_price_source=share&expected_price_currency=usd&expected_price=455",
+   "google_link": "https://www.google.com/travel/flights/search?tfs=GhoSCjIwMjYtMTEtMDRqBRIDS1VMcgUSA0pFREIBAUgBmAEC&hl=ar&curr=SAR",
+   "verified": true,
+   "cached_price": 1706.25,
+   "compare_links": [
+    {
+     "name": "Trip.com",
+     "url": "https://www.trip.com/flights/kuala-lumpur-to-jeddah/tickets-kul-jed/?ddate=2026-11-04&flighttype=s"
+    },
+    {
+     "name": "Skyscanner",
+     "url": "https://www.skyscanner.net/transport/flights/kul/jed/261104/?adultsv2=1&cabinclass=economy"
+    },
+    {
+     "name": "Kayak",
+     "url": "https://www.kayak.com/flights/KUL-JED/2026-11-04?sort=price_a"
+    }
+   ],
+   "discount_name": null,
+   "discount_price": null,
+   "discount_for_alerts": false,
+   "stay": null
+  },
+  {
+   "source": "aviasales",
+   "origin": "KUL",
+   "destination": "JED",
+   "depart": "2026-11-05",
+   "price": 2943.0,
+   "ret": null,
+   "origin_airport": "KUL",
+   "destination_airport": "JED",
+   "airline": "G9",
+   "flight_number": "801",
+   "transfers": 2,
+   "return_transfers": 0,
+   "duration": 1145,
+   "link": "https://www.aviasales.com/search/KUL0511JED1?t=G917938722001793922900001145KULSHJJED_a29eecd2a5290a4b3068a1f43210a36f_32597&search_date=01112026&expected_price_uuid=01a197a7-2232-8031-2085-84b65aed13f8&static_fare_key=TY%7CP1%7CH1%7CL0%7CCH1%7CR0%7CTBC0&itinerary_key=QvTydOGIDHtWpm8wqo7lBQ&expected_price_source=share&expected_price_currency=usd&expected_price=406",
+   "google_link": "https://www.google.com/travel/flights/search?tfs=GhoSCjIwMjYtMTEtMDVqBRIDS1VMcgUSA0pFREIBAUgBmAEC&hl=ar&curr=SAR",
+   "verified": true,
+   "cached_price": 1522.5,
+   "compare_links": [
+    {
+     "name": "Trip.com",
+     "url": "https://www.trip.com/flights/kuala-lumpur-to-jeddah/tickets-kul-jed/?ddate=2026-11-05&flighttype=s"
+    },
+    {
+     "name": "Skyscanner",
+     "url": "https://www.skyscanner.net/transport/flights/kul/jed/261105/?adultsv2=1&cabinclass=economy"
+    },
+    {
+     "name": "Kayak",
+     "url": "https://www.kayak.com/flights/KUL-JED/2026-11-05?sort=price_a"
+    }
+   ],
+   "discount_name": null,
+   "discount_price": null,
+   "discount_for_alerts": false,
+   "stay": null
+  }
+ ]
+}
