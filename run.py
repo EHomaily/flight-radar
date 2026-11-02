@@ -44,7 +44,8 @@ def main(argv=None) -> int:
     s = sub.add_parser("search")
     s.add_argument("--from", dest="origins", required=True, help="مثال: RUH أو RUH,JED")
     s.add_argument("--to", dest="dests", default="ANY", help="مثال: IST أو IST,SAW أو ANY")
-    s.add_argument("--month", required=True, help="مثال: 2026-12 أو 2026-11,2026-12")
+    s.add_argument("--month", required=True,
+                   help="مثال: 2026-12 أو 2026-11,2026-12 أو فترة تواريخ 2026-11-04:2026-11-07")
     s.add_argument("--trip", default="one-way", choices=["one-way", "round-trip"])
     s.add_argument("--stay", default="", help="للذهاب والعودة: 3-7")
     s.add_argument("--direct", action="store_true")
@@ -116,15 +117,25 @@ def main(argv=None) -> int:
             "name": f"{a.origins} → {a.dests} ({a.month})",
             "origins": [x.strip() for x in a.origins.split(",") if x.strip()],
             "destinations": [x.strip() for x in a.dests.split(",") if x.strip()],
-            "months": [x.strip() for x in a.month.split(",") if x.strip()],
             "trip": a.trip, "stay_days": stay, "direct_only": a.direct, "top": 10,
         }
+        if ":" in a.month:
+            d1, _, d2 = a.month.partition(":")
+            raw["dates"] = {"from": d1.strip(), "to": d2.strip()}
+        else:
+            raw["months"] = [x.strip() for x in a.month.split(",") if x.strip()]
         try:
             w = parse_watch(raw)
         except ConfigError as e:
             print(f"❌ {e}")
             return 2
         r = run_search(w, cfg, tp, tg, Paths(ROOT))
+        import json as _json
+        out = ROOT / "data" / "last_search.json"
+        out.parent.mkdir(parents=True, exist_ok=True)
+        out.write_text(_json.dumps({"query": raw, "errors": r.errors,
+                                    "offers": [o.to_dict() for o in r.offers[:200]]},
+                                   ensure_ascii=False, indent=1, default=str), encoding="utf-8")
         print(f"✅ {len(r.offers)} عرض")
         return 0
     return 0

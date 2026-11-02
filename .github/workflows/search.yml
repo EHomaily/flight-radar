@@ -14,7 +14,7 @@ on:
         required: true
         default: "ANY"
       month:
-        description: "الشهر (مثال: 2026-12 أو 2026-11,2026-12)"
+        description: "الشهر (2026-12) أو أشهر (2026-11,2026-12) أو فترة تواريخ (2026-11-04:2026-11-07)"
         required: true
       trip:
         description: "نوع الرحلة"
@@ -31,7 +31,7 @@ on:
         default: false
 
 permissions:
-  contents: read
+  contents: write
 
 jobs:
   search:
@@ -60,3 +60,14 @@ jobs:
           if [ -n "$IN_STAY" ]; then ARGS+=(--stay "$IN_STAY"); fi
           if [ "$IN_DIRECT" = "true" ]; then ARGS+=(--direct); fi
           python run.py -v "${ARGS[@]}"
+      - name: Save result
+        if: always()
+        run: |
+          [ -f data/last_search.json ] || exit 0
+          git config user.name "flight-radar-bot"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data/last_search.json
+          git diff --cached --quiet && exit 0
+          git commit -m "نتيجة بحث سريع"
+          git pull --rebase -X theirs --autostash || { git rebase --abort; exit 0; }
+          git push
