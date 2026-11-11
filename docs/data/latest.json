@@ -1,6 +1,6 @@
 {
- "generated_at": "2026-11-10T14:03:34.764295+03:00",
- "generated_label": "الثلاثاء 10 نوفمبر 2026 — 14:03",
+ "generated_at": "2026-11-11T13:48:11.919260+03:00",
+ "generated_label": "الأربعاء 11 نوفمبر 2026 — 13:48",
  "currency": "SAR",
  "currency_label": "ر.س",
  "repo": "EHomaily/flight-radar",
@@ -432,7 +432,7 @@
     "origin": "JED",
     "destination": "DMM",
     "depart": "2027-02-14",
-    "price": 378.0,
+    "price": 405.0,
     "ret": "2027-02-21",
     "origin_airport": "JED",
     "destination_airport": "DMM",
@@ -443,8 +443,8 @@
     "duration": 260,
     "link": "https://www.aviasales.com/search/JED1402DMM21021?t=XY18025974001802604300000115JEDDMM18032235001803232200000145DMMJED_1ec51681cdb3d9e77a0c0ba737ae92e6_8821&search_date=04112026&expected_price_uuid=01a1a705-6a5a-8031-2ee9-f897fc0163b5&static_fare_key=TY%7CP0%7CH1%7CL0%7CCH0%7CR0%7CTBC0&itinerary_key=0tYI6PqYWVriIIdbTxinRg&expected_price_source=share&expected_price_currency=usd&expected_price=108",
     "google_link": "https://www.google.com/travel/flights/search?tfs=GhoSCjIwMjctMDItMTRqBRIDSkVEcgUSA0RNTRoaEgoyMDI3LTAyLTIxagUSA0RNTXIFEgNKRURCAQFIAZgBAQ==&hl=ar&curr=SAR",
-    "verified": true,
-    "cached_price": 405.0,
+    "verified": false,
+    "cached_price": null,
     "compare_links": [
      {
       "name": "Trip.com",
@@ -478,7 +478,7 @@
      "origin": "JED",
      "destination": "DMM",
      "depart": "2027-02-14",
-     "price": 378.0,
+     "price": 405.0,
      "ret": "2027-02-21",
      "origin_airport": "JED",
      "destination_airport": "DMM",
@@ -489,8 +489,8 @@
      "duration": 260,
      "link": "https://www.aviasales.com/search/JED1402DMM21021?t=XY18025974001802604300000115JEDDMM18032235001803232200000145DMMJED_1ec51681cdb3d9e77a0c0ba737ae92e6_8821&search_date=04112026&expected_price_uuid=01a1a705-6a5a-8031-2ee9-f897fc0163b5&static_fare_key=TY%7CP0%7CH1%7CL0%7CCH0%7CR0%7CTBC0&itinerary_key=0tYI6PqYWVriIIdbTxinRg&expected_price_source=share&expected_price_currency=usd&expected_price=108",
      "google_link": "https://www.google.com/travel/flights/search?tfs=GhoSCjIwMjctMDItMTRqBRIDSkVEcgUSA0RNTRoaEgoyMDI3LTAyLTIxagUSA0RNTXIFEgNKRURCAQFIAZgBAQ==&hl=ar&curr=SAR",
-     "verified": true,
-     "cached_price": 405.0,
+     "verified": false,
+     "cached_price": null,
      "compare_links": [
       {
        "name": "Trip.com",
@@ -515,49 +515,6 @@
      "stops": "مباشر",
      "depart_label": "الأحد 14 فبراير 2027",
      "ret_label": "الأحد 21 فبراير 2027"
-    },
-    {
-     "source": "aviasales",
-     "origin": "JED",
-     "destination": "DMM",
-     "depart": "2026-12-11",
-     "price": 431.25,
-     "ret": "2026-12-16",
-     "origin_airport": "JED",
-     "destination_airport": "DMM",
-     "airline": "F3",
-     "flight_number": "309",
-     "transfers": 0,
-     "return_transfers": 0,
-     "duration": 255,
-     "link": "https://www.aviasales.com/search/JED1112DMM16121?t=F317969940001797000900000115JEDDMM17974170001797425400000140DMMJED_fd63dd3492c57eba83380fca450a227f_9396&search_date=03112026&expected_price_uuid=01a1a19b-c2ea-8040-2672-1500aae52e14&static_fare_key=TY%7CP0%7CH1%7CL0%7CCH0%7CR0%7CTBC0&itinerary_key=AUgZ7OWDYC3URSLOaPjBdw&expected_price_source=share&expected_price_currency=usd&expected_price=115",
-     "google_link": "https://www.google.com/travel/flights/search?tfs=GhoSCjIwMjYtMTItMTFqBRIDSkVEcgUSA0RNTRoaEgoyMDI2LTEyLTE2agUSA0RNTXIFEgNKRURCAQFIAZgBAQ==&hl=ar&curr=SAR",
-     "verified": false,
-     "cached_price": null,
-     "compare_links": [
-      {
-       "name": "Trip.com",
-       "url": "https://www.trip.com/flights/jeddah-to-dammam/tickets-jed-dmm/?ddate=2026-12-11&rdate=2026-12-16&flighttype=d"
-      },
-      {
-       "name": "Skyscanner",
-       "url": "https://www.skyscanner.net/transport/flights/jed/dmm/261211/261216/?adultsv2=1&cabinclass=economy"
-      },
-      {
-       "name": "Kayak",
-       "url": "https://www.kayak.com/flights/JED-DMM/2026-12-11/2026-12-16?sort=price_a"
-      }
-     ],
-     "discount_name": null,
-     "discount_price": null,
-     "discount_for_alerts": false,
-     "stay": 5,
-     "origin_name": "جدة",
-     "destination_name": "الدمام",
-     "airline_name": "طيران أديل",
-     "stops": "مباشر",
-     "depart_label": "الجمعة 11 ديسمبر 2026",
-     "ret_label": "الأربعاء 16 ديسمبر 2026"
     },
     {
      "source": "aviasales",
@@ -692,9 +649,9 @@
      "source": "aviasales",
      "origin": "JED",
      "destination": "MED",
-     "depart": "2026-11-13",
-     "price": 525.0,
-     "ret": "2026-11-20",
+     "depart": "2026-11-17",
+     "price": 510.0,
+     "ret": "2026-11-24",
      "origin_airport": "JED",
      "destination_airport": "MED",
      "airline": "SV",
@@ -702,22 +659,22 @@
      "transfers": 0,
      "return_transfers": 0,
      "duration": 130,
-     "link": "https://www.aviasales.com/search/JED1311MED20111?t=SV17945730001794576600000060JEDMED17951847001795188900000070MEDJED_c9f6fc0c15ef6f37ad82a778b84b0fc9_11480&search_date=06112026&expected_price_uuid=01a1b278-e75c-8031-6c61-aa194117cdb7&static_fare_key=TY%7CP0%7CH1%7CL0%7CCH0%7CR0%7CTBC0&itinerary_key=Ss7_OUWxFnR6KBdn2_-dxg&expected_price_source=share&expected_price_currency=usd&expected_price=140",
-     "google_link": "https://www.google.com/travel/flights/search?tfs=GhoSCjIwMjYtMTEtMTNqBRIDSkVEcgUSA01FRBoaEgoyMDI2LTExLTIwagUSA01FRHIFEgNKRURCAQFIAZgBAQ==&hl=ar&curr=SAR",
+     "link": "https://www.aviasales.com/search/JED1711MED24111?t=SV17949186001794922200000060JEDMED17955303001795534500000070MEDJED_1cf33c08adba6aa63cf451889b3024a7_11224&search_date=10112026&expected_price_uuid=01a1c55a-3d45-8031-2703-d7eace7d03ea&static_fare_key=TY%7CP1%7CH1%7CL0%7CCH0%7CR0%7CTBC0&itinerary_key=Ss7_OUWxFnR6KBdn2_-dxg&expected_price_source=share&expected_price_currency=usd&expected_price=136",
+     "google_link": "https://www.google.com/travel/flights/search?tfs=GhoSCjIwMjYtMTEtMTdqBRIDSkVEcgUSA01FRBoaEgoyMDI2LTExLTI0agUSA01FRHIFEgNKRURCAQFIAZgBAQ==&hl=ar&curr=SAR",
      "verified": false,
      "cached_price": null,
      "compare_links": [
       {
        "name": "Trip.com",
-       "url": "https://www.trip.com/flights/jeddah-to-medina/tickets-jed-med/?ddate=2026-11-13&rdate=2026-11-20&flighttype=d"
+       "url": "https://www.trip.com/flights/jeddah-to-medina/tickets-jed-med/?ddate=2026-11-17&rdate=2026-11-24&flighttype=d"
       },
       {
        "name": "Skyscanner",
-       "url": "https://www.skyscanner.net/transport/flights/jed/med/261113/261120/?adultsv2=1&cabinclass=economy"
+       "url": "https://www.skyscanner.net/transport/flights/jed/med/261117/261124/?adultsv2=1&cabinclass=economy"
       },
       {
        "name": "Kayak",
-       "url": "https://www.kayak.com/flights/JED-MED/2026-11-13/2026-11-20?sort=price_a"
+       "url": "https://www.kayak.com/flights/JED-MED/2026-11-17/2026-11-24?sort=price_a"
       }
      ],
      "discount_name": null,
@@ -728,51 +685,8 @@
      "destination_name": "المدينة المنورة",
      "airline_name": "السعودية",
      "stops": "مباشر",
-     "depart_label": "الجمعة 13 نوفمبر 2026",
-     "ret_label": "الجمعة 20 نوفمبر 2026"
-    },
-    {
-     "source": "aviasales",
-     "origin": "JED",
-     "destination": "AHB",
-     "depart": "2026-11-14",
-     "price": 528.0,
-     "ret": "2026-11-17",
-     "origin_airport": "JED",
-     "destination_airport": "AHB",
-     "airline": "F3",
-     "flight_number": "333",
-     "transfers": 0,
-     "return_transfers": 0,
-     "duration": 155,
-     "link": "https://www.aviasales.com/search/JED1411AHB17111?t=SV17946330001794637500000075JEDAHB17949048001794909600000080AHBJED_83e37fa6e09e5ca75181585d03762026_11108&search_date=05112026&expected_price_uuid=01a1aa01-9847-8031-6e5c-2ce1ba9fdbed&static_fare_key=TY%7CP1%7CH0%7CL0%7CCH0%7CR0%7CTBC0&itinerary_key=iFYA6uFZ-XQcCeoBfOyctA&expected_price_source=share&expected_price_currency=usd&expected_price=136",
-     "google_link": "https://www.google.com/travel/flights/search?tfs=GhoSCjIwMjYtMTEtMTRqBRIDSkVEcgUSA0FIQhoaEgoyMDI2LTExLTE3agUSA0FIQnIFEgNKRURCAQFIAZgBAQ==&hl=ar&curr=SAR",
-     "verified": true,
-     "cached_price": 510.0,
-     "compare_links": [
-      {
-       "name": "Trip.com",
-       "url": "https://www.trip.com/flights/jeddah-to-abha/tickets-jed-ahb/?ddate=2026-11-14&rdate=2026-11-17&flighttype=d"
-      },
-      {
-       "name": "Skyscanner",
-       "url": "https://www.skyscanner.net/transport/flights/jed/ahb/261114/261117/?adultsv2=1&cabinclass=economy"
-      },
-      {
-       "name": "Kayak",
-       "url": "https://www.kayak.com/flights/JED-AHB/2026-11-14/2026-11-17?sort=price_a"
-      }
-     ],
-     "discount_name": null,
-     "discount_price": null,
-     "discount_for_alerts": false,
-     "stay": 3,
-     "origin_name": "جدة",
-     "destination_name": "أبها",
-     "airline_name": "طيران أديل",
-     "stops": "مباشر",
-     "depart_label": "السبت 14 نوفمبر 2026",
-     "ret_label": "الثلاثاء 17 نوفمبر 2026"
+     "depart_label": "الثلاثاء 17 نوفمبر 2026",
+     "ret_label": "الثلاثاء 24 نوفمبر 2026"
     },
     {
      "source": "aviasales",
@@ -816,6 +730,49 @@
      "stops": "مباشر",
      "depart_label": "الأربعاء 18 نوفمبر 2026",
      "ret_label": "الأربعاء 25 نوفمبر 2026"
+    },
+    {
+     "source": "aviasales",
+     "origin": "JED",
+     "destination": "AHB",
+     "depart": "2026-11-14",
+     "price": 628.0,
+     "ret": "2026-11-17",
+     "origin_airport": "JED",
+     "destination_airport": "AHB",
+     "airline": "XY",
+     "flight_number": "425",
+     "transfers": 0,
+     "return_transfers": 0,
+     "duration": 150,
+     "link": "https://www.aviasales.com/search/JED1411AHB17111?t=XY17946381001794642600000075JEDAHB17949015001794906000000075AHBJED_fdedeb338234681f4d927f7a1868e917_11839&search_date=10112026&expected_price_uuid=01a1c5ce-9ea8-8030-6f4c-83c497d5dc62&static_fare_key=TY%7CP0%7CH1%7CL0%7CCH0%7CR0%7CTBC0&itinerary_key=6Z_78iSDosG8CRW-pWj-jg&expected_price_source=share&expected_price_currency=usd&expected_price=143",
+     "google_link": "https://www.google.com/travel/flights/search?tfs=GhoSCjIwMjYtMTEtMTRqBRIDSkVEcgUSA0FIQhoaEgoyMDI2LTExLTE3agUSA0FIQnIFEgNKRURCAQFIAZgBAQ==&hl=ar&curr=SAR",
+     "verified": true,
+     "cached_price": 536.25,
+     "compare_links": [
+      {
+       "name": "Trip.com",
+       "url": "https://www.trip.com/flights/jeddah-to-abha/tickets-jed-ahb/?ddate=2026-11-14&rdate=2026-11-17&flighttype=d"
+      },
+      {
+       "name": "Skyscanner",
+       "url": "https://www.skyscanner.net/transport/flights/jed/ahb/261114/261117/?adultsv2=1&cabinclass=economy"
+      },
+      {
+       "name": "Kayak",
+       "url": "https://www.kayak.com/flights/JED-AHB/2026-11-14/2026-11-17?sort=price_a"
+      }
+     ],
+     "discount_name": null,
+     "discount_price": null,
+     "discount_for_alerts": false,
+     "stay": 3,
+     "origin_name": "جدة",
+     "destination_name": "أبها",
+     "airline_name": "طيران ناس",
+     "stops": "مباشر",
+     "depart_label": "السبت 14 نوفمبر 2026",
+     "ret_label": "الثلاثاء 17 نوفمبر 2026"
     },
     {
      "source": "aviasales",
@@ -902,6 +859,49 @@
      "stops": "مباشر",
      "depart_label": "الأحد 22 نوفمبر 2026",
      "ret_label": "السبت 28 نوفمبر 2026"
+    },
+    {
+     "source": "aviasales",
+     "origin": "JED",
+     "destination": "DMM",
+     "depart": "2026-11-22",
+     "price": 678.75,
+     "ret": "2026-11-26",
+     "origin_airport": "JED",
+     "destination_airport": "DMM",
+     "airline": "XY",
+     "flight_number": "402",
+     "transfers": 0,
+     "return_transfers": 0,
+     "duration": 260,
+     "link": "https://www.aviasales.com/search/JED2211DMM26111?t=F317953287001795335900000120JEDDMM17956890001795697400000140DMMJED_aa5c98628f0ddc710b0f309e5596f93e_14933&search_date=10112026&expected_price_uuid=01a1c39c-f0ee-8040-6614-b35fdb5d04cc&static_fare_key=TY%7CP0%7CH0%7CL0%7CCH0%7CR0%7CTBC0&itinerary_key=j_UGXxNqlbuHbkfRQkg0Lw&expected_price_source=share&expected_price_currency=usd&expected_price=181",
+     "google_link": "https://www.google.com/travel/flights/search?tfs=GhoSCjIwMjYtMTEtMjJqBRIDSkVEcgUSA0RNTRoaEgoyMDI2LTExLTI2agUSA0RNTXIFEgNKRURCAQFIAZgBAQ==&hl=ar&curr=SAR",
+     "verified": false,
+     "cached_price": null,
+     "compare_links": [
+      {
+       "name": "Trip.com",
+       "url": "https://www.trip.com/flights/jeddah-to-dammam/tickets-jed-dmm/?ddate=2026-11-22&rdate=2026-11-26&flighttype=d"
+      },
+      {
+       "name": "Skyscanner",
+       "url": "https://www.skyscanner.net/transport/flights/jed/dmm/261122/261126/?adultsv2=1&cabinclass=economy"
+      },
+      {
+       "name": "Kayak",
+       "url": "https://www.kayak.com/flights/JED-DMM/2026-11-22/2026-11-26?sort=price_a"
+      }
+     ],
+     "discount_name": null,
+     "discount_price": null,
+     "discount_for_alerts": false,
+     "stay": 4,
+     "origin_name": "جدة",
+     "destination_name": "الدمام",
+     "airline_name": "طيران ناس",
+     "stops": "مباشر",
+     "depart_label": "الأحد 22 نوفمبر 2026",
+     "ret_label": "الخميس 26 نوفمبر 2026"
     }
    ],
    "reference_origin": "RUH",
@@ -912,7 +912,7 @@
      "origin": "JED",
      "destination": "DMM",
      "depart": "2027-02-14",
-     "price": 378.0,
+     "price": 405.0,
      "ret": "2027-02-21",
      "origin_airport": "JED",
      "destination_airport": "DMM",
@@ -923,8 +923,8 @@
      "duration": 260,
      "link": "https://www.aviasales.com/search/JED1402DMM21021?t=XY18025974001802604300000115JEDDMM18032235001803232200000145DMMJED_1ec51681cdb3d9e77a0c0ba737ae92e6_8821&search_date=04112026&expected_price_uuid=01a1a705-6a5a-8031-2ee9-f897fc0163b5&static_fare_key=TY%7CP0%7CH1%7CL0%7CCH0%7CR0%7CTBC0&itinerary_key=0tYI6PqYWVriIIdbTxinRg&expected_price_source=share&expected_price_currency=usd&expected_price=108",
      "google_link": "https://www.google.com/travel/flights/search?tfs=GhoSCjIwMjctMDItMTRqBRIDSkVEcgUSA0RNTRoaEgoyMDI3LTAyLTIxagUSA0RNTXIFEgNKRURCAQFIAZgBAQ==&hl=ar&curr=SAR",
-     "verified": true,
-     "cached_price": 405.0,
+     "verified": false,
+     "cached_price": null,
      "compare_links": [
       {
        "name": "Trip.com",
@@ -1008,19 +1008,19 @@
      "origin": "JED",
      "destination": "AHB",
      "depart": "2026-11-14",
-     "price": 528.0,
+     "price": 628.0,
      "ret": "2026-11-17",
      "origin_airport": "JED",
      "destination_airport": "AHB",
-     "airline": "F3",
-     "flight_number": "333",
+     "airline": "XY",
+     "flight_number": "425",
      "transfers": 0,
      "return_transfers": 0,
-     "duration": 155,
-     "link": "https://www.aviasales.com/search/JED1411AHB17111?t=SV17946330001794637500000075JEDAHB17949048001794909600000080AHBJED_83e37fa6e09e5ca75181585d03762026_11108&search_date=05112026&expected_price_uuid=01a1aa01-9847-8031-6e5c-2ce1ba9fdbed&static_fare_key=TY%7CP1%7CH0%7CL0%7CCH0%7CR0%7CTBC0&itinerary_key=iFYA6uFZ-XQcCeoBfOyctA&expected_price_source=share&expected_price_currency=usd&expected_price=136",
+     "duration": 150,
+     "link": "https://www.aviasales.com/search/JED1411AHB17111?t=XY17946381001794642600000075JEDAHB17949015001794906000000075AHBJED_fdedeb338234681f4d927f7a1868e917_11839&search_date=10112026&expected_price_uuid=01a1c5ce-9ea8-8030-6f4c-83c497d5dc62&static_fare_key=TY%7CP0%7CH1%7CL0%7CCH0%7CR0%7CTBC0&itinerary_key=6Z_78iSDosG8CRW-pWj-jg&expected_price_source=share&expected_price_currency=usd&expected_price=143",
      "google_link": "https://www.google.com/travel/flights/search?tfs=GhoSCjIwMjYtMTEtMTRqBRIDSkVEcgUSA0FIQhoaEgoyMDI2LTExLTE3agUSA0FIQnIFEgNKRURCAQFIAZgBAQ==&hl=ar&curr=SAR",
      "verified": true,
-     "cached_price": 510.0,
+     "cached_price": 536.25,
      "compare_links": [
       {
        "name": "Trip.com",
@@ -1041,7 +1041,7 @@
      "stay": 3,
      "origin_name": "جدة",
      "destination_name": "أبها",
-     "airline_name": "طيران أديل",
+     "airline_name": "طيران ناس",
      "stops": "مباشر",
      "depart_label": "السبت 14 نوفمبر 2026",
      "ret_label": "الثلاثاء 17 نوفمبر 2026",
@@ -1150,6 +1150,54 @@
     {
      "source": "aviasales",
      "origin": "JED",
+     "destination": "KWI",
+     "depart": "2026-11-11",
+     "price": 750.0,
+     "ret": "2026-11-14",
+     "origin_airport": "JED",
+     "destination_airport": "KWI",
+     "airline": "J9",
+     "flight_number": "214",
+     "transfers": 0,
+     "return_transfers": 0,
+     "duration": 280,
+     "link": "https://www.aviasales.com/search/JED1111KWI14111?t=J917944110001794419100000135JEDKWI17946723001794681000000145KWIJED_aff3637cc77238c1344bcbddaf6abca2_16636&search_date=10112026&expected_price_uuid=01a1c6de-a02e-8030-eb15-dc393f367cb3&static_fare_key=TY%7CP0%7CH1%7CL0%7CCH1%7CR0%7CTBC0&itinerary_key=4T-reiWPQeO2mH9yqjjnYQ&expected_price_source=share&expected_price_currency=usd&expected_price=200",
+     "google_link": "https://www.google.com/travel/flights/search?tfs=GhoSCjIwMjYtMTEtMTFqBRIDSkVEcgUSA0tXSRoaEgoyMDI2LTExLTE0agUSA0tXSXIFEgNKRURCAQFIAZgBAQ==&hl=ar&curr=SAR",
+     "verified": false,
+     "cached_price": null,
+     "compare_links": [
+      {
+       "name": "Trip.com",
+       "url": "https://www.trip.com/flights/jeddah-to-kuwait-city/tickets-jed-kwi/?ddate=2026-11-11&rdate=2026-11-14&flighttype=d"
+      },
+      {
+       "name": "Skyscanner",
+       "url": "https://www.skyscanner.net/transport/flights/jed/kwi/261111/261114/?adultsv2=1&cabinclass=economy"
+      },
+      {
+       "name": "Kayak",
+       "url": "https://www.kayak.com/flights/JED-KWI/2026-11-11/2026-11-14?sort=price_a"
+      }
+     ],
+     "discount_name": null,
+     "discount_price": null,
+     "discount_for_alerts": false,
+     "stay": 3,
+     "origin_name": "جدة",
+     "destination_name": "الكويت",
+     "airline_name": "طيران الجزيرة",
+     "stops": "مباشر",
+     "depart_label": "الأربعاء 11 نوفمبر 2026",
+     "ret_label": "السبت 14 نوفمبر 2026",
+     "ref": {
+      "missing": true,
+      "origin_name": "الرياض",
+      "google_link": "https://www.google.com/travel/flights/search?tfs=GhoSCjIwMjYtMTEtMTFqBRIDUlVIcgUSA0tXSRoaEgoyMDI2LTExLTE0agUSA0tXSXIFEgNSVUhCAQFIAZgBAQ==&hl=ar&curr=SAR"
+     }
+    },
+    {
+     "source": "aviasales",
+     "origin": "JED",
      "destination": "GIZ",
      "depart": "2026-11-22",
      "price": 761.25,
@@ -1193,54 +1241,6 @@
       "missing": true,
       "origin_name": "الرياض",
       "google_link": "https://www.google.com/travel/flights/search?tfs=GhoSCjIwMjYtMTEtMjJqBRIDUlVIcgUSA0dJWhoaEgoyMDI2LTExLTI2agUSA0dJWnIFEgNSVUhCAQFIAZgBAQ==&hl=ar&curr=SAR"
-     }
-    },
-    {
-     "source": "aviasales",
-     "origin": "JED",
-     "destination": "DXB",
-     "depart": "2026-11-10",
-     "price": 787.5,
-     "ret": "2026-11-17",
-     "origin_airport": "JED",
-     "destination_airport": "DXB",
-     "airline": "SV",
-     "flight_number": "8062",
-     "transfers": 1,
-     "return_transfers": 0,
-     "duration": 755,
-     "link": "https://www.aviasales.com/search/JED1011DXB17111?t=SV17943264001794363900000565JEDELQDXB17949564001794964200000190DXBJED_289b01ae6d38b2849c888a6d1352c34f_17131&search_date=05112026&expected_price_uuid=01a1acf4-b94e-8030-6378-563a79f17c02&static_fare_key=TY%7CP0%7CH1%7CL0%7CCH0%7CR0%7CTBC0&itinerary_key=E1kEUIBMoj3YTrTfd2s81w&expected_price_source=share&expected_price_currency=usd&expected_price=210",
-     "google_link": "https://www.google.com/travel/flights/search?tfs=GhoSCjIwMjYtMTEtMTBqBRIDSkVEcgUSA0RYQhoaEgoyMDI2LTExLTE3agUSA0RYQnIFEgNKRURCAQFIAZgBAQ==&hl=ar&curr=SAR",
-     "verified": false,
-     "cached_price": null,
-     "compare_links": [
-      {
-       "name": "Trip.com",
-       "url": "https://www.trip.com/flights/jeddah-to-dubai/tickets-jed-dxb/?ddate=2026-11-10&rdate=2026-11-17&flighttype=d"
-      },
-      {
-       "name": "Skyscanner",
-       "url": "https://www.skyscanner.net/transport/flights/jed/dxb/261110/261117/?adultsv2=1&cabinclass=economy"
-      },
-      {
-       "name": "Kayak",
-       "url": "https://www.kayak.com/flights/JED-DXB/2026-11-10/2026-11-17?sort=price_a"
-      }
-     ],
-     "discount_name": null,
-     "discount_price": null,
-     "discount_for_alerts": false,
-     "stay": 7,
-     "origin_name": "جدة",
-     "destination_name": "دبي",
-     "airline_name": "السعودية",
-     "stops": "توقف واحد",
-     "depart_label": "الثلاثاء 10 نوفمبر 2026",
-     "ret_label": "الثلاثاء 17 نوفمبر 2026",
-     "ref": {
-      "missing": true,
-      "origin_name": "الرياض",
-      "google_link": "https://www.google.com/travel/flights/search?tfs=GhoSCjIwMjYtMTEtMTBqBRIDUlVIcgUSA0RYQhoaEgoyMDI2LTExLTE3agUSA0RYQnIFEgNSVUhCAQFIAZgBAQ==&hl=ar&curr=SAR"
      }
     },
     {
@@ -1390,6 +1390,54 @@
     {
      "source": "aviasales",
      "origin": "JED",
+     "destination": "DXB",
+     "depart": "2027-02-11",
+     "price": 832.5,
+     "ret": "2027-02-16",
+     "origin_airport": "JED",
+     "destination_airport": "DXB",
+     "airline": "SV",
+     "flight_number": "1424",
+     "transfers": 1,
+     "return_transfers": 0,
+     "duration": 800,
+     "link": "https://www.aviasales.com/search/JED1102DXB16021?t=SV18023340001802374200000610JEDMEDDXB18027507001802758500000190DXBJED_a090f36e92cb27fbf47545a8893b9410_18181&search_date=04112026&expected_price_uuid=01a1a7b7-fca1-8040-6d06-27ee37e639d8&static_fare_key=TY%7CP0%7CH1%7CL0%7CCH0%7CR0%7CTBC0&itinerary_key=5GM9yEzwwaYG06rOZBKJ7A&expected_price_source=share&expected_price_currency=usd&expected_price=222",
+     "google_link": "https://www.google.com/travel/flights/search?tfs=GhoSCjIwMjctMDItMTFqBRIDSkVEcgUSA0RYQhoaEgoyMDI3LTAyLTE2agUSA0RYQnIFEgNKRURCAQFIAZgBAQ==&hl=ar&curr=SAR",
+     "verified": false,
+     "cached_price": null,
+     "compare_links": [
+      {
+       "name": "Trip.com",
+       "url": "https://www.trip.com/flights/jeddah-to-dubai/tickets-jed-dxb/?ddate=2027-02-11&rdate=2027-02-16&flighttype=d"
+      },
+      {
+       "name": "Skyscanner",
+       "url": "https://www.skyscanner.net/transport/flights/jed/dxb/270211/270216/?adultsv2=1&cabinclass=economy"
+      },
+      {
+       "name": "Kayak",
+       "url": "https://www.kayak.com/flights/JED-DXB/2027-02-11/2027-02-16?sort=price_a"
+      }
+     ],
+     "discount_name": null,
+     "discount_price": null,
+     "discount_for_alerts": false,
+     "stay": 5,
+     "origin_name": "جدة",
+     "destination_name": "دبي",
+     "airline_name": "السعودية",
+     "stops": "توقف واحد",
+     "depart_label": "الخميس 11 فبراير 2027",
+     "ret_label": "الثلاثاء 16 فبراير 2027",
+     "ref": {
+      "missing": true,
+      "origin_name": "الرياض",
+      "google_link": "https://www.google.com/travel/flights/search?tfs=GhoSCjIwMjctMDItMTFqBRIDUlVIcgUSA0RYQhoaEgoyMDI3LTAyLTE2agUSA0RYQnIFEgNSVUhCAQFIAZgBAQ==&hl=ar&curr=SAR"
+     }
+    },
+    {
+     "source": "aviasales",
+     "origin": "JED",
      "destination": "AUH",
      "depart": "2026-11-24",
      "price": 862.5,
@@ -1434,54 +1482,6 @@
       "origin_name": "الرياض",
       "google_link": "https://www.google.com/travel/flights/search?tfs=GhoSCjIwMjYtMTEtMjRqBRIDUlVIcgUSA0FVSBoaEgoyMDI2LTExLTI5agUSA0FVSHIFEgNSVUhCAQFIAZgBAQ==&hl=ar&curr=SAR"
      }
-    },
-    {
-     "source": "aviasales",
-     "origin": "JED",
-     "destination": "SSH",
-     "depart": "2026-11-12",
-     "price": 892.5,
-     "ret": "2026-11-19",
-     "origin_airport": "JED",
-     "destination_airport": "SSH",
-     "airline": "SV",
-     "flight_number": "325",
-     "transfers": 0,
-     "return_transfers": 0,
-     "duration": 210,
-     "link": "https://www.aviasales.com/search/JED1211SSH19111?t=SV17944935001794496200000105JEDSSH17951058001795115700000105SSHJED_d9a81fab1bf9bb0e620dbd2c7574b9d6_19407&search_date=05112026&expected_price_uuid=01a1ace1-c0de-8030-e4e0-48fe2f1381fe&static_fare_key=TY%7CP0%7CH1%7CL0%7CCH0%7CR0%7CTBC0&itinerary_key=u4m8waLBF-cuUe-vqF4mqQ&expected_price_source=share&expected_price_currency=usd&expected_price=238",
-     "google_link": "https://www.google.com/travel/flights/search?tfs=GhoSCjIwMjYtMTEtMTJqBRIDSkVEcgUSA1NTSBoaEgoyMDI2LTExLTE5agUSA1NTSHIFEgNKRURCAQFIAZgBAQ==&hl=ar&curr=SAR",
-     "verified": false,
-     "cached_price": null,
-     "compare_links": [
-      {
-       "name": "Trip.com",
-       "url": "https://www.trip.com/flights/jeddah-to-sharm-el-sheikh/tickets-jed-ssh/?ddate=2026-11-12&rdate=2026-11-19&flighttype=d"
-      },
-      {
-       "name": "Skyscanner",
-       "url": "https://www.skyscanner.net/transport/flights/jed/ssh/261112/261119/?adultsv2=1&cabinclass=economy"
-      },
-      {
-       "name": "Kayak",
-       "url": "https://www.kayak.com/flights/JED-SSH/2026-11-12/2026-11-19?sort=price_a"
-      }
-     ],
-     "discount_name": null,
-     "discount_price": null,
-     "discount_for_alerts": false,
-     "stay": 7,
-     "origin_name": "جدة",
-     "destination_name": "شرم الشيخ",
-     "airline_name": "السعودية",
-     "stops": "مباشر",
-     "depart_label": "الخميس 12 نوفمبر 2026",
-     "ret_label": "الخميس 19 نوفمبر 2026",
-     "ref": {
-      "missing": true,
-      "origin_name": "الرياض",
-      "google_link": "https://www.google.com/travel/flights/search?tfs=GhoSCjIwMjYtMTEtMTJqBRIDUlVIcgUSA1NTSBoaEgoyMDI2LTExLTE5agUSA1NTSHIFEgNSVUhCAQFIAZgBAQ==&hl=ar&curr=SAR"
-     }
     }
    ],
    "missing_destinations": [],
@@ -1491,24 +1491,14 @@
      "label": "نوفمبر 2026",
      "days": [
       {
-       "date": "2026-11-10",
-       "price": 787.5,
-       "destination": "DXB",
-       "destination_name": "دبي",
-       "verified": false,
-       "ret": "2026-11-17",
-       "link": "https://www.aviasales.com/search/JED1011DXB17111?t=SV17943264001794363900000565JEDELQDXB17949564001794964200000190DXBJED_289b01ae6d38b2849c888a6d1352c34f_17131&search_date=05112026&expected_price_uuid=01a1acf4-b94e-8030-6378-563a79f17c02&static_fare_key=TY%7CP0%7CH1%7CL0%7CCH0%7CR0%7CTBC0&itinerary_key=E1kEUIBMoj3YTrTfd2s81w&expected_price_source=share&expected_price_currency=usd&expected_price=210",
-       "google_link": "https://www.google.com/travel/flights/search?tfs=GhoSCjIwMjYtMTEtMTBqBRIDSkVEcgUSA0RYQhoaEgoyMDI2LTExLTE3agUSA0RYQnIFEgNKRURCAQFIAZgBAQ==&hl=ar&curr=SAR"
-      },
-      {
        "date": "2026-11-11",
-       "price": 795.0,
-       "destination": "HOF",
-       "destination_name": "الهفوف",
+       "price": 750.0,
+       "destination": "KWI",
+       "destination_name": "الكويت",
        "verified": false,
-       "ret": "2026-11-15",
-       "link": "https://www.aviasales.com/search/JED1111HOF15111?t=SV17943906001794398100000125JEDHOF17947461001794753900000130HOFJED_5804b12cf20e7517d5a445506e76a160_17458&search_date=09112026&expected_price_uuid=01a1bfad-c57c-8040-29a7-c1a2526bcc8c&static_fare_key=TY%7CP0%7CH1%7CL1_1_23%7CCH0%7CR0%7CTBC1&itinerary_key=4BeEm-8J5pBe73CU2ak_Ag&expected_price_source=share&expected_price_currency=usd&expected_price=212",
-       "google_link": "https://www.google.com/travel/flights/search?tfs=GhoSCjIwMjYtMTEtMTFqBRIDSkVEcgUSA0hPRhoaEgoyMDI2LTExLTE1agUSA0hPRnIFEgNKRURCAQFIAZgBAQ==&hl=ar&curr=SAR"
+       "ret": "2026-11-14",
+       "link": "https://www.aviasales.com/search/JED1111KWI14111?t=J917944110001794419100000135JEDKWI17946723001794681000000145KWIJED_aff3637cc77238c1344bcbddaf6abca2_16636&search_date=10112026&expected_price_uuid=01a1c6de-a02e-8030-eb15-dc393f367cb3&static_fare_key=TY%7CP0%7CH1%7CL0%7CCH1%7CR0%7CTBC0&itinerary_key=4T-reiWPQeO2mH9yqjjnYQ&expected_price_source=share&expected_price_currency=usd&expected_price=200",
+       "google_link": "https://www.google.com/travel/flights/search?tfs=GhoSCjIwMjYtMTEtMTFqBRIDSkVEcgUSA0tXSRoaEgoyMDI2LTExLTE0agUSA0tXSXIFEgNKRURCAQFIAZgBAQ==&hl=ar&curr=SAR"
       },
       {
        "date": "2026-11-12",
@@ -1522,33 +1512,33 @@
       },
       {
        "date": "2026-11-13",
-       "price": 525.0,
-       "destination": "MED",
-       "destination_name": "المدينة المنورة",
+       "price": 742.5,
+       "destination": "TUU",
+       "destination_name": "تبوك",
        "verified": false,
-       "ret": "2026-11-20",
-       "link": "https://www.aviasales.com/search/JED1311MED20111?t=SV17945730001794576600000060JEDMED17951847001795188900000070MEDJED_c9f6fc0c15ef6f37ad82a778b84b0fc9_11480&search_date=06112026&expected_price_uuid=01a1b278-e75c-8031-6c61-aa194117cdb7&static_fare_key=TY%7CP0%7CH1%7CL0%7CCH0%7CR0%7CTBC0&itinerary_key=Ss7_OUWxFnR6KBdn2_-dxg&expected_price_source=share&expected_price_currency=usd&expected_price=140",
-       "google_link": "https://www.google.com/travel/flights/search?tfs=GhoSCjIwMjYtMTEtMTNqBRIDSkVEcgUSA01FRBoaEgoyMDI2LTExLTIwagUSA01FRHIFEgNKRURCAQFIAZgBAQ==&hl=ar&curr=SAR"
+       "ret": "2026-11-19",
+       "link": "https://www.aviasales.com/search/JED1311TUU19111?t=XY17945955001794601200000095JEDTUU17951220001795128000000100TUUJED_cd0cd963ba5adf937211476285b36c2e_16227&search_date=09112026&expected_price_uuid=01a1be21-94c7-8031-6ae3-9c59e867df0f&static_fare_key=TY%7CP0%7CH1%7CL0%7CCH0%7CR0%7CTBC0&itinerary_key=q1tVvGGcW_F9Z-DDjAQRvw&expected_price_source=share&expected_price_currency=usd&expected_price=198",
+       "google_link": "https://www.google.com/travel/flights/search?tfs=GhoSCjIwMjYtMTEtMTNqBRIDSkVEcgUSA1RVVRoaEgoyMDI2LTExLTE5agUSA1RVVXIFEgNKRURCAQFIAZgBAQ==&hl=ar&curr=SAR"
       },
       {
        "date": "2026-11-14",
-       "price": 528.0,
+       "price": 628.0,
        "destination": "AHB",
        "destination_name": "أبها",
        "verified": true,
        "ret": "2026-11-17",
-       "link": "https://www.aviasales.com/search/JED1411AHB17111?t=SV17946330001794637500000075JEDAHB17949048001794909600000080AHBJED_83e37fa6e09e5ca75181585d03762026_11108&search_date=05112026&expected_price_uuid=01a1aa01-9847-8031-6e5c-2ce1ba9fdbed&static_fare_key=TY%7CP1%7CH0%7CL0%7CCH0%7CR0%7CTBC0&itinerary_key=iFYA6uFZ-XQcCeoBfOyctA&expected_price_source=share&expected_price_currency=usd&expected_price=136",
+       "link": "https://www.aviasales.com/search/JED1411AHB17111?t=XY17946381001794642600000075JEDAHB17949015001794906000000075AHBJED_fdedeb338234681f4d927f7a1868e917_11839&search_date=10112026&expected_price_uuid=01a1c5ce-9ea8-8030-6f4c-83c497d5dc62&static_fare_key=TY%7CP0%7CH1%7CL0%7CCH0%7CR0%7CTBC0&itinerary_key=6Z_78iSDosG8CRW-pWj-jg&expected_price_source=share&expected_price_currency=usd&expected_price=143",
        "google_link": "https://www.google.com/travel/flights/search?tfs=GhoSCjIwMjYtMTEtMTRqBRIDSkVEcgUSA0FIQhoaEgoyMDI2LTExLTE3agUSA0FIQnIFEgNKRURCAQFIAZgBAQ==&hl=ar&curr=SAR"
       },
       {
        "date": "2026-11-15",
-       "price": 1605.0,
-       "destination": "GOI",
-       "destination_name": "غوا",
+       "price": 873.75,
+       "destination": "DXB",
+       "destination_name": "دبي",
        "verified": false,
-       "ret": "2026-11-22",
-       "link": "https://www.aviasales.com/search/JED1511GOI22111?t=IX17947833001794856200001065JEDBLRGOI17953215001795351200000645GOIBAHJED_78e354277d60843ade6db54a69486058_34898&search_date=05112026&expected_price_uuid=01a1ad36-8e1b-8031-62f1-eff56281f572&static_fare_key=TY%7CP0%7CH1%7CL0%7CCH0%7CR0%7CTBC0&itinerary_key=qXs0qMvB6E4KveRTJ2KVCA&expected_price_source=share&expected_price_currency=usd&expected_price=428",
-       "google_link": "https://www.google.com/travel/flights/search?tfs=GhoSCjIwMjYtMTEtMTVqBRIDSkVEcgUSA0dPSRoaEgoyMDI2LTExLTIyagUSA0dPSXIFEgNKRURCAQFIAZgBAQ==&hl=ar&curr=SAR"
+       "ret": "2026-11-21",
+       "link": "https://www.aviasales.com/search/JED1511DXB21111?t=SV17947665001794798000000465JEDELQDXB17952822001795290000000190DXBJED_db5d450a3503f6d216f958a82795cc3c_19071&search_date=08112026&expected_price_uuid=01a1bd1f-0708-8040-6a91-7a58933e53ec&static_fare_key=TY%7CP0%7CH1%7CL0%7CCH1%7CR0%7CTBC0&itinerary_key=VaU6txCZT95ekiLhIgvSoQ&expected_price_source=share&expected_price_currency=usd&expected_price=233",
+       "google_link": "https://www.google.com/travel/flights/search?tfs=GhoSCjIwMjYtMTEtMTVqBRIDSkVEcgUSA0RYQhoaEgoyMDI2LTExLTIxagUSA0RYQnIFEgNKRURCAQFIAZgBAQ==&hl=ar&curr=SAR"
       },
       {
        "date": "2026-11-16",
@@ -1562,13 +1552,13 @@
       },
       {
        "date": "2026-11-17",
-       "price": 806.25,
-       "destination": "DXB",
-       "destination_name": "دبي",
+       "price": 510.0,
+       "destination": "MED",
+       "destination_name": "المدينة المنورة",
        "verified": false,
-       "ret": "2026-11-23",
-       "link": "https://www.aviasales.com/search/JED1711DXB23111?t=SV17949330001794968700000535JEDELQDXB17954748001795482600000190DXBJED_3e55336e96639bd80a431b0ea578b821_17573&search_date=07112026&expected_price_uuid=01a1b70c-93ad-8030-2b71-842719430d7c&static_fare_key=TY%7CP0%7CH1%7CL0%7CCH0%7CR0%7CTBC0&itinerary_key=K8J8jo2_lNY7XZFyip-FAg&expected_price_source=share&expected_price_currency=usd&expected_price=214",
-       "google_link": "https://www.google.com/travel/flights/search?tfs=GhoSCjIwMjYtMTEtMTdqBRIDSkVEcgUSA0RYQhoaEgoyMDI2LTExLTIzagUSA0RYQnIFEgNKRURCAQFIAZgBAQ==&hl=ar&curr=SAR"
+       "ret": "2026-11-24",
+       "link": "https://www.aviasales.com/search/JED1711MED24111?t=SV17949186001794922200000060JEDMED17955303001795534500000070MEDJED_1cf33c08adba6aa63cf451889b3024a7_11224&search_date=10112026&expected_price_uuid=01a1c55a-3d45-8031-2703-d7eace7d03ea&static_fare_key=TY%7CP1%7CH1%7CL0%7CCH0%7CR0%7CTBC0&itinerary_key=Ss7_OUWxFnR6KBdn2_-dxg&expected_price_source=share&expected_price_currency=usd&expected_price=136",
+       "google_link": "https://www.google.com/travel/flights/search?tfs=GhoSCjIwMjYtMTEtMTdqBRIDSkVEcgUSA01FRBoaEgoyMDI2LTExLTI0agUSA01FRHIFEgNKRURCAQFIAZgBAQ==&hl=ar&curr=SAR"
       },
       {
        "date": "2026-11-18",
@@ -1672,13 +1662,13 @@
       },
       {
        "date": "2026-11-28",
-       "price": 2062.5,
-       "destination": "MUX",
-       "destination_name": "ملتان",
+       "price": 1297.5,
+       "destination": "BAK",
+       "destination_name": "باكو",
        "verified": false,
-       "ret": "2026-12-05",
-       "link": "https://www.aviasales.com/search/JED2811MUX05121?t=G917958621001795945800001275JEDSHJMUX17964669001796550900001520MUXSHJJED_5b6bc043a159d335623038b7f081271e_44943&search_date=04112026&expected_price_uuid=01a1a55a-b2a1-8030-e82e-4d4f6cbecd2b&static_fare_key=TY%7CP0%7CH1%7CL0%7CCH1%7CR0%7CTBC0&itinerary_key=TTxmquHapekBulavHw17OQ&expected_price_source=share&expected_price_currency=usd&expected_price=550",
-       "google_link": "https://www.google.com/travel/flights/search?tfs=GhoSCjIwMjYtMTEtMjhqBRIDSkVEcgUSA01VWBoaEgoyMDI2LTEyLTA1agUSA01VWHIFEgNKRURCAQFIAZgBAQ==&hl=ar&curr=SAR"
+       "ret": "2026-12-04",
+       "link": "https://www.aviasales.com/search/JED2811BAK04121?t=XY17958477001795867200000265JEDGYD17963892001796402100000275GYDJED_95b04dde1cf72e617c53555ee974469a_28779&search_date=10112026&expected_price_uuid=01a1c6c7-a264-8031-25b1-b796c5e66966&static_fare_key=TY%7CP0%7CH1%7CL0%7CCH0%7CR0%7CTBC0&itinerary_key=kFJPt6BaN1Ip2QoxwViGTw&expected_price_source=share&expected_price_currency=usd&expected_price=346",
+       "google_link": "https://www.google.com/travel/flights/search?tfs=GhoSCjIwMjYtMTEtMjhqBRIDSkVEcgUSA0dZRBoaEgoyMDI2LTEyLTA0agUSA0dZRHIFEgNKRURCAQFIAZgBAQ==&hl=ar&curr=SAR"
       },
       {
        "date": "2026-11-29",
@@ -1733,13 +1723,13 @@
       },
       {
        "date": "2026-12-04",
-       "price": 1008.75,
-       "destination": "DOH",
-       "destination_name": "الدوحة",
+       "price": 873.75,
+       "destination": "DXB",
+       "destination_name": "دبي",
        "verified": false,
-       "ret": "2026-12-09",
-       "link": "https://www.aviasales.com/search/JED0412DOH09121?t=XY17963997001796408400000145JEDDOH17968440001796853900000165DOHJED_821d6153212fc8d1fb080501717358c2_21946&search_date=03112026&expected_price_uuid=01a1a23b-5170-8031-697c-c2a3bcccb1cd&static_fare_key=TY%7CP0%7CH1%7CL0%7CCH0%7CR0%7CTBC0&itinerary_key=FjXlJYbyU5gZRqP2zXDnNQ&expected_price_source=share&expected_price_currency=usd&expected_price=269",
-       "google_link": "https://www.google.com/travel/flights/search?tfs=GhoSCjIwMjYtMTItMDRqBRIDSkVEcgUSA0RPSBoaEgoyMDI2LTEyLTA5agUSA0RPSHIFEgNKRURCAQFIAZgBAQ==&hl=ar&curr=SAR"
+       "ret": "2026-12-07",
+       "link": "https://www.aviasales.com/search/JED0412DXB07121?t=SV17963640001796377500000165JEDDXB17966844001796692200000190DXBJED_d636da2633e3673ce813d021beaf921b_19162&search_date=09112026&expected_price_uuid=01a1c00d-5ddd-8030-2fbc-664724f5fb22&static_fare_key=TY%7CP0%7CH1%7CL0%7CCH0%7CR0%7CTBC0&itinerary_key=uuJpYWY-Y1AVqsV3CwuJqw&expected_price_source=share&expected_price_currency=usd&expected_price=233",
+       "google_link": "https://www.google.com/travel/flights/search?tfs=GhoSCjIwMjYtMTItMDRqBRIDSkVEcgUSA0RYQhoaEgoyMDI2LTEyLTA3agUSA0RYQnIFEgNKRURCAQFIAZgBAQ==&hl=ar&curr=SAR"
       },
       {
        "date": "2026-12-05",
@@ -1763,13 +1753,13 @@
       },
       {
        "date": "2026-12-07",
-       "price": 1286.25,
-       "destination": "BAK",
-       "destination_name": "باكو",
+       "price": 1020.0,
+       "destination": "HMB",
+       "destination_name": "سوهاج",
        "verified": false,
-       "ret": "2026-12-14",
-       "link": "https://www.aviasales.com/search/JED0712BAK14121?t=XY17966253001796644800000265JEDGYD17972532001797266100000275GYDJED_e9924e711ca76050f15b8b4862ae2ac0_28275&search_date=10112026&expected_price_uuid=01a1c37e-aa97-8031-2d6f-6ec41cc141a5&static_fare_key=TY%7CP0%7CH1%7CL0%7CCH0%7CR0%7CTBC0&itinerary_key=MeHgcb6sv_RGFWoZJWduFw&expected_price_source=share&expected_price_currency=usd&expected_price=343",
-       "google_link": "https://www.google.com/travel/flights/search?tfs=GhoSCjIwMjYtMTItMDdqBRIDSkVEcgUSA0dZRBoaEgoyMDI2LTEyLTE0agUSA0dZRHIFEgNKRURCAQFIAZgBAQ==&hl=ar&curr=SAR"
+       "ret": "2026-12-10",
+       "link": "https://www.aviasales.com/search/JED0712HMB10121?t=SM17966874001796690400000110JEDHMB17969061001796916000000105HMBJED_55205ae96c80bca18c141159f83f62c5_22516&search_date=10112026&expected_price_uuid=01a1c549-41f8-8040-ae83-2d4cb0411757&static_fare_key=TY%7CP0%7CH1%7CL1_1_30%7CCH0%7CR0%7CTBC1&itinerary_key=C_TUshs-k1KhqfTBZBYwrw&expected_price_source=share&expected_price_currency=usd&expected_price=272",
+       "google_link": "https://www.google.com/travel/flights/search?tfs=GhoSCjIwMjYtMTItMDdqBRIDSkVEcgUSA0hNQhoaEgoyMDI2LTEyLTEwagUSA0hNQnIFEgNKRURCAQFIAZgBAQ==&hl=ar&curr=SAR"
       },
       {
        "date": "2026-12-08",
@@ -1803,13 +1793,13 @@
       },
       {
        "date": "2026-12-11",
-       "price": 431.25,
-       "destination": "DMM",
-       "destination_name": "الدمام",
+       "price": 1290.0,
+       "destination": "BAK",
+       "destination_name": "باكو",
        "verified": false,
-       "ret": "2026-12-16",
-       "link": "https://www.aviasales.com/search/JED1112DMM16121?t=F317969940001797000900000115JEDDMM17974170001797425400000140DMMJED_fd63dd3492c57eba83380fca450a227f_9396&search_date=03112026&expected_price_uuid=01a1a19b-c2ea-8040-2672-1500aae52e14&static_fare_key=TY%7CP0%7CH1%7CL0%7CCH0%7CR0%7CTBC0&itinerary_key=AUgZ7OWDYC3URSLOaPjBdw&expected_price_source=share&expected_price_currency=usd&expected_price=115",
-       "google_link": "https://www.google.com/travel/flights/search?tfs=GhoSCjIwMjYtMTItMTFqBRIDSkVEcgUSA0RNTRoaEgoyMDI2LTEyLTE2agUSA0RNTXIFEgNKRURCAQFIAZgBAQ==&hl=ar&curr=SAR"
+       "ret": "2026-12-14",
+       "link": "https://www.aviasales.com/search/JED1112BAK14121?t=XY17969709001796990400000265JEDGYD17972532001797266100000275GYDJED_5c8e5a36375d420313fe6705247565db_28342&search_date=09112026&expected_price_uuid=01a1c186-63a0-8031-26d6-3249bb623c8e&static_fare_key=TY%7CP0%7CH1%7CL0%7CCH0%7CR0%7CTBC0&itinerary_key=0f7h_cxtJlEICjTNbEJgPQ&expected_price_source=share&expected_price_currency=usd&expected_price=344",
+       "google_link": "https://www.google.com/travel/flights/search?tfs=GhoSCjIwMjYtMTItMTFqBRIDSkVEcgUSA0dZRBoaEgoyMDI2LTEyLTE0agUSA0dZRHIFEgNKRURCAQFIAZgBAQ==&hl=ar&curr=SAR"
       },
       {
        "date": "2026-12-12",
@@ -1923,13 +1913,13 @@
       },
       {
        "date": "2026-12-29",
-       "price": 1128.75,
-       "destination": "DOH",
-       "destination_name": "الدوحة",
+       "price": 1837.5,
+       "destination": "DEL",
+       "destination_name": "دلهي",
        "verified": false,
-       "ret": "2027-01-03",
-       "link": "https://www.aviasales.com/search/JED2912DOH03011?t=EY17985234001798555500000535JEDAUHDOH17989731001798993200000335DOHAUHJED_5e3e2806cbe31ad3a169ae971634a6d7_24556&search_date=04112026&expected_price_uuid=01a1a557-30e8-8030-e7e5-68a6069e60eb&static_fare_key=TY%7CP0%7CH1%7CL0%7CCH0%7CR0%7CTBC0&itinerary_key=uJmk3gFCZ_8-wd6b_EOePQ&expected_price_source=share&expected_price_currency=usd&expected_price=301",
-       "google_link": "https://www.google.com/travel/flights/search?tfs=GhoSCjIwMjYtMTItMjlqBRIDSkVEcgUSA0RPSBoaEgoyMDI3LTAxLTAzagUSA0RPSHIFEgNKRURCAQFIAZgBAQ==&hl=ar&curr=SAR"
+       "ret": "2027-01-05",
+       "link": "https://www.aviasales.com/search/JED2912DEL05011?t=IX17985693001798612800000575JEDDMMDEL17991768001799226600000980DELIXEJED_8e223302349b062670275b55e7f378ab_40336&search_date=09112026&expected_price_uuid=01a1c07c-4cb2-8031-6e65-1d70648c0a6b&static_fare_key=TY%7CP0%7CH1%7CL0%7CCH0%7CR0%7CTBC0&itinerary_key=D7ssB3gzNwqumhwQN491Mg&expected_price_source=share&expected_price_currency=usd&expected_price=490",
+       "google_link": "https://www.google.com/travel/flights/search?tfs=GhoSCjIwMjYtMTItMjlqBRIDSkVEcgUSA0RFTBoaEgoyMDI3LTAxLTA1agUSA0RFTHIFEgNKRURCAQFIAZgBAQ==&hl=ar&curr=SAR"
       },
       {
        "date": "2026-12-31",
@@ -1943,9 +1933,9 @@
       }
      ],
      "cheapest": {
-      "date": "2026-12-11",
-      "label": "الجمعة 11 ديسمبر 2026",
-      "price": 431.25
+      "date": "2026-12-17",
+      "label": "الخميس 17 ديسمبر 2026",
+      "price": 502.5
      }
     },
     {
@@ -2064,12 +2054,12 @@
       },
       {
        "date": "2027-01-20",
-       "price": 1653.75,
+       "price": 1736.25,
        "destination": "ISB",
        "destination_name": "إسلام آباد",
        "verified": false,
        "ret": "2027-01-27",
-       "link": "https://www.aviasales.com/search/JED2001ISB27011?t=SV18004686001800492600000280JEDISB18010173001801030500000340ISBJED_4489f39de0bd831f8d43d5633749d399_36130&search_date=07112026&expected_price_uuid=01a1b4e9-ce99-8040-a7f2-c616eb821dba&static_fare_key=TY%7CP0%7CH1%7CL1_1_23%7CCH1%7CR1%7CTBC1&itinerary_key=BVN6DDa8l2q8YWC-JbUchg&expected_price_source=share&expected_price_currency=usd&expected_price=441",
+       "link": "https://www.aviasales.com/search/JED2001ISB27011?t=EK18004437001800495000000735JEDDXBISB18010404001801073100000665ISBDXBJED_63f5e9d84b34ea59e655e6c7bfad27e3_38367&search_date=11112026&expected_price_uuid=01a1ca00-bd52-8030-664d-a39b79d6c6c2&static_fare_key=TY%7CP0%7CH1%7CL1_1_25%7CCH0%7CR0%7CTBC1&itinerary_key=q1I2BcsMamqOr9ANHCu_hw&expected_price_source=share&expected_price_currency=usd&expected_price=463",
        "google_link": "https://www.google.com/travel/flights/search?tfs=GhoSCjIwMjctMDEtMjBqBRIDSkVEcgUSA0lTQhoaEgoyMDI3LTAxLTI3agUSA0lTQnIFEgNKRURCAQFIAZgBAQ==&hl=ar&curr=SAR"
       },
       {
@@ -2084,13 +2074,13 @@
       },
       {
        "date": "2027-01-25",
-       "price": 1548.75,
-       "destination": "TAS",
-       "destination_name": "طشقند",
+       "price": 1687.5,
+       "destination": "NBO",
+       "destination_name": "نيروبي",
        "verified": false,
-       "ret": "2027-01-31",
-       "link": "https://www.aviasales.com/search/JED2501TAS31011?t=RJ18009108001801025400001790JEDAMMTAS18013782001801425600000910TASAMMJED_3b7b610c7eb577e12d4684456f59ad4a_33654&search_date=03112026&expected_price_uuid=01a1a19c-471b-8040-add2-c3ec4ceb3192&static_fare_key=TY%7CP0%7CH1%7CL1_1_30%7CCH1%7CR0%7CTBC1&itinerary_key=a3tATcVLbb93RG1z3hE9gg&expected_price_source=share&expected_price_currency=usd&expected_price=413",
-       "google_link": "https://www.google.com/travel/flights/search?tfs=GhoSCjIwMjctMDEtMjVqBRIDSkVEcgUSA1RBUxoaEgoyMDI3LTAxLTMxagUSA1RBU3IFEgNKRURCAQFIAZgBAQ==&hl=ar&curr=SAR"
+       "ret": "2027-01-29",
+       "link": "https://www.aviasales.com/search/JED2501NBO29011?t=ET18008520001800882600000510JEDADDNBO18012435001801276800000555NBOADDJED_e1afacffe7836677b7a8f77ca3c8772f_36858&search_date=07112026&expected_price_uuid=01a1b642-8471-8031-22dc-8cb3496efb08&static_fare_key=TY%7CP1%7CH1%7CL1_2_46%7CCH0%7CR0%7CTBC1&itinerary_key=mARoI9WOMVdlXirb7jgORw&expected_price_source=share&expected_price_currency=usd&expected_price=450",
+       "google_link": "https://www.google.com/travel/flights/search?tfs=GhoSCjIwMjctMDEtMjVqBRIDSkVEcgUSA05CTxoaEgoyMDI3LTAxLTI5agUSA05CT3IFEgNKRURCAQFIAZgBAQ==&hl=ar&curr=SAR"
       },
       {
        "date": "2027-01-27",
@@ -2185,10 +2175,10 @@
       },
       {
        "date": "2027-02-14",
-       "price": 378.0,
+       "price": 405.0,
        "destination": "DMM",
        "destination_name": "الدمام",
-       "verified": true,
+       "verified": false,
        "ret": "2027-02-21",
        "link": "https://www.aviasales.com/search/JED1402DMM21021?t=XY18025974001802604300000115JEDDMM18032235001803232200000145DMMJED_1ec51681cdb3d9e77a0c0ba737ae92e6_8821&search_date=04112026&expected_price_uuid=01a1a705-6a5a-8031-2ee9-f897fc0163b5&static_fare_key=TY%7CP0%7CH1%7CL0%7CCH0%7CR0%7CTBC0&itinerary_key=0tYI6PqYWVriIIdbTxinRg&expected_price_source=share&expected_price_currency=usd&expected_price=108",
        "google_link": "https://www.google.com/travel/flights/search?tfs=GhoSCjIwMjctMDItMTRqBRIDSkVEcgUSA0RNTRoaEgoyMDI3LTAyLTIxagUSA0RNTXIFEgNKRURCAQFIAZgBAQ==&hl=ar&curr=SAR"
@@ -2227,7 +2217,7 @@
      "cheapest": {
       "date": "2027-02-14",
       "label": "الأحد 14 فبراير 2027",
-      "price": 378.0
+      "price": 405.0
      }
     },
     {
@@ -2263,16 +2253,6 @@
        "ret": "2027-03-11",
        "link": "https://www.aviasales.com/search/JED0403KHI11031?t=EK18041340001804242600001690JEDDXBKHI18047823001804818600000725KHIDXBJED_8444b4c76594cdfcd1c6ffeb6844e9f3_35483&search_date=07112026&expected_price_uuid=01a1b79f-31d2-8030-24bd-a826a232d046&static_fare_key=TY%7CP0%7CH1%7CL1_1_25%7CCH0%7CR0%7CTBC1&itinerary_key=dPn24OkzH7SJOlLy36BDBg&expected_price_source=share&expected_price_currency=usd&expected_price=433",
        "google_link": "https://www.google.com/travel/flights/search?tfs=GhoSCjIwMjctMDMtMDRqBRIDSkVEcgUSA0tISRoaEgoyMDI3LTAzLTExagUSA0tISXIFEgNKRURCAQFIAZgBAQ==&hl=ar&curr=SAR"
-      },
-      {
-       "date": "2027-03-07",
-       "price": 2182.5,
-       "destination": "LXR",
-       "destination_name": "الأقصر",
-       "verified": false,
-       "ret": "2027-03-10",
-       "link": "https://www.aviasales.com/search/JED0703LXR10031?t=MS18044022001804404600000100JEDLXR18046662001804714800000750LXRCAIJED_3f3bd534ede7c28fac9e74d5a76f4186_47550&search_date=04112026&expected_price_uuid=01a1a444-5da9-8040-273e-552fb28e3d78&static_fare_key=TY%7CP0%7CH0%7CL1_1_23%7CCH0%7CR0%7CTBC1&itinerary_key=gl1WY1_qFrEYLzLYeEon2g&expected_price_source=share&expected_price_currency=usd&expected_price=582",
-       "google_link": "https://www.google.com/travel/flights/search?tfs=GhoSCjIwMjctMDMtMDdqBRIDSkVEcgUSA0xYUhoaEgoyMDI3LTAzLTEwagUSA0xYUnIFEgNKRURCAQFIAZgBAQ==&hl=ar&curr=SAR"
       },
       {
        "date": "2027-03-10",
@@ -2336,16 +2316,6 @@
      "label": "أبريل 2027",
      "days": [
       {
-       "date": "2027-04-01",
-       "price": 1942.5,
-       "destination": "CGN",
-       "destination_name": "كولون",
-       "verified": false,
-       "ret": "2027-04-04",
-       "link": "https://www.aviasales.com/search/JED0104CGN04041?t=EW18066009001806694800001625JEDESBCGN18068817001806906000000345CGNJED_7915018f824568c990bbe9f8b96fcb56_42337&search_date=04112026&expected_price_uuid=01a1a5a1-1ee2-8030-6f1c-01321a10ced0&static_fare_key=TY%7CP0%7CH0%7CL0%7CCH0%7CR0%7CTBC0&itinerary_key=oa2alGL-DVn7qIxWqshspQ&expected_price_source=share&expected_price_currency=usd&expected_price=518",
-       "google_link": "https://www.google.com/travel/flights/search?tfs=GhoSCjIwMjctMDQtMDFqBRIDSkVEcgUSA0NHThoaEgoyMDI3LTA0LTA0agUSA0NHTnIFEgNKRURCAQFIAZgBAQ==&hl=ar&curr=SAR"
-      },
-      {
        "date": "2027-04-03",
        "price": 1852.5,
        "destination": "AMS",
@@ -2383,20 +2353,20 @@
      "label": "يونيو 2027",
      "days": [
       {
-       "date": "2027-06-17",
-       "price": 1188.75,
-       "destination": "IZM",
-       "destination_name": "إزمير",
+       "date": "2027-06-02",
+       "price": 3071.25,
+       "destination": "MCX",
+       "destination_name": "ماخاك كالا",
        "verified": false,
-       "ret": "2027-06-20",
-       "link": "https://www.aviasales.com/search/JED1706IZM20061?t=VF18132072001813248600000690JEDESBADB18135261001813549200000385ADBESBJED_103bf58f92b5030965989ec6be8d2c24_25912&search_date=04112026&expected_price_uuid=01a1a4f9-ff62-8040-66f2-6fdf0695cae3&static_fare_key=TY%7CP0%7CH0%7CL0%7CCH0%7CR0%7CTBC0&itinerary_key=s6ymsua1qhmMOo_v3-b9TA&expected_price_source=share&expected_price_currency=usd&expected_price=317",
-       "google_link": "https://www.google.com/travel/flights/search?tfs=GhoSCjIwMjctMDYtMTdqBRIDSkVEcgUSA0FEQhoaEgoyMDI3LTA2LTIwagUSA0FEQnIFEgNKRURCAQFIAZgBAQ==&hl=ar&curr=SAR"
+       "ret": "2027-06-09",
+       "link": "https://www.aviasales.com/search/JED0206MCX09061?t=FZ18119670001812075600001810JEDDXBMCX18125112001812563100000865MCXDXBJED_f8de9140263a33cbfad3103768fc85ec_66987&search_date=04112026&expected_price_uuid=01a1a8e3-73a9-8031-6d0d-ef57534b78f0&static_fare_key=TY%7CP0%7CH1%7CL1_1_25%7CCH0%7CR0%7CTBC1&itinerary_key=xdZJiqShOkuM3swfKdl2JQ&expected_price_source=share&expected_price_currency=usd&expected_price=819",
+       "google_link": "https://www.google.com/travel/flights/search?tfs=GhoSCjIwMjctMDYtMDJqBRIDSkVEcgUSA01DWBoaEgoyMDI3LTA2LTA5agUSA01DWHIFEgNKRURCAQFIAZgBAQ==&hl=ar&curr=SAR"
       }
      ],
      "cheapest": {
-      "date": "2027-06-17",
-      "label": "الخميس 17 يونيو 2027",
-      "price": 1188.75
+      "date": "2027-06-02",
+      "label": "الأربعاء 2 يونيو 2027",
+      "price": 3071.25
      }
     }
    ],
@@ -2524,10 +2494,16 @@
     {
      "d": "2026-11-10",
      "p": 378.0
+    },
+    {
+     "d": "2026-11-11",
+     "p": 405.0
     }
    ],
    "live_checked": 3,
-   "live_errors": [],
+   "live_errors": [
+    "JED→DMM 2027-02-14: FlightsNotFound: no flights found; received error"
+   ],
    "errors": []
   },
   {
@@ -2582,134 +2558,48 @@
     "source": "aviasales",
     "origin": "DMM",
     "destination": "MED",
-    "depart": "2026-12-06",
-    "price": 428.0,
-    "ret": "2026-12-15",
+    "depart": "2026-11-28",
+    "price": 502.5,
+    "ret": "2026-12-06",
     "origin_airport": "DMM",
     "destination_airport": "MED",
-    "airline": "XY",
-    "flight_number": "735",
+    "airline": "SV",
+    "flight_number": "8023",
     "transfers": 0,
     "return_transfers": 0,
-    "duration": 240,
-    "link": "https://www.aviasales.com/search/DMM0612MED15121?t=XY17965824001796590800000140DMMMED17973315001797337500000100MEDDMM_b63f00ce67a6779c33f1e99ddbc3604d_9132&search_date=09112026&expected_price_uuid=01a1c211-20b4-8040-6a78-f0fdc2a3d487&static_fare_key=TY%7CP0%7CH1%7CL0%7CCH0%7CR0%7CTBC0&itinerary_key=lPOHtHLBeZ91vrrBsJT9LQ&expected_price_source=share&expected_price_currency=usd&expected_price=111",
-    "google_link": "https://www.google.com/travel/flights/search?tfs=GhoSCjIwMjYtMTItMDZqBRIDRE1NcgUSA01FRBoaEgoyMDI2LTEyLTE1agUSA01FRHIFEgNETU1CAgEBSAGYAQE=&hl=ar&curr=SAR",
-    "verified": true,
-    "cached_price": 416.25,
+    "duration": 215,
+    "link": "https://www.aviasales.com/search/DMM2811MED06121?t=SV17958408001795847700000115DMMMED17965539001796559900000100MEDDMM_285f43fe6240fafb403106abdb2673c0_11003&search_date=09112026&expected_price_uuid=01a1c038-2d28-8030-6784-555c96811ff1&static_fare_key=TY%7CP0%7CH1%7CL0%7CCH0%7CR0%7CTBC0&itinerary_key=gOQ5GP8-UJmBnDuCa8UCrA&expected_price_source=share&expected_price_currency=usd&expected_price=134",
+    "google_link": "https://www.google.com/travel/flights/search?tfs=GhoSCjIwMjYtMTEtMjhqBRIDRE1NcgUSA01FRBoaEgoyMDI2LTEyLTA2agUSA01FRHIFEgNETU1CAgEBSAGYAQE=&hl=ar&curr=SAR",
+    "verified": false,
+    "cached_price": null,
     "compare_links": [
      {
       "name": "Trip.com",
-      "url": "https://www.trip.com/flights/dammam-to-medina/tickets-dmm-med/?ddate=2026-12-06&rdate=2026-12-15&flighttype=d"
+      "url": "https://www.trip.com/flights/dammam-to-medina/tickets-dmm-med/?ddate=2026-11-28&rdate=2026-12-06&flighttype=d"
      },
      {
       "name": "Skyscanner",
-      "url": "https://www.skyscanner.net/transport/flights/dmm/med/261206/261215/?adultsv2=2&cabinclass=economy"
+      "url": "https://www.skyscanner.net/transport/flights/dmm/med/261128/261206/?adultsv2=2&cabinclass=economy"
      },
      {
       "name": "Kayak",
-      "url": "https://www.kayak.com/flights/DMM-MED/2026-12-06/2026-12-15?sort=price_a"
+      "url": "https://www.kayak.com/flights/DMM-MED/2026-11-28/2026-12-06?sort=price_a"
      }
     ],
     "discount_name": null,
     "discount_price": null,
     "discount_for_alerts": false,
-    "stay": 9,
+    "stay": 8,
     "origin_name": "الدمام",
     "destination_name": "المدينة المنورة",
-    "airline_name": "طيران ناس",
+    "airline_name": "السعودية",
     "stops": "مباشر",
-    "depart_label": "الأحد 6 ديسمبر 2026",
-    "ret_label": "الثلاثاء 15 ديسمبر 2026"
+    "depart_label": "السبت 28 نوفمبر 2026",
+    "ret_label": "الأحد 6 ديسمبر 2026"
    },
-   "previous": 517.5,
+   "previous": 428.0,
    "all_time_low": 420.0,
    "top": [
-    {
-     "source": "aviasales",
-     "origin": "DMM",
-     "destination": "MED",
-     "depart": "2026-12-06",
-     "price": 428.0,
-     "ret": "2026-12-15",
-     "origin_airport": "DMM",
-     "destination_airport": "MED",
-     "airline": "XY",
-     "flight_number": "735",
-     "transfers": 0,
-     "return_transfers": 0,
-     "duration": 240,
-     "link": "https://www.aviasales.com/search/DMM0612MED15121?t=XY17965824001796590800000140DMMMED17973315001797337500000100MEDDMM_b63f00ce67a6779c33f1e99ddbc3604d_9132&search_date=09112026&expected_price_uuid=01a1c211-20b4-8040-6a78-f0fdc2a3d487&static_fare_key=TY%7CP0%7CH1%7CL0%7CCH0%7CR0%7CTBC0&itinerary_key=lPOHtHLBeZ91vrrBsJT9LQ&expected_price_source=share&expected_price_currency=usd&expected_price=111",
-     "google_link": "https://www.google.com/travel/flights/search?tfs=GhoSCjIwMjYtMTItMDZqBRIDRE1NcgUSA01FRBoaEgoyMDI2LTEyLTE1agUSA01FRHIFEgNETU1CAgEBSAGYAQE=&hl=ar&curr=SAR",
-     "verified": true,
-     "cached_price": 416.25,
-     "compare_links": [
-      {
-       "name": "Trip.com",
-       "url": "https://www.trip.com/flights/dammam-to-medina/tickets-dmm-med/?ddate=2026-12-06&rdate=2026-12-15&flighttype=d"
-      },
-      {
-       "name": "Skyscanner",
-       "url": "https://www.skyscanner.net/transport/flights/dmm/med/261206/261215/?adultsv2=2&cabinclass=economy"
-      },
-      {
-       "name": "Kayak",
-       "url": "https://www.kayak.com/flights/DMM-MED/2026-12-06/2026-12-15?sort=price_a"
-      }
-     ],
-     "discount_name": null,
-     "discount_price": null,
-     "discount_for_alerts": false,
-     "stay": 9,
-     "origin_name": "الدمام",
-     "destination_name": "المدينة المنورة",
-     "airline_name": "طيران ناس",
-     "stops": "مباشر",
-     "depart_label": "الأحد 6 ديسمبر 2026",
-     "ret_label": "الثلاثاء 15 ديسمبر 2026"
-    },
-    {
-     "source": "aviasales",
-     "origin": "JED",
-     "destination": "MED",
-     "depart": "2026-11-18",
-     "price": 491.25,
-     "ret": "2026-12-04",
-     "origin_airport": "JED",
-     "destination_airport": "MED",
-     "airline": "SV",
-     "flight_number": "8004",
-     "transfers": 0,
-     "return_transfers": 0,
-     "duration": 130,
-     "link": "https://www.aviasales.com/search/JED1811MED04121?t=SV17950050001795008600000060JEDMED17964123001796416500000070MEDJED_2f131ccb9aff6638e30ea2fce71c31d5_10659&search_date=03112026&expected_price_uuid=01a1a25f-774a-8031-2a3d-0f7afef081ce&static_fare_key=TY%7CP0%7CH1%7CL0%7CCH0%7CR0%7CTBC0&itinerary_key=gIvhkiqP1vwUpkwnkik-Dw&expected_price_source=share&expected_price_currency=usd&expected_price=131",
-     "google_link": "https://www.google.com/travel/flights/search?tfs=GhoSCjIwMjYtMTEtMThqBRIDSkVEcgUSA01FRBoaEgoyMDI2LTEyLTA0agUSA01FRHIFEgNKRURCAgEBSAGYAQE=&hl=ar&curr=SAR",
-     "verified": false,
-     "cached_price": null,
-     "compare_links": [
-      {
-       "name": "Trip.com",
-       "url": "https://www.trip.com/flights/jeddah-to-medina/tickets-jed-med/?ddate=2026-11-18&rdate=2026-12-04&flighttype=d"
-      },
-      {
-       "name": "Skyscanner",
-       "url": "https://www.skyscanner.net/transport/flights/jed/med/261118/261204/?adultsv2=2&cabinclass=economy"
-      },
-      {
-       "name": "Kayak",
-       "url": "https://www.kayak.com/flights/JED-MED/2026-11-18/2026-12-04?sort=price_a"
-      }
-     ],
-     "discount_name": null,
-     "discount_price": null,
-     "discount_for_alerts": false,
-     "stay": 16,
-     "origin_name": "جدة",
-     "destination_name": "المدينة المنورة",
-     "airline_name": "السعودية",
-     "stops": "مباشر",
-     "depart_label": "الأربعاء 18 نوفمبر 2026",
-     "ret_label": "الجمعة 4 ديسمبر 2026"
-    },
     {
      "source": "aviasales",
      "origin": "DMM",
@@ -2800,6 +2690,49 @@
      "source": "aviasales",
      "origin": "JED",
      "destination": "MED",
+     "depart": "2027-01-10",
+     "price": 510.0,
+     "ret": "2027-01-21",
+     "origin_airport": "JED",
+     "destination_airport": "MED",
+     "airline": "SV",
+     "flight_number": "1428",
+     "transfers": 0,
+     "return_transfers": 0,
+     "duration": 130,
+     "link": "https://www.aviasales.com/search/JED1001MED21011?t=SV17996022001799605800000060JEDMED18005268001800531000000070MEDJED_8afaf2b62e5419a10856f02f32b326d2_11280&search_date=10112026&expected_price_uuid=01a1c717-e1f5-8030-2573-32659dc6e263&static_fare_key=TY%7CP0%7CH1%7CL0%7CCH0%7CR0%7CTBC0&itinerary_key=vHSkcCmRYfeCvjDcoctxIg&expected_price_source=share&expected_price_currency=usd&expected_price=136",
+     "google_link": "https://www.google.com/travel/flights/search?tfs=GhoSCjIwMjctMDEtMTBqBRIDSkVEcgUSA01FRBoaEgoyMDI3LTAxLTIxagUSA01FRHIFEgNKRURCAgEBSAGYAQE=&hl=ar&curr=SAR",
+     "verified": false,
+     "cached_price": null,
+     "compare_links": [
+      {
+       "name": "Trip.com",
+       "url": "https://www.trip.com/flights/jeddah-to-medina/tickets-jed-med/?ddate=2027-01-10&rdate=2027-01-21&flighttype=d"
+      },
+      {
+       "name": "Skyscanner",
+       "url": "https://www.skyscanner.net/transport/flights/jed/med/270110/270121/?adultsv2=2&cabinclass=economy"
+      },
+      {
+       "name": "Kayak",
+       "url": "https://www.kayak.com/flights/JED-MED/2027-01-10/2027-01-21?sort=price_a"
+      }
+     ],
+     "discount_name": null,
+     "discount_price": null,
+     "discount_for_alerts": false,
+     "stay": 11,
+     "origin_name": "جدة",
+     "destination_name": "المدينة المنورة",
+     "airline_name": "السعودية",
+     "stops": "مباشر",
+     "depart_label": "الأحد 10 يناير 2027",
+     "ret_label": "الخميس 21 يناير 2027"
+    },
+    {
+     "source": "aviasales",
+     "origin": "JED",
+     "destination": "MED",
      "depart": "2026-11-23",
      "price": 517.5,
      "ret": "2026-12-02",
@@ -2842,33 +2775,33 @@
     {
      "source": "aviasales",
      "origin": "JED",
-     "destination": "MED",
-     "depart": "2026-12-20",
+     "destination": "ANK",
+     "depart": "2026-12-04",
      "price": 738.75,
-     "ret": "2027-01-03",
+     "ret": "2026-12-18",
      "origin_airport": "JED",
-     "destination_airport": "MED",
-     "airline": "F3",
-     "flight_number": "309",
-     "transfers": 1,
+     "destination_airport": "ESB",
+     "airline": "VF",
+     "flight_number": "568",
+     "transfers": 0,
      "return_transfers": 0,
-     "duration": 665,
-     "link": "https://www.aviasales.com/search/JED2012MED03011?t=F317977716001797807300000595JEDDMMMED17989716001798975800000070MEDJED_251bb29413f0f7bf64a58ee9751f36a8_16097&search_date=03112026&expected_price_uuid=01a1a1e9-44f3-8030-64bf-fcc9ba75c032&static_fare_key=TY%7CP0%7CH1%7CL0%7CCH0%7CR0%7CTBC0&itinerary_key=jjihBWM-MiDX2jqZBOJ8Zg&expected_price_source=share&expected_price_currency=usd&expected_price=197",
-     "google_link": "https://www.google.com/travel/flights/search?tfs=GhoSCjIwMjYtMTItMjBqBRIDSkVEcgUSA01FRBoaEgoyMDI3LTAxLTAzagUSA01FRHIFEgNKRURCAgEBSAGYAQE=&hl=ar&curr=SAR",
+     "duration": 425,
+     "link": "https://www.aviasales.com/search/JED0412ANK18121?t=VF17963643001796376900000210JEDESB17975994001797612300000215ESBJED_35180e96d4f24315b990f8039e4ca946_16113&search_date=08112026&expected_price_uuid=01a1ba1c-303c-8031-2ea3-cdadce3173e1&static_fare_key=TY%7CP1%7CH0%7CL0%7CCH0%7CR0%7CTBC0&itinerary_key=_mTSFj_ZEjnhrmhrO0sRoA&expected_price_source=share&expected_price_currency=usd&expected_price=197",
+     "google_link": "https://www.google.com/travel/flights/search?tfs=GhoSCjIwMjYtMTItMDRqBRIDSkVEcgUSA0VTQhoaEgoyMDI2LTEyLTE4agUSA0VTQnIFEgNKRURCAgEBSAGYAQE=&hl=ar&curr=SAR",
      "verified": false,
      "cached_price": null,
      "compare_links": [
       {
        "name": "Trip.com",
-       "url": "https://www.trip.com/flights/jeddah-to-medina/tickets-jed-med/?ddate=2026-12-20&rdate=2027-01-03&flighttype=d"
+       "url": "https://www.trip.com/flights/jeddah-to-ankara/tickets-jed-esb/?ddate=2026-12-04&rdate=2026-12-18&flighttype=d"
       },
       {
        "name": "Skyscanner",
-       "url": "https://www.skyscanner.net/transport/flights/jed/med/261220/270103/?adultsv2=2&cabinclass=economy"
+       "url": "https://www.skyscanner.net/transport/flights/jed/esb/261204/261218/?adultsv2=2&cabinclass=economy"
       },
       {
        "name": "Kayak",
-       "url": "https://www.kayak.com/flights/JED-MED/2026-12-20/2027-01-03?sort=price_a"
+       "url": "https://www.kayak.com/flights/JED-ESB/2026-12-04/2026-12-18?sort=price_a"
       }
      ],
      "discount_name": null,
@@ -2876,11 +2809,97 @@
      "discount_for_alerts": false,
      "stay": 14,
      "origin_name": "جدة",
-     "destination_name": "المدينة المنورة",
+     "destination_name": "أنقرة",
+     "airline_name": "VF",
+     "stops": "مباشر",
+     "depart_label": "الجمعة 4 ديسمبر 2026",
+     "ret_label": "الجمعة 18 ديسمبر 2026"
+    },
+    {
+     "source": "aviasales",
+     "origin": "JED",
+     "destination": "IST",
+     "depart": "2026-12-02",
+     "price": 832.5,
+     "ret": "2026-12-11",
+     "origin_airport": "JED",
+     "destination_airport": "SAW",
+     "airline": "PC",
+     "flight_number": "695",
+     "transfers": 0,
+     "return_transfers": 0,
+     "duration": 475,
+     "link": "https://www.aviasales.com/search/JED0212IST11121?t=PC17961774001796191800000240JEDSAW17970282001797042300000235SAWJED_24263677c3db5b19af1a5e3cc8dae41b_18154&search_date=07112026&expected_price_uuid=01a1b434-35fe-8030-af0f-af23c0654d0e&static_fare_key=TY%7CP1%7CH0%7CL0%7CCH0%7CR0%7CTBC0&itinerary_key=NnSC1xLYiQFVzZLfPhr5OQ&expected_price_source=share&expected_price_currency=usd&expected_price=222",
+     "google_link": "https://www.google.com/travel/flights/search?tfs=GhoSCjIwMjYtMTItMDJqBRIDSkVEcgUSA1NBVxoaEgoyMDI2LTEyLTExagUSA1NBV3IFEgNKRURCAgEBSAGYAQE=&hl=ar&curr=SAR",
+     "verified": false,
+     "cached_price": null,
+     "compare_links": [
+      {
+       "name": "Trip.com",
+       "url": "https://www.trip.com/flights/jeddah-to-istanbul/tickets-jed-saw/?ddate=2026-12-02&rdate=2026-12-11&flighttype=d"
+      },
+      {
+       "name": "Skyscanner",
+       "url": "https://www.skyscanner.net/transport/flights/jed/saw/261202/261211/?adultsv2=2&cabinclass=economy"
+      },
+      {
+       "name": "Kayak",
+       "url": "https://www.kayak.com/flights/JED-SAW/2026-12-02/2026-12-11?sort=price_a"
+      }
+     ],
+     "discount_name": null,
+     "discount_price": null,
+     "discount_for_alerts": false,
+     "stay": 9,
+     "origin_name": "جدة",
+     "destination_name": "إسطنبول",
+     "airline_name": "بيغاسوس",
+     "stops": "مباشر",
+     "depart_label": "الأربعاء 2 ديسمبر 2026",
+     "ret_label": "الجمعة 11 ديسمبر 2026"
+    },
+    {
+     "source": "aviasales",
+     "origin": "JED",
+     "destination": "HMB",
+     "depart": "2027-01-09",
+     "price": 858.75,
+     "ret": "2027-01-20",
+     "origin_airport": "JED",
+     "destination_airport": "HMB",
+     "airline": "F3",
+     "flight_number": "779",
+     "transfers": 0,
+     "return_transfers": 0,
+     "duration": 220,
+     "link": "https://www.aviasales.com/search/JED0901HMB20011?t=F317994774001799481000000120JEDHMB18004839001800493500000100HMBJED_cf6e56585690ea07659f4f9f38a59ddb_19043&search_date=10112026&expected_price_uuid=01a1c6e9-03d7-8040-a9c3-ba7e92ee913c&static_fare_key=TY%7CP0%7CH1%7CL0%7CCH0%7CR0%7CTBC0&itinerary_key=gbwqH6xPnFEI8VX0eDnVfQ&expected_price_source=share&expected_price_currency=usd&expected_price=229",
+     "google_link": "https://www.google.com/travel/flights/search?tfs=GhoSCjIwMjctMDEtMDlqBRIDSkVEcgUSA0hNQhoaEgoyMDI3LTAxLTIwagUSA0hNQnIFEgNKRURCAgEBSAGYAQE=&hl=ar&curr=SAR",
+     "verified": false,
+     "cached_price": null,
+     "compare_links": [
+      {
+       "name": "Trip.com",
+       "url": "https://www.trip.com/flights/jeddah-to-sohag/tickets-jed-hmb/?ddate=2027-01-09&rdate=2027-01-20&flighttype=d"
+      },
+      {
+       "name": "Skyscanner",
+       "url": "https://www.skyscanner.net/transport/flights/jed/hmb/270109/270120/?adultsv2=2&cabinclass=economy"
+      },
+      {
+       "name": "Kayak",
+       "url": "https://www.kayak.com/flights/JED-HMB/2027-01-09/2027-01-20?sort=price_a"
+      }
+     ],
+     "discount_name": null,
+     "discount_price": null,
+     "discount_for_alerts": false,
+     "stay": 11,
+     "origin_name": "جدة",
+     "destination_name": "سوهاج",
      "airline_name": "طيران أديل",
-     "stops": "توقف واحد",
-     "depart_label": "الأحد 20 ديسمبر 2026",
-     "ret_label": "الأحد 3 يناير 2027"
+     "stops": "مباشر",
+     "depart_label": "السبت 9 يناير 2027",
+     "ret_label": "الأربعاء 20 يناير 2027"
     },
     {
      "source": "aviasales",
@@ -2928,6 +2947,49 @@
     {
      "source": "aviasales",
      "origin": "JED",
+     "destination": "ANK",
+     "depart": "2027-03-21",
+     "price": 877.5,
+     "ret": "2027-03-31",
+     "origin_airport": "JED",
+     "destination_airport": "ESB",
+     "airline": "TK",
+     "flight_number": "568",
+     "transfers": 0,
+     "return_transfers": 0,
+     "duration": 435,
+     "link": "https://www.aviasales.com/search/JED2103ANK31031?t=VF18056091001805621700000210JEDESB18065373001806550800000225ESBJED_ea02bbf9fa6fa9734d95b3665afe4d25_19472&search_date=10112026&expected_price_uuid=01a1c727-2c39-8031-6d07-521716fee9d9&static_fare_key=TY%7CP1%7CH0%7CL0%7CCH0%7CR0%7CTBC0&itinerary_key=M_fqDwQaxUsvQxZbfAOaig&expected_price_source=share&expected_price_currency=usd&expected_price=234",
+     "google_link": "https://www.google.com/travel/flights/search?tfs=GhoSCjIwMjctMDMtMjFqBRIDSkVEcgUSA0VTQhoaEgoyMDI3LTAzLTMxagUSA0VTQnIFEgNKRURCAgEBSAGYAQE=&hl=ar&curr=SAR",
+     "verified": false,
+     "cached_price": null,
+     "compare_links": [
+      {
+       "name": "Trip.com",
+       "url": "https://www.trip.com/flights/jeddah-to-ankara/tickets-jed-esb/?ddate=2027-03-21&rdate=2027-03-31&flighttype=d"
+      },
+      {
+       "name": "Skyscanner",
+       "url": "https://www.skyscanner.net/transport/flights/jed/esb/270321/270331/?adultsv2=2&cabinclass=economy"
+      },
+      {
+       "name": "Kayak",
+       "url": "https://www.kayak.com/flights/JED-ESB/2027-03-21/2027-03-31?sort=price_a"
+      }
+     ],
+     "discount_name": null,
+     "discount_price": null,
+     "discount_for_alerts": false,
+     "stay": 10,
+     "origin_name": "جدة",
+     "destination_name": "أنقرة",
+     "airline_name": "التركية",
+     "stops": "مباشر",
+     "depart_label": "الأحد 21 مارس 2027",
+     "ret_label": "الأربعاء 31 مارس 2027"
+    },
+    {
+     "source": "aviasales",
+     "origin": "JED",
      "destination": "SSH",
      "depart": "2026-12-27",
      "price": 896.25,
@@ -2967,92 +3029,6 @@
      "stops": "مباشر",
      "depart_label": "الأحد 27 ديسمبر 2026",
      "ret_label": "السبت 9 يناير 2027"
-    },
-    {
-     "source": "aviasales",
-     "origin": "JED",
-     "destination": "IST",
-     "depart": "2026-12-19",
-     "price": 907.5,
-     "ret": "2027-01-04",
-     "origin_airport": "JED",
-     "destination_airport": "SAW",
-     "airline": "VF",
-     "flight_number": "190",
-     "transfers": 0,
-     "return_transfers": 0,
-     "duration": 470,
-     "link": "https://www.aviasales.com/search/JED1912IST04011?t=VF17976516001797665700000235JEDSAW17990235001799037600000235SAWJED_033d3ae2671779ae19cbc0db9d414357_19748&search_date=05112026&expected_price_uuid=01a1ad87-e0af-8040-2a55-964cdb56c92f&static_fare_key=TY%7CP0%7CH0%7CL0%7CCH0%7CR0%7CTBC0&itinerary_key=x1Em7v8Zx4xKVRShEiE1jQ&expected_price_source=share&expected_price_currency=usd&expected_price=242",
-     "google_link": "https://www.google.com/travel/flights/search?tfs=GhoSCjIwMjYtMTItMTlqBRIDSkVEcgUSA1NBVxoaEgoyMDI3LTAxLTA0agUSA1NBV3IFEgNKRURCAgEBSAGYAQE=&hl=ar&curr=SAR",
-     "verified": false,
-     "cached_price": null,
-     "compare_links": [
-      {
-       "name": "Trip.com",
-       "url": "https://www.trip.com/flights/jeddah-to-istanbul/tickets-jed-saw/?ddate=2026-12-19&rdate=2027-01-04&flighttype=d"
-      },
-      {
-       "name": "Skyscanner",
-       "url": "https://www.skyscanner.net/transport/flights/jed/saw/261219/270104/?adultsv2=2&cabinclass=economy"
-      },
-      {
-       "name": "Kayak",
-       "url": "https://www.kayak.com/flights/JED-SAW/2026-12-19/2027-01-04?sort=price_a"
-      }
-     ],
-     "discount_name": null,
-     "discount_price": null,
-     "discount_for_alerts": false,
-     "stay": 16,
-     "origin_name": "جدة",
-     "destination_name": "إسطنبول",
-     "airline_name": "VF",
-     "stops": "مباشر",
-     "depart_label": "السبت 19 ديسمبر 2026",
-     "ret_label": "الاثنين 4 يناير 2027"
-    },
-    {
-     "source": "aviasales",
-     "origin": "JED",
-     "destination": "ULH",
-     "depart": "2026-11-14",
-     "price": 922.5,
-     "ret": "2026-11-28",
-     "origin_airport": "JED",
-     "destination_airport": "ULH",
-     "airline": "SV",
-     "flight_number": "1632",
-     "transfers": 0,
-     "return_transfers": 0,
-     "duration": 160,
-     "link": "https://www.aviasales.com/search/JED1411ULH28111?t=SV17946657001794670200000075JEDULH17958834001795888500000085ULHJED_9f1c526694e624f8a4fd28f91d8b4f66_20331&search_date=09112026&expected_price_uuid=01a1c2bc-18be-8031-22d3-725f4a85929c&static_fare_key=TY%7CP0%7CH1%7CL0%7CCH0%7CR0%7CTBC0&itinerary_key=oNarDPBBk0rI7ETkavjk9g&expected_price_source=share&expected_price_currency=usd&expected_price=246",
-     "google_link": "https://www.google.com/travel/flights/search?tfs=GhoSCjIwMjYtMTEtMTRqBRIDSkVEcgUSA1VMSBoaEgoyMDI2LTExLTI4agUSA1VMSHIFEgNKRURCAgEBSAGYAQE=&hl=ar&curr=SAR",
-     "verified": false,
-     "cached_price": null,
-     "compare_links": [
-      {
-       "name": "Trip.com",
-       "url": "https://www.trip.com/flights/jeddah-to-al-ula/tickets-jed-ulh/?ddate=2026-11-14&rdate=2026-11-28&flighttype=d"
-      },
-      {
-       "name": "Skyscanner",
-       "url": "https://www.skyscanner.net/transport/flights/jed/ulh/261114/261128/?adultsv2=2&cabinclass=economy"
-      },
-      {
-       "name": "Kayak",
-       "url": "https://www.kayak.com/flights/JED-ULH/2026-11-14/2026-11-28?sort=price_a"
-      }
-     ],
-     "discount_name": null,
-     "discount_price": null,
-     "discount_for_alerts": false,
-     "stay": 14,
-     "origin_name": "جدة",
-     "destination_name": "العلا",
-     "airline_name": "السعودية",
-     "stops": "مباشر",
-     "depart_label": "السبت 14 نوفمبر 2026",
-     "ret_label": "السبت 28 نوفمبر 2026"
     }
    ],
    "reference_origin": "RUH",
@@ -3062,80 +3038,128 @@
      "source": "aviasales",
      "origin": "DMM",
      "destination": "MED",
-     "depart": "2026-12-06",
-     "price": 428.0,
-     "ret": "2026-12-15",
+     "depart": "2026-11-28",
+     "price": 502.5,
+     "ret": "2026-12-06",
      "origin_airport": "DMM",
      "destination_airport": "MED",
-     "airline": "XY",
-     "flight_number": "735",
+     "airline": "SV",
+     "flight_number": "8023",
      "transfers": 0,
      "return_transfers": 0,
-     "duration": 240,
-     "link": "https://www.aviasales.com/search/DMM0612MED15121?t=XY17965824001796590800000140DMMMED17973315001797337500000100MEDDMM_b63f00ce67a6779c33f1e99ddbc3604d_9132&search_date=09112026&expected_price_uuid=01a1c211-20b4-8040-6a78-f0fdc2a3d487&static_fare_key=TY%7CP0%7CH1%7CL0%7CCH0%7CR0%7CTBC0&itinerary_key=lPOHtHLBeZ91vrrBsJT9LQ&expected_price_source=share&expected_price_currency=usd&expected_price=111",
-     "google_link": "https://www.google.com/travel/flights/search?tfs=GhoSCjIwMjYtMTItMDZqBRIDRE1NcgUSA01FRBoaEgoyMDI2LTEyLTE1agUSA01FRHIFEgNETU1CAgEBSAGYAQE=&hl=ar&curr=SAR",
-     "verified": true,
-     "cached_price": 416.25,
+     "duration": 215,
+     "link": "https://www.aviasales.com/search/DMM2811MED06121?t=SV17958408001795847700000115DMMMED17965539001796559900000100MEDDMM_285f43fe6240fafb403106abdb2673c0_11003&search_date=09112026&expected_price_uuid=01a1c038-2d28-8030-6784-555c96811ff1&static_fare_key=TY%7CP0%7CH1%7CL0%7CCH0%7CR0%7CTBC0&itinerary_key=gOQ5GP8-UJmBnDuCa8UCrA&expected_price_source=share&expected_price_currency=usd&expected_price=134",
+     "google_link": "https://www.google.com/travel/flights/search?tfs=GhoSCjIwMjYtMTEtMjhqBRIDRE1NcgUSA01FRBoaEgoyMDI2LTEyLTA2agUSA01FRHIFEgNETU1CAgEBSAGYAQE=&hl=ar&curr=SAR",
+     "verified": false,
+     "cached_price": null,
      "compare_links": [
       {
        "name": "Trip.com",
-       "url": "https://www.trip.com/flights/dammam-to-medina/tickets-dmm-med/?ddate=2026-12-06&rdate=2026-12-15&flighttype=d"
+       "url": "https://www.trip.com/flights/dammam-to-medina/tickets-dmm-med/?ddate=2026-11-28&rdate=2026-12-06&flighttype=d"
       },
       {
        "name": "Skyscanner",
-       "url": "https://www.skyscanner.net/transport/flights/dmm/med/261206/261215/?adultsv2=2&cabinclass=economy"
+       "url": "https://www.skyscanner.net/transport/flights/dmm/med/261128/261206/?adultsv2=2&cabinclass=economy"
       },
       {
        "name": "Kayak",
-       "url": "https://www.kayak.com/flights/DMM-MED/2026-12-06/2026-12-15?sort=price_a"
+       "url": "https://www.kayak.com/flights/DMM-MED/2026-11-28/2026-12-06?sort=price_a"
       }
      ],
      "discount_name": null,
      "discount_price": null,
      "discount_for_alerts": false,
-     "stay": 9,
+     "stay": 8,
      "origin_name": "الدمام",
      "destination_name": "المدينة المنورة",
-     "airline_name": "طيران ناس",
+     "airline_name": "السعودية",
      "stops": "مباشر",
-     "depart_label": "الأحد 6 ديسمبر 2026",
-     "ret_label": "الثلاثاء 15 ديسمبر 2026",
+     "depart_label": "السبت 28 نوفمبر 2026",
+     "ret_label": "الأحد 6 ديسمبر 2026",
      "ref": {
       "missing": true,
       "origin_name": "الرياض",
-      "google_link": "https://www.google.com/travel/flights/search?tfs=GhoSCjIwMjYtMTItMDZqBRIDUlVIcgUSA01FRBoaEgoyMDI2LTEyLTE1agUSA01FRHIFEgNSVUhCAgEBSAGYAQE=&hl=ar&curr=SAR"
+      "google_link": "https://www.google.com/travel/flights/search?tfs=GhoSCjIwMjYtMTEtMjhqBRIDUlVIcgUSA01FRBoaEgoyMDI2LTEyLTA2agUSA01FRHIFEgNSVUhCAgEBSAGYAQE=&hl=ar&curr=SAR"
      }
     },
     {
      "source": "aviasales",
      "origin": "JED",
      "destination": "ANK",
-     "depart": "2026-11-13",
-     "price": 866.25,
-     "ret": "2026-11-22",
+     "depart": "2026-12-04",
+     "price": 738.75,
+     "ret": "2026-12-18",
      "origin_airport": "JED",
      "destination_airport": "ESB",
-     "airline": "TK",
+     "airline": "VF",
      "flight_number": "568",
      "transfers": 0,
      "return_transfers": 0,
      "duration": 425,
-     "link": "https://www.aviasales.com/search/JED1311ANK22111?t=VF17945499001794562500000210JEDESB17953071001795320000000215ESBJED_c9f333e4719fc180a3ab945756c60d58_18901&search_date=07112026&expected_price_uuid=01a1b6db-c736-8030-2471-cc3f0efc28ef&static_fare_key=TY%7CP1%7CH0%7CL0%7CCH0%7CR0%7CTBC0&itinerary_key=xh4SV-wbPyZkew2gZEuIww&expected_price_source=share&expected_price_currency=usd&expected_price=231",
-     "google_link": "https://www.google.com/travel/flights/search?tfs=GhoSCjIwMjYtMTEtMTNqBRIDSkVEcgUSA0VTQhoaEgoyMDI2LTExLTIyagUSA0VTQnIFEgNKRURCAgEBSAGYAQE=&hl=ar&curr=SAR",
+     "link": "https://www.aviasales.com/search/JED0412ANK18121?t=VF17963643001796376900000210JEDESB17975994001797612300000215ESBJED_35180e96d4f24315b990f8039e4ca946_16113&search_date=08112026&expected_price_uuid=01a1ba1c-303c-8031-2ea3-cdadce3173e1&static_fare_key=TY%7CP1%7CH0%7CL0%7CCH0%7CR0%7CTBC0&itinerary_key=_mTSFj_ZEjnhrmhrO0sRoA&expected_price_source=share&expected_price_currency=usd&expected_price=197",
+     "google_link": "https://www.google.com/travel/flights/search?tfs=GhoSCjIwMjYtMTItMDRqBRIDSkVEcgUSA0VTQhoaEgoyMDI2LTEyLTE4agUSA0VTQnIFEgNKRURCAgEBSAGYAQE=&hl=ar&curr=SAR",
      "verified": false,
      "cached_price": null,
      "compare_links": [
       {
        "name": "Trip.com",
-       "url": "https://www.trip.com/flights/jeddah-to-ankara/tickets-jed-esb/?ddate=2026-11-13&rdate=2026-11-22&flighttype=d"
+       "url": "https://www.trip.com/flights/jeddah-to-ankara/tickets-jed-esb/?ddate=2026-12-04&rdate=2026-12-18&flighttype=d"
       },
       {
        "name": "Skyscanner",
-       "url": "https://www.skyscanner.net/transport/flights/jed/esb/261113/261122/?adultsv2=2&cabinclass=economy"
+       "url": "https://www.skyscanner.net/transport/flights/jed/esb/261204/261218/?adultsv2=2&cabinclass=economy"
       },
       {
        "name": "Kayak",
-       "url": "https://www.kayak.com/flights/JED-ESB/2026-11-13/2026-11-22?sort=price_a"
+       "url": "https://www.kayak.com/flights/JED-ESB/2026-12-04/2026-12-18?sort=price_a"
+      }
+     ],
+     "discount_name": null,
+     "discount_price": null,
+     "discount_for_alerts": false,
+     "stay": 14,
+     "origin_name": "جدة",
+     "destination_name": "أنقرة",
+     "airline_name": "VF",
+     "stops": "مباشر",
+     "depart_label": "الجمعة 4 ديسمبر 2026",
+     "ret_label": "الجمعة 18 ديسمبر 2026",
+     "ref": {
+      "missing": true,
+      "origin_name": "الرياض",
+      "google_link": "https://www.google.com/travel/flights/search?tfs=GhoSCjIwMjYtMTItMDRqBRIDUlVIcgUSA0VTQhoaEgoyMDI2LTEyLTE4agUSA0VTQnIFEgNSVUhCAgEBSAGYAQE=&hl=ar&curr=SAR"
+     }
+    },
+    {
+     "source": "aviasales",
+     "origin": "JED",
+     "destination": "IST",
+     "depart": "2026-12-02",
+     "price": 832.5,
+     "ret": "2026-12-11",
+     "origin_airport": "JED",
+     "destination_airport": "SAW",
+     "airline": "PC",
+     "flight_number": "695",
+     "transfers": 0,
+     "return_transfers": 0,
+     "duration": 475,
+     "link": "https://www.aviasales.com/search/JED0212IST11121?t=PC17961774001796191800000240JEDSAW17970282001797042300000235SAWJED_24263677c3db5b19af1a5e3cc8dae41b_18154&search_date=07112026&expected_price_uuid=01a1b434-35fe-8030-af0f-af23c0654d0e&static_fare_key=TY%7CP1%7CH0%7CL0%7CCH0%7CR0%7CTBC0&itinerary_key=NnSC1xLYiQFVzZLfPhr5OQ&expected_price_source=share&expected_price_currency=usd&expected_price=222",
+     "google_link": "https://www.google.com/travel/flights/search?tfs=GhoSCjIwMjYtMTItMDJqBRIDSkVEcgUSA1NBVxoaEgoyMDI2LTEyLTExagUSA1NBV3IFEgNKRURCAgEBSAGYAQE=&hl=ar&curr=SAR",
+     "verified": false,
+     "cached_price": null,
+     "compare_links": [
+      {
+       "name": "Trip.com",
+       "url": "https://www.trip.com/flights/jeddah-to-istanbul/tickets-jed-saw/?ddate=2026-12-02&rdate=2026-12-11&flighttype=d"
+      },
+      {
+       "name": "Skyscanner",
+       "url": "https://www.skyscanner.net/transport/flights/jed/saw/261202/261211/?adultsv2=2&cabinclass=economy"
+      },
+      {
+       "name": "Kayak",
+       "url": "https://www.kayak.com/flights/JED-SAW/2026-12-02/2026-12-11?sort=price_a"
       }
      ],
      "discount_name": null,
@@ -3143,15 +3167,63 @@
      "discount_for_alerts": false,
      "stay": 9,
      "origin_name": "جدة",
-     "destination_name": "أنقرة",
-     "airline_name": "التركية",
+     "destination_name": "إسطنبول",
+     "airline_name": "بيغاسوس",
      "stops": "مباشر",
-     "depart_label": "الجمعة 13 نوفمبر 2026",
-     "ret_label": "الأحد 22 نوفمبر 2026",
+     "depart_label": "الأربعاء 2 ديسمبر 2026",
+     "ret_label": "الجمعة 11 ديسمبر 2026",
      "ref": {
       "missing": true,
       "origin_name": "الرياض",
-      "google_link": "https://www.google.com/travel/flights/search?tfs=GhoSCjIwMjYtMTEtMTNqBRIDUlVIcgUSA0VTQhoaEgoyMDI2LTExLTIyagUSA0VTQnIFEgNSVUhCAgEBSAGYAQE=&hl=ar&curr=SAR"
+      "google_link": "https://www.google.com/travel/flights/search?tfs=GhoSCjIwMjYtMTItMDJqBRIDUlVIcgUSA1NBVxoaEgoyMDI2LTEyLTExagUSA1NBV3IFEgNSVUhCAgEBSAGYAQE=&hl=ar&curr=SAR"
+     }
+    },
+    {
+     "source": "aviasales",
+     "origin": "JED",
+     "destination": "HMB",
+     "depart": "2027-01-09",
+     "price": 858.75,
+     "ret": "2027-01-20",
+     "origin_airport": "JED",
+     "destination_airport": "HMB",
+     "airline": "F3",
+     "flight_number": "779",
+     "transfers": 0,
+     "return_transfers": 0,
+     "duration": 220,
+     "link": "https://www.aviasales.com/search/JED0901HMB20011?t=F317994774001799481000000120JEDHMB18004839001800493500000100HMBJED_cf6e56585690ea07659f4f9f38a59ddb_19043&search_date=10112026&expected_price_uuid=01a1c6e9-03d7-8040-a9c3-ba7e92ee913c&static_fare_key=TY%7CP0%7CH1%7CL0%7CCH0%7CR0%7CTBC0&itinerary_key=gbwqH6xPnFEI8VX0eDnVfQ&expected_price_source=share&expected_price_currency=usd&expected_price=229",
+     "google_link": "https://www.google.com/travel/flights/search?tfs=GhoSCjIwMjctMDEtMDlqBRIDSkVEcgUSA0hNQhoaEgoyMDI3LTAxLTIwagUSA0hNQnIFEgNKRURCAgEBSAGYAQE=&hl=ar&curr=SAR",
+     "verified": false,
+     "cached_price": null,
+     "compare_links": [
+      {
+       "name": "Trip.com",
+       "url": "https://www.trip.com/flights/jeddah-to-sohag/tickets-jed-hmb/?ddate=2027-01-09&rdate=2027-01-20&flighttype=d"
+      },
+      {
+       "name": "Skyscanner",
+       "url": "https://www.skyscanner.net/transport/flights/jed/hmb/270109/270120/?adultsv2=2&cabinclass=economy"
+      },
+      {
+       "name": "Kayak",
+       "url": "https://www.kayak.com/flights/JED-HMB/2027-01-09/2027-01-20?sort=price_a"
+      }
+     ],
+     "discount_name": null,
+     "discount_price": null,
+     "discount_for_alerts": false,
+     "stay": 11,
+     "origin_name": "جدة",
+     "destination_name": "سوهاج",
+     "airline_name": "طيران أديل",
+     "stops": "مباشر",
+     "depart_label": "السبت 9 يناير 2027",
+     "ret_label": "الأربعاء 20 يناير 2027",
+     "ref": {
+      "missing": true,
+      "origin_name": "الرياض",
+      "google_link": "https://www.google.com/travel/flights/search?tfs=GhoSCjIwMjctMDEtMDlqBRIDUlVIcgUSA0hNQhoaEgoyMDI3LTAxLTIwagUSA0hNQnIFEgNSVUhCAgEBSAGYAQE=&hl=ar&curr=SAR"
      }
     },
     {
@@ -3200,54 +3272,6 @@
       "missing": true,
       "origin_name": "الرياض",
       "google_link": "https://www.google.com/travel/flights/search?tfs=GhoSCjIwMjYtMTItMjdqBRIDUlVIcgUSA1NTSBoaEgoyMDI3LTAxLTA5agUSA1NTSHIFEgNSVUhCAgEBSAGYAQE=&hl=ar&curr=SAR"
-     }
-    },
-    {
-     "source": "aviasales",
-     "origin": "JED",
-     "destination": "IST",
-     "depart": "2026-12-19",
-     "price": 907.5,
-     "ret": "2027-01-04",
-     "origin_airport": "JED",
-     "destination_airport": "SAW",
-     "airline": "VF",
-     "flight_number": "190",
-     "transfers": 0,
-     "return_transfers": 0,
-     "duration": 470,
-     "link": "https://www.aviasales.com/search/JED1912IST04011?t=VF17976516001797665700000235JEDSAW17990235001799037600000235SAWJED_033d3ae2671779ae19cbc0db9d414357_19748&search_date=05112026&expected_price_uuid=01a1ad87-e0af-8040-2a55-964cdb56c92f&static_fare_key=TY%7CP0%7CH0%7CL0%7CCH0%7CR0%7CTBC0&itinerary_key=x1Em7v8Zx4xKVRShEiE1jQ&expected_price_source=share&expected_price_currency=usd&expected_price=242",
-     "google_link": "https://www.google.com/travel/flights/search?tfs=GhoSCjIwMjYtMTItMTlqBRIDSkVEcgUSA1NBVxoaEgoyMDI3LTAxLTA0agUSA1NBV3IFEgNKRURCAgEBSAGYAQE=&hl=ar&curr=SAR",
-     "verified": false,
-     "cached_price": null,
-     "compare_links": [
-      {
-       "name": "Trip.com",
-       "url": "https://www.trip.com/flights/jeddah-to-istanbul/tickets-jed-saw/?ddate=2026-12-19&rdate=2027-01-04&flighttype=d"
-      },
-      {
-       "name": "Skyscanner",
-       "url": "https://www.skyscanner.net/transport/flights/jed/saw/261219/270104/?adultsv2=2&cabinclass=economy"
-      },
-      {
-       "name": "Kayak",
-       "url": "https://www.kayak.com/flights/JED-SAW/2026-12-19/2027-01-04?sort=price_a"
-      }
-     ],
-     "discount_name": null,
-     "discount_price": null,
-     "discount_for_alerts": false,
-     "stay": 16,
-     "origin_name": "جدة",
-     "destination_name": "إسطنبول",
-     "airline_name": "VF",
-     "stops": "مباشر",
-     "depart_label": "السبت 19 ديسمبر 2026",
-     "ret_label": "الاثنين 4 يناير 2027",
-     "ref": {
-      "missing": true,
-      "origin_name": "الرياض",
-      "google_link": "https://www.google.com/travel/flights/search?tfs=GhoSCjIwMjYtMTItMTlqBRIDUlVIcgUSA1NBVxoaEgoyMDI3LTAxLTA0agUSA1NBV3IFEgNSVUhCAgEBSAGYAQE=&hl=ar&curr=SAR"
      }
     },
     {
@@ -3303,7 +3327,7 @@
      "origin": "JED",
      "destination": "AUH",
      "depart": "2027-03-19",
-     "price": 960.0,
+     "price": 945.0,
      "ret": "2027-03-30",
      "origin_airport": "JED",
      "destination_airport": "AUH",
@@ -3312,7 +3336,7 @@
      "transfers": 0,
      "return_transfers": 0,
      "duration": 325,
-     "link": "https://www.aviasales.com/search/JED1903AUH30031?t=SV18054570001805469900000155JEDAUH18064239001806430500000170AUHJED_e57ae22bd7897603b3f964f2bce6fb58_20940&search_date=07112026&expected_price_uuid=01a1b73f-94a3-8030-a5fa-68c3a23e7c1d&static_fare_key=TY%7CP0%7CH0%7CL0%7CCH0%7CR0%7CTBC0&itinerary_key=DrPMGBLpb7ILPzVCPxNrCg&expected_price_source=share&expected_price_currency=usd&expected_price=256",
+     "link": "https://www.aviasales.com/search/JED1903AUH30031?t=SV18054570001805469900000155JEDAUH18064239001806430500000170AUHJED_e57ae22bd7897603b3f964f2bce6fb58_20917&search_date=11112026&expected_price_uuid=01a1c9da-ee52-8030-e8b2-4de0f2a43bc1&static_fare_key=TY%7CP1%7CH1%7CL0%7CCH0%7CR0%7CTBC0&itinerary_key=DrPMGBLpb7ILPzVCPxNrCg&expected_price_source=share&expected_price_currency=usd&expected_price=252",
      "google_link": "https://www.google.com/travel/flights/search?tfs=GhoSCjIwMjctMDMtMTlqBRIDSkVEcgUSA0FVSBoaEgoyMDI3LTAzLTMwagUSA0FVSHIFEgNKRURCAgEBSAGYAQE=&hl=ar&curr=SAR",
      "verified": false,
      "cached_price": null,
@@ -3344,54 +3368,6 @@
       "missing": true,
       "origin_name": "الرياض",
       "google_link": "https://www.google.com/travel/flights/search?tfs=GhoSCjIwMjctMDMtMTlqBRIDUlVIcgUSA0FVSBoaEgoyMDI3LTAzLTMwagUSA0FVSHIFEgNSVUhCAgEBSAGYAQE=&hl=ar&curr=SAR"
-     }
-    },
-    {
-     "source": "aviasales",
-     "origin": "JED",
-     "destination": "HMB",
-     "depart": "2026-11-28",
-     "price": 982.5,
-     "ret": "2026-12-10",
-     "origin_airport": "JED",
-     "destination_airport": "HMB",
-     "airline": "SM",
-     "flight_number": "8224",
-     "transfers": 0,
-     "return_transfers": 0,
-     "duration": 215,
-     "link": "https://www.aviasales.com/search/JED2811HMB10121?t=SM17958639001795866900000110JEDHMB17969061001796916000000105HMBJED_0114fb019b16d7e73e526eb4f55947cc_21446&search_date=08112026&expected_price_uuid=01a1bb3c-951c-8040-6631-4bf375c1c3bb&static_fare_key=TY%7CP0%7CH1%7CL1_1_30%7CCH0%7CR0%7CTBC1&itinerary_key=3bmYCY4QEcAW6tp_dQN5Vw&expected_price_source=share&expected_price_currency=usd&expected_price=262",
-     "google_link": "https://www.google.com/travel/flights/search?tfs=GhoSCjIwMjYtMTEtMjhqBRIDSkVEcgUSA0hNQhoaEgoyMDI2LTEyLTEwagUSA0hNQnIFEgNKRURCAgEBSAGYAQE=&hl=ar&curr=SAR",
-     "verified": false,
-     "cached_price": null,
-     "compare_links": [
-      {
-       "name": "Trip.com",
-       "url": "https://www.trip.com/flights/jeddah-to-sohag/tickets-jed-hmb/?ddate=2026-11-28&rdate=2026-12-10&flighttype=d"
-      },
-      {
-       "name": "Skyscanner",
-       "url": "https://www.skyscanner.net/transport/flights/jed/hmb/261128/261210/?adultsv2=2&cabinclass=economy"
-      },
-      {
-       "name": "Kayak",
-       "url": "https://www.kayak.com/flights/JED-HMB/2026-11-28/2026-12-10?sort=price_a"
-      }
-     ],
-     "discount_name": null,
-     "discount_price": null,
-     "discount_for_alerts": false,
-     "stay": 12,
-     "origin_name": "جدة",
-     "destination_name": "سوهاج",
-     "airline_name": "إير كايرو",
-     "stops": "مباشر",
-     "depart_label": "السبت 28 نوفمبر 2026",
-     "ret_label": "الخميس 10 ديسمبر 2026",
-     "ref": {
-      "missing": true,
-      "origin_name": "الرياض",
-      "google_link": "https://www.google.com/travel/flights/search?tfs=GhoSCjIwMjYtMTEtMjhqBRIDUlVIcgUSA0hNQhoaEgoyMDI2LTEyLTEwagUSA0hNQnIFEgNSVUhCAgEBSAGYAQE=&hl=ar&curr=SAR"
      }
     },
     {
@@ -3440,54 +3416,6 @@
       "missing": true,
       "origin_name": "الرياض",
       "google_link": "https://www.google.com/travel/flights/search?tfs=GhoSCjIwMjYtMTItMjBqBRIDUlVIcgUSA0FERBoaEgoyMDI2LTEyLTI5agUSA0FERHIFEgNSVUhCAgEBSAGYAQE=&hl=ar&curr=SAR"
-     }
-    },
-    {
-     "source": "aviasales",
-     "origin": "JED",
-     "destination": "ALY",
-     "depart": "2026-11-10",
-     "price": 1125.0,
-     "ret": "2026-11-24",
-     "origin_airport": "JED",
-     "destination_airport": "ALY",
-     "airline": "SM",
-     "flight_number": "452",
-     "transfers": 0,
-     "return_transfers": 0,
-     "duration": 290,
-     "link": "https://www.aviasales.com/search/JED1011ALY24111?t=SM17943546001794359400000140JEDALY17955000001795512600000150ALYJED_5901259d47ee3a9cc19ecb5f41d98ad8_24569&search_date=07112026&expected_price_uuid=01a1b844-d672-8031-6e96-c4d491453e2c&static_fare_key=TY%7CP1%7CH1%7CL1_1_30%7CCH0%7CR0%7CTBC1&itinerary_key=LHWCWEjiFRd6cyIKf37teg&expected_price_source=share&expected_price_currency=usd&expected_price=300",
-     "google_link": "https://www.google.com/travel/flights/search?tfs=GhoSCjIwMjYtMTEtMTBqBRIDSkVEcgUSA0FMWRoaEgoyMDI2LTExLTI0agUSA0FMWXIFEgNKRURCAgEBSAGYAQE=&hl=ar&curr=SAR",
-     "verified": false,
-     "cached_price": null,
-     "compare_links": [
-      {
-       "name": "Trip.com",
-       "url": "https://www.trip.com/flights/jeddah-to-alexandria/tickets-jed-aly/?ddate=2026-11-10&rdate=2026-11-24&flighttype=d"
-      },
-      {
-       "name": "Skyscanner",
-       "url": "https://www.skyscanner.net/transport/flights/jed/aly/261110/261124/?adultsv2=2&cabinclass=economy"
-      },
-      {
-       "name": "Kayak",
-       "url": "https://www.kayak.com/flights/JED-ALY/2026-11-10/2026-11-24?sort=price_a"
-      }
-     ],
-     "discount_name": null,
-     "discount_price": null,
-     "discount_for_alerts": false,
-     "stay": 14,
-     "origin_name": "جدة",
-     "destination_name": "الإسكندرية",
-     "airline_name": "إير كايرو",
-     "stops": "مباشر",
-     "depart_label": "الثلاثاء 10 نوفمبر 2026",
-     "ret_label": "الثلاثاء 24 نوفمبر 2026",
-     "ref": {
-      "missing": true,
-      "origin_name": "الرياض",
-      "google_link": "https://www.google.com/travel/flights/search?tfs=GhoSCjIwMjYtMTEtMTBqBRIDUlVIcgUSA0FMWRoaEgoyMDI2LTExLTI0agUSA0FMWXIFEgNSVUhCAgEBSAGYAQE=&hl=ar&curr=SAR"
      }
     },
     {
@@ -3633,6 +3561,54 @@
       "origin_name": "الرياض",
       "google_link": "https://www.google.com/travel/flights/search?tfs=GhoSCjIwMjctMDItMTZqBRIDUlVIcgUSA0NNQhoaEgoyMDI3LTAyLTI1agUSA0NNQnIFEgNSVUhCAgEBSAGYAQE=&hl=ar&curr=SAR"
      }
+    },
+    {
+     "source": "aviasales",
+     "origin": "JED",
+     "destination": "BOM",
+     "depart": "2027-01-15",
+     "price": 1271.25,
+     "ret": "2027-01-31",
+     "origin_airport": "JED",
+     "destination_airport": "BOM",
+     "airline": "OV",
+     "flight_number": "284",
+     "transfers": 1,
+     "return_transfers": 1,
+     "duration": 1795,
+     "link": "https://www.aviasales.com/search/JED1501BOM31011?t=IX18000150001800074100000835JEDMCTBOM18013839001801432500000960NMIBLRJED_b40408cfa6c781923037b195b8371ee2_28101&search_date=11112026&expected_price_uuid=01a1c9da-140d-8030-e231-9f0120a0b0c7&static_fare_key=TY%7CP0%7CH0%7CL0%7CCH0%7CR0%7CTBC0&itinerary_key=jt_VkLDaTSzMXI24sPCBPw&expected_price_source=share&expected_price_currency=usd&expected_price=339",
+     "google_link": "https://www.google.com/travel/flights/search?tfs=GhoSCjIwMjctMDEtMTVqBRIDSkVEcgUSA0JPTRoaEgoyMDI3LTAxLTMxagUSA0JPTXIFEgNKRURCAgEBSAGYAQE=&hl=ar&curr=SAR",
+     "verified": false,
+     "cached_price": null,
+     "compare_links": [
+      {
+       "name": "Trip.com",
+       "url": "https://www.trip.com/flights/jeddah-to-mumbai/tickets-jed-bom/?ddate=2027-01-15&rdate=2027-01-31&flighttype=d"
+      },
+      {
+       "name": "Skyscanner",
+       "url": "https://www.skyscanner.net/transport/flights/jed/bom/270115/270131/?adultsv2=2&cabinclass=economy"
+      },
+      {
+       "name": "Kayak",
+       "url": "https://www.kayak.com/flights/JED-BOM/2027-01-15/2027-01-31?sort=price_a"
+      }
+     ],
+     "discount_name": null,
+     "discount_price": null,
+     "discount_for_alerts": false,
+     "stay": 16,
+     "origin_name": "جدة",
+     "destination_name": "مومباي",
+     "airline_name": "سلام إير",
+     "stops": "توقف واحد",
+     "depart_label": "الجمعة 15 يناير 2027",
+     "ret_label": "الأحد 31 يناير 2027",
+     "ref": {
+      "missing": true,
+      "origin_name": "الرياض",
+      "google_link": "https://www.google.com/travel/flights/search?tfs=GhoSCjIwMjctMDEtMTVqBRIDUlVIcgUSA0JPTRoaEgoyMDI3LTAxLTMxagUSA0JPTXIFEgNSVUhCAgEBSAGYAQE=&hl=ar&curr=SAR"
+     }
     }
    ],
    "missing_destinations": [],
@@ -3641,16 +3617,6 @@
      "month": "2026-11",
      "label": "نوفمبر 2026",
      "days": [
-      {
-       "date": "2026-11-10",
-       "price": 1125.0,
-       "destination": "ALY",
-       "destination_name": "الإسكندرية",
-       "verified": false,
-       "ret": "2026-11-24",
-       "link": "https://www.aviasales.com/search/JED1011ALY24111?t=SM17943546001794359400000140JEDALY17955000001795512600000150ALYJED_5901259d47ee3a9cc19ecb5f41d98ad8_24569&search_date=07112026&expected_price_uuid=01a1b844-d672-8031-6e96-c4d491453e2c&static_fare_key=TY%7CP1%7CH1%7CL1_1_30%7CCH0%7CR0%7CTBC1&itinerary_key=LHWCWEjiFRd6cyIKf37teg&expected_price_source=share&expected_price_currency=usd&expected_price=300",
-       "google_link": "https://www.google.com/travel/flights/search?tfs=GhoSCjIwMjYtMTEtMTBqBRIDSkVEcgUSA0FMWRoaEgoyMDI2LTExLTI0agUSA0FMWXIFEgNKRURCAgEBSAGYAQE=&hl=ar&curr=SAR"
-      },
       {
        "date": "2026-11-11",
        "price": 2561.25,
@@ -3713,23 +3679,23 @@
       },
       {
        "date": "2026-11-17",
-       "price": 1158.75,
+       "price": 945.0,
        "destination": "IST",
        "destination_name": "إسطنبول",
        "verified": false,
-       "ret": "2026-11-25",
-       "link": "https://www.aviasales.com/search/DMM1711IST25111?t=RJ17948961001794949500000890DMMAMMIST17956155001795650600000585ISTAMMDMM_7c181a04422903adc545c20379a711bc_25492&search_date=10112026&expected_price_uuid=01a1c39d-945a-8040-23ce-97e33ffe88d4&static_fare_key=TY%7CP0%7CH1%7CL1_1_20%7CCH0%7CR0%7CTBC1&itinerary_key=ZxkGsJYZDkeFjniNIO7TsA&expected_price_source=share&expected_price_currency=usd&expected_price=309",
-       "google_link": "https://www.google.com/travel/flights/search?tfs=GhoSCjIwMjYtMTEtMTdqBRIDRE1NcgUSA0lTVBoaEgoyMDI2LTExLTI1agUSA0lTVHIFEgNETU1CAgEBSAGYAQE=&hl=ar&curr=SAR"
+       "ret": "2026-11-30",
+       "link": "https://www.aviasales.com/search/JED1711IST30111?t=VF17948868001794900900000235JEDSAW17960778001796091900000235SAWJED_09fac879d7e01fda20ebacd9fec781c1_20878&search_date=10112026&expected_price_uuid=01a1c565-dd38-8040-2b04-baa421313c0b&static_fare_key=TY%7CP0%7CH0%7CL0%7CCH0%7CR0%7CTBC0&itinerary_key=xXCDs1W9HHyOUBo6ysdNKw&expected_price_source=share&expected_price_currency=usd&expected_price=252",
+       "google_link": "https://www.google.com/travel/flights/search?tfs=GhoSCjIwMjYtMTEtMTdqBRIDSkVEcgUSA1NBVxoaEgoyMDI2LTExLTMwagUSA1NBV3IFEgNKRURCAgEBSAGYAQE=&hl=ar&curr=SAR"
       },
       {
        "date": "2026-11-18",
-       "price": 491.25,
-       "destination": "MED",
-       "destination_name": "المدينة المنورة",
+       "price": 1140.0,
+       "destination": "IST",
+       "destination_name": "إسطنبول",
        "verified": false,
-       "ret": "2026-12-04",
-       "link": "https://www.aviasales.com/search/JED1811MED04121?t=SV17950050001795008600000060JEDMED17964123001796416500000070MEDJED_2f131ccb9aff6638e30ea2fce71c31d5_10659&search_date=03112026&expected_price_uuid=01a1a25f-774a-8031-2a3d-0f7afef081ce&static_fare_key=TY%7CP0%7CH1%7CL0%7CCH0%7CR0%7CTBC0&itinerary_key=gIvhkiqP1vwUpkwnkik-Dw&expected_price_source=share&expected_price_currency=usd&expected_price=131",
-       "google_link": "https://www.google.com/travel/flights/search?tfs=GhoSCjIwMjYtMTEtMThqBRIDSkVEcgUSA01FRBoaEgoyMDI2LTEyLTA0agUSA01FRHIFEgNKRURCAgEBSAGYAQE=&hl=ar&curr=SAR"
+       "ret": "2026-11-26",
+       "link": "https://www.aviasales.com/search/DMM1811IST26111?t=RJ17950356001795093500000965DMMAMMIST17957310001795752000000350ISTAMMDMM_6170c38feb0dd7f29c7bda5bceb5a7c3_24928&search_date=07112026&expected_price_uuid=01a1b6d0-11dc-8040-662e-858c983a47d4&static_fare_key=TY%7CP0%7CH1%7CL0%7CCH0%7CR0%7CTBC0&itinerary_key=Z9wI4EqEmanZo5x3gqR6_w&expected_price_source=share&expected_price_currency=usd&expected_price=304",
+       "google_link": "https://www.google.com/travel/flights/search?tfs=GhoSCjIwMjYtMTEtMThqBRIDRE1NcgUSA0lTVBoaEgoyMDI2LTExLTI2agUSA0lTVHIFEgNETU1CAgEBSAGYAQE=&hl=ar&curr=SAR"
       },
       {
        "date": "2026-11-19",
@@ -3818,7 +3784,7 @@
        "destination_name": "لكناو",
        "verified": false,
        "ret": "2026-12-13",
-       "link": "https://www.aviasales.com/search/DMM2711LKO13121?t=AI17958225001795872300000680DMMBOMLKO17971701001797201300000670LKOBOMDMM_639e1c184892514135146d562a41a42f_33411&search_date=10112026&expected_price_uuid=01a1c3da-3830-8031-6321-528414dec9c6&static_fare_key=TY%7CP0%7CH1%7CL1_1_25%7CCH1%7CR1%7CTBC1&itinerary_key=UMSypdO3dHEOftwwR_w31g&expected_price_source=share&expected_price_currency=usd&expected_price=405",
+       "link": "https://www.aviasales.com/search/DMM2711LKO13121?t=AI17958225001795872300000680DMMBOMLKO17971701001797201300000670LKOBOMDMM_639e1c184892514135146d562a41a42f_33528&search_date=10112026&expected_price_uuid=01a1c571-e192-8030-a9d4-15f53e95cd54&static_fare_key=TY%7CP0%7CH1%7CL1_1_25%7CCH1%7CR1%7CTBC1&itinerary_key=UMSypdO3dHEOftwwR_w31g&expected_price_source=share&expected_price_currency=usd&expected_price=405",
        "google_link": "https://www.google.com/travel/flights/search?tfs=GhoSCjIwMjYtMTEtMjdqBRIDRE1NcgUSA0xLTxoaEgoyMDI2LTEyLTEzagUSA0xLT3IFEgNETU1CAgEBSAGYAQE=&hl=ar&curr=SAR"
       },
       {
@@ -3833,29 +3799,29 @@
       },
       {
        "date": "2026-11-29",
-       "price": 2006.25,
+       "price": 1867.5,
        "destination": "LIS",
        "destination_name": "لشبونة",
        "verified": false,
-       "ret": "2026-12-11",
-       "link": "https://www.aviasales.com/search/JED2911LIS11121?t=A317959242001795950300000615JEDATHLIS17970228001797102900001155LISBGYMXPSSHJED_eec425cbc55a384a05a3cf0fa545a257_44166&search_date=10112026&expected_price_uuid=01a1c41a-e53e-8030-a823-f9a162034f36&static_fare_key=TY%7CP0%7CH0%7CL0%7CCH0%7CR0%7CTBC0&itinerary_key=rIhfGFDOaXQkUMEcLdneaQ&expected_price_source=share&expected_price_currency=usd&expected_price=535",
-       "google_link": "https://www.google.com/travel/flights/search?tfs=GhoSCjIwMjYtMTEtMjlqBRIDSkVEcgUSA0xJUxoaEgoyMDI2LTEyLTExagUSA0xJU3IFEgNKRURCAgEBSAGYAQE=&hl=ar&curr=SAR"
+       "ret": "2026-12-12",
+       "link": "https://www.aviasales.com/search/JED2911LIS12121?t=A317959242001795950300000615JEDATHLIS17971107001797189300001130LISBGYMXPSSHJED_88669115adfbbb656925919ee1a6d8eb_41401&search_date=10112026&expected_price_uuid=01a1c702-1999-8030-2d7f-4a75ee594b0f&static_fare_key=TY%7CP0%7CH0%7CL0%7CCH0%7CR0%7CTBC0&itinerary_key=gWgp3g7FrGczd55VOgMi7w&expected_price_source=share&expected_price_currency=usd&expected_price=498",
+       "google_link": "https://www.google.com/travel/flights/search?tfs=GhoSCjIwMjYtMTEtMjlqBRIDSkVEcgUSA0xJUxoaEgoyMDI2LTEyLTEyagUSA0xJU3IFEgNKRURCAgEBSAGYAQE=&hl=ar&curr=SAR"
       },
       {
        "date": "2026-11-30",
-       "price": 1395.0,
-       "destination": "BCN",
-       "destination_name": "برشلونة",
+       "price": 967.5,
+       "destination": "HMB",
+       "destination_name": "سوهاج",
        "verified": false,
-       "ret": "2026-12-08",
-       "link": "https://www.aviasales.com/search/JED3011BCN08121?t=VF17960187001796052000000675JEDESBBCN17967288001796784600000810BCNATHJED_8ca7f513a4a811456736a9c68138dfc2_30383&search_date=05112026&expected_price_uuid=01a1aaea-0719-8030-2f33-dc78e4aac7e0&static_fare_key=TY%7CP1%7CH0%7CL0%7CCH0%7CR0%7CTBC0&itinerary_key=tKhyBLZgLcFWzIpkFYqcOA&expected_price_source=share&expected_price_currency=usd&expected_price=372",
-       "google_link": "https://www.google.com/travel/flights/search?tfs=GhoSCjIwMjYtMTEtMzBqBRIDSkVEcgUSA0JDThoaEgoyMDI2LTEyLTA4agUSA0JDTnIFEgNKRURCAgEBSAGYAQE=&hl=ar&curr=SAR"
+       "ret": "2026-12-12",
+       "link": "https://www.aviasales.com/search/JED3011HMB12121?t=SM17960826001796085600000110JEDHMB17970600001797069900000105HMBJED_a373d1dbf8897be7a6b54149441438bb_21351&search_date=10112026&expected_price_uuid=01a1c545-9dee-8040-211b-6a44362103cb&static_fare_key=TY%7CP0%7CH1%7CL1_1_30%7CCH0%7CR0%7CTBC1&itinerary_key=iN0AO3ZvkzQlh_Tf4fptpg&expected_price_source=share&expected_price_currency=usd&expected_price=258",
+       "google_link": "https://www.google.com/travel/flights/search?tfs=GhoSCjIwMjYtMTEtMzBqBRIDSkVEcgUSA0hNQhoaEgoyMDI2LTEyLTEyagUSA0hNQnIFEgNKRURCAgEBSAGYAQE=&hl=ar&curr=SAR"
       }
      ],
      "cheapest": {
-      "date": "2026-11-18",
-      "label": "الأربعاء 18 نوفمبر 2026",
-      "price": 491.25
+      "date": "2026-11-28",
+      "label": "السبت 28 نوفمبر 2026",
+      "price": 502.5
      }
     },
     {
@@ -3874,10 +3840,10 @@
       },
       {
        "date": "2026-12-02",
-       "price": 1047.0,
+       "price": 832.5,
        "destination": "IST",
        "destination_name": "إسطنبول",
-       "verified": true,
+       "verified": false,
        "ret": "2026-12-11",
        "link": "https://www.aviasales.com/search/JED0212IST11121?t=PC17961774001796191800000240JEDSAW17970282001797042300000235SAWJED_24263677c3db5b19af1a5e3cc8dae41b_18154&search_date=07112026&expected_price_uuid=01a1b434-35fe-8030-af0f-af23c0654d0e&static_fare_key=TY%7CP1%7CH0%7CL0%7CCH0%7CR0%7CTBC0&itinerary_key=NnSC1xLYiQFVzZLfPhr5OQ&expected_price_source=share&expected_price_currency=usd&expected_price=222",
        "google_link": "https://www.google.com/travel/flights/search?tfs=GhoSCjIwMjYtMTItMDJqBRIDSkVEcgUSA1NBVxoaEgoyMDI2LTEyLTExagUSA1NBV3IFEgNKRURCAgEBSAGYAQE=&hl=ar&curr=SAR"
@@ -3894,10 +3860,10 @@
       },
       {
        "date": "2026-12-04",
-       "price": 1041.0,
+       "price": 738.75,
        "destination": "ANK",
        "destination_name": "أنقرة",
-       "verified": true,
+       "verified": false,
        "ret": "2026-12-18",
        "link": "https://www.aviasales.com/search/JED0412ANK18121?t=VF17963643001796376900000210JEDESB17975994001797612300000215ESBJED_35180e96d4f24315b990f8039e4ca946_16113&search_date=08112026&expected_price_uuid=01a1ba1c-303c-8031-2ea3-cdadce3173e1&static_fare_key=TY%7CP1%7CH0%7CL0%7CCH0%7CR0%7CTBC0&itinerary_key=_mTSFj_ZEjnhrmhrO0sRoA&expected_price_source=share&expected_price_currency=usd&expected_price=197",
        "google_link": "https://www.google.com/travel/flights/search?tfs=GhoSCjIwMjYtMTItMDRqBRIDSkVEcgUSA0VTQhoaEgoyMDI2LTEyLTE4agUSA0VTQnIFEgNKRURCAgEBSAGYAQE=&hl=ar&curr=SAR"
@@ -3914,7 +3880,7 @@
       },
       {
        "date": "2026-12-06",
-       "price": 428.0,
+       "price": 2239.5,
        "destination": "MED",
        "destination_name": "المدينة المنورة",
        "verified": true,
@@ -3934,33 +3900,33 @@
       },
       {
        "date": "2026-12-08",
-       "price": 1788.75,
-       "destination": "LHE",
-       "destination_name": "لاهور",
+       "price": 1376.25,
+       "destination": "MLE",
+       "destination_name": "المالديف",
        "verified": false,
-       "ret": "2026-12-18",
-       "link": "https://www.aviasales.com/search/DMM0812LHE18121?t=XY17967252001796744700000205DMMLHE17975988001797607800000270LHEDMM_ae6b95c611b23729354ab63309db7697_39065&search_date=09112026&expected_price_uuid=01a1be77-b5fe-8040-6bcb-2a29232666d3&static_fare_key=TY%7CP0%7CH1%7CL0%7CCH0%7CR0%7CTBC0&itinerary_key=nB3bXkNkxuv6BMVO6jSK3g&expected_price_source=share&expected_price_currency=usd&expected_price=477",
-       "google_link": "https://www.google.com/travel/flights/search?tfs=GhoSCjIwMjYtMTItMDhqBRIDRE1NcgUSA0xIRRoaEgoyMDI2LTEyLTE4agUSA0xIRXIFEgNETU1CAgEBSAGYAQE=&hl=ar&curr=SAR"
+       "ret": "2026-12-16",
+       "link": "https://www.aviasales.com/search/DMM0812MLE16121?t=UL17967693001796804100000460DMMCMBMLE17974131001797456000000835MLECMBDMM_9bef450b92c5f167ade7a3b8a97dd0f1_30559&search_date=10112026&expected_price_uuid=01a1c76f-dbf6-8030-6769-95144d0a63a1&static_fare_key=TY%7CP1%7CH1%7CL1_1_30%7CCH0%7CR0%7CTBC1&itinerary_key=ZY1mNATwc8NtVectBkJoRA&expected_price_source=share&expected_price_currency=usd&expected_price=367",
+       "google_link": "https://www.google.com/travel/flights/search?tfs=GhoSCjIwMjYtMTItMDhqBRIDRE1NcgUSA01MRRoaEgoyMDI2LTEyLTE2agUSA01MRXIFEgNETU1CAgEBSAGYAQE=&hl=ar&curr=SAR"
       },
       {
        "date": "2026-12-09",
-       "price": 1436.25,
-       "destination": "BLR",
-       "destination_name": "بنغالور",
+       "price": 1391.25,
+       "destination": "DEL",
+       "destination_name": "دلهي",
        "verified": false,
-       "ret": "2026-12-19",
-       "link": "https://www.aviasales.com/search/DMM0912BLR19121?t=IX17967756001796800500000265DMMBLR17977122001797722100000315BLRDMM_d803ab326239a7c7f8e2f79cd3655c80_31419&search_date=06112026&expected_price_uuid=01a1b2f5-e9db-8040-a572-de05de5e3868&static_fare_key=TY%7CP0%7CH1%7CL0%7CCH0%7CR0%7CTBC0&itinerary_key=fSKZo0WoSjpjoxbLKsFmvg&expected_price_source=share&expected_price_currency=usd&expected_price=383",
-       "google_link": "https://www.google.com/travel/flights/search?tfs=GhoSCjIwMjYtMTItMDlqBRIDRE1NcgUSA0JMUhoaEgoyMDI2LTEyLTE5agUSA0JMUnIFEgNETU1CAgEBSAGYAQE=&hl=ar&curr=SAR"
+       "ret": "2026-12-20",
+       "link": "https://www.aviasales.com/search/DMM0912DEL20121?t=6E17967747001796798400000245DMMDEL17977989001797807900000300DELDMM_e3e138b135eeeb2d6f1d7308a492e601_30887&search_date=11112026&expected_price_uuid=01a1c830-5723-8030-6c2e-9014d29db81b&static_fare_key=TY%7CP0%7CH1%7CL1_1_0%7CCH0%7CR0%7CTBC1&itinerary_key=JzFXAjV9g1BMUXwi-iyLSw&expected_price_source=share&expected_price_currency=usd&expected_price=371",
+       "google_link": "https://www.google.com/travel/flights/search?tfs=GhoSCjIwMjYtMTItMDlqBRIDRE1NcgUSA0RFTBoaEgoyMDI2LTEyLTIwagUSA0RFTHIFEgNETU1CAgEBSAGYAQE=&hl=ar&curr=SAR"
       },
       {
        "date": "2026-12-10",
-       "price": 2508.75,
-       "destination": "KZN",
-       "destination_name": "كازان",
+       "price": 1725.0,
+       "destination": "MLE",
+       "destination_name": "المالديف",
        "verified": false,
-       "ret": "2026-12-22",
-       "link": "https://www.aviasales.com/search/JED1012KZN22121?t=VF17968806001797020700002335JEDSAWISTKZN17979003001797971100001180KZNNQZESBJED_f7013848e3f7052b91a126dee150bad2_54797&search_date=08112026&expected_price_uuid=01a1b9d0-d5dd-8031-2b9d-d1256d5bf3db&static_fare_key=TY%7CP0%7CH0%7CL0%7CCH0%7CR0%7CTBC0&itinerary_key=jscRKxoyJCgE5YPxTpCQ9Q&expected_price_source=share&expected_price_currency=usd&expected_price=669",
-       "google_link": "https://www.google.com/travel/flights/search?tfs=GhoSCjIwMjYtMTItMTBqBRIDSkVEcgUSA0taThoaEgoyMDI2LTEyLTIyagUSA0taTnIFEgNKRURCAgEBSAGYAQE=&hl=ar&curr=SAR"
+       "ret": "2026-12-18",
+       "link": "https://www.aviasales.com/search/DMM1012MLE18121?t=EY17969214001796965500000615DMMAUHMLE17976303001797648300000420MLEAUHDMM_577f2b2b3f1c8e5bb6c4ad0dcdad3053_38232&search_date=10112026&expected_price_uuid=01a1c76e-e3cd-8031-2b9d-e42c36378d5b&static_fare_key=TY%7CP0%7CH1%7CL0%7CCH0%7CR0%7CTBC0&itinerary_key=QYESQqQfh9LfTCLVFQbkHQ&expected_price_source=share&expected_price_currency=usd&expected_price=460",
+       "google_link": "https://www.google.com/travel/flights/search?tfs=GhoSCjIwMjYtMTItMTBqBRIDRE1NcgUSA01MRRoaEgoyMDI2LTEyLTE4agUSA01MRXIFEgNETU1CAgEBSAGYAQE=&hl=ar&curr=SAR"
       },
       {
        "date": "2026-12-11",
@@ -3994,13 +3960,13 @@
       },
       {
        "date": "2026-12-14",
-       "price": 3592.5,
-       "destination": "TYO",
-       "destination_name": "طوكيو",
+       "price": 1856.25,
+       "destination": "MAD",
+       "destination_name": "مدريد",
        "verified": false,
        "ret": "2026-12-25",
-       "link": "https://www.aviasales.com/search/JED1412TYO25121?t=AI17972850001797400500001565JEDDELHND17981958001798318200002400HNDBOMJED_5aa433ede96d61d921e89d280a7b8856_78411&search_date=09112026&expected_price_uuid=01a1bef6-e91e-8030-ab79-11482d2525f1&static_fare_key=TY%7CP1%7CH1%7CL1_1_23%7CCH0%7CR0%7CTBC1&itinerary_key=mHImv_myY33TM-9HT6XQCQ&expected_price_source=share&expected_price_currency=usd&expected_price=958",
-       "google_link": "https://www.google.com/travel/flights/search?tfs=GhoSCjIwMjYtMTItMTRqBRIDSkVEcgUSA0hORBoaEgoyMDI2LTEyLTI1agUSA0hORHIFEgNKRURCAgEBSAGYAQE=&hl=ar&curr=SAR"
+       "link": "https://www.aviasales.com/search/DMM1412MAD25121?t=EY17972880001797361500001345DMMAUHMAD17982024001798246800000620MADSAWDMM_59623516bb9d2c32d6dc28be5de59ec1_41166&search_date=10112026&expected_price_uuid=01a1c691-2b16-8031-6b06-ee3ff2a6d3da&static_fare_key=TY%7CP1%7CH0%7CL0%7CCH0%7CR0%7CTBC0&itinerary_key=ntHZO5AIEu-HCTbf_sjFNg&expected_price_source=share&expected_price_currency=usd&expected_price=495",
+       "google_link": "https://www.google.com/travel/flights/search?tfs=GhoSCjIwMjYtMTItMTRqBRIDRE1NcgUSA01BRBoaEgoyMDI2LTEyLTI1agUSA01BRHIFEgNETU1CAgEBSAGYAQE=&hl=ar&curr=SAR"
       },
       {
        "date": "2026-12-15",
@@ -4054,13 +4020,13 @@
       },
       {
        "date": "2026-12-20",
-       "price": 738.75,
-       "destination": "MED",
-       "destination_name": "المدينة المنورة",
+       "price": 1008.75,
+       "destination": "ADD",
+       "destination_name": "أديس أبابا",
        "verified": false,
-       "ret": "2027-01-03",
-       "link": "https://www.aviasales.com/search/JED2012MED03011?t=F317977716001797807300000595JEDDMMMED17989716001798975800000070MEDJED_251bb29413f0f7bf64a58ee9751f36a8_16097&search_date=03112026&expected_price_uuid=01a1a1e9-44f3-8030-64bf-fcc9ba75c032&static_fare_key=TY%7CP0%7CH1%7CL0%7CCH0%7CR0%7CTBC0&itinerary_key=jjihBWM-MiDX2jqZBOJ8Zg&expected_price_source=share&expected_price_currency=usd&expected_price=197",
-       "google_link": "https://www.google.com/travel/flights/search?tfs=GhoSCjIwMjYtMTItMjBqBRIDSkVEcgUSA01FRBoaEgoyMDI3LTAxLTAzagUSA01FRHIFEgNKRURCAgEBSAGYAQE=&hl=ar&curr=SAR"
+       "ret": "2026-12-29",
+       "link": "https://www.aviasales.com/search/JED2012ADD29121?t=XY17977335001797741600000135JEDADD17985225001798530900000140ADDJED_1c81e087d84cefc0ab1666cbab411ae8_21977&search_date=06112026&expected_price_uuid=01a1b016-199b-8040-a664-a8fca366d32e&static_fare_key=TY%7CP0%7CH1%7CL0%7CCH0%7CR0%7CTBC0&itinerary_key=NYzY2J21p5fa6WVUpmj-tA&expected_price_source=share&expected_price_currency=usd&expected_price=269",
+       "google_link": "https://www.google.com/travel/flights/search?tfs=GhoSCjIwMjYtMTItMjBqBRIDSkVEcgUSA0FERBoaEgoyMDI2LTEyLTI5agUSA0FERHIFEgNKRURCAgEBSAGYAQE=&hl=ar&curr=SAR"
       },
       {
        "date": "2026-12-21",
@@ -4094,13 +4060,13 @@
       },
       {
        "date": "2026-12-24",
-       "price": 1702.5,
-       "destination": "TBS",
-       "destination_name": "تبليسي",
+       "price": 1755.0,
+       "destination": "MOW",
+       "destination_name": "موسكو",
        "verified": false,
-       "ret": "2027-01-04",
-       "link": "https://www.aviasales.com/search/JED2412TBS04011?t=VF17981355001798254000001915JEDESBTBS17990397001799121600001425TBSESBJED_451979ccc68b2d40f13a755d205d76e4_37228&search_date=06112026&expected_price_uuid=01a1b2e4-ba6a-8030-60dd-cd45778c910c&static_fare_key=TY%7CP1%7CH0%7CL0%7CCH1%7CR0%7CTBC0&itinerary_key=sAVpTXWpSqjYg4m0y3Qe2w&expected_price_source=share&expected_price_currency=usd&expected_price=454",
-       "google_link": "https://www.google.com/travel/flights/search?tfs=GhoSCjIwMjYtMTItMjRqBRIDSkVEcgUSA1RCUxoaEgoyMDI3LTAxLTA0agUSA1RCU3IFEgNKRURCAgEBSAGYAQE=&hl=ar&curr=SAR"
+       "ret": "2027-01-09",
+       "link": "https://www.aviasales.com/search/JED2412MOW09011?t=DP17980914001798158300001115JEDSAWISTVKO17994558001799547900001535SVOISTSAWJED_22a8ff093a7dbe36587a6f64ea4834a4_38330&search_date=08112026&expected_price_uuid=01a1ba1a-72db-8030-6e2f-1b3a7cb9fb8d&static_fare_key=TY%7CP0%7CH0%7CL0%7CCH0%7CR0%7CTBC0&itinerary_key=7MQS4c1F6kr6tDB-_On8Zg&expected_price_source=share&expected_price_currency=usd&expected_price=468",
+       "google_link": "https://www.google.com/travel/flights/search?tfs=GhoSCjIwMjYtMTItMjRqBRIDSkVEcgUSA1ZLTxoaEgoyMDI3LTAxLTA5agUSA1ZLT3IFEgNKRURCAgEBSAGYAQE=&hl=ar&curr=SAR"
       },
       {
        "date": "2026-12-25",
@@ -4164,19 +4130,19 @@
       },
       {
        "date": "2026-12-31",
-       "price": 1275.0,
-       "destination": "SSH",
-       "destination_name": "شرم الشيخ",
+       "price": 1507.5,
+       "destination": "MIL",
+       "destination_name": "ميلانو",
        "verified": false,
-       "ret": "2027-01-08",
-       "link": "https://www.aviasales.com/search/DMM3112SSH08011?t=NP17987112001798729800000370DMMJEDSSH17994024001799445600000660SSHCAIDMM_e6526861c1b3e131899e6589399bf326_27803&search_date=03112026&expected_price_uuid=01a1a290-3ad7-8030-662d-8c3da3717b75&static_fare_key=TY%7CP1%7CH0%7CL0%7CCH0%7CR0%7CTBC0&itinerary_key=Q6vWHbiC6sPbrnuJgEdR0A&expected_price_source=share&expected_price_currency=usd&expected_price=340",
-       "google_link": "https://www.google.com/travel/flights/search?tfs=GhoSCjIwMjYtMTItMzFqBRIDRE1NcgUSA1NTSBoaEgoyMDI3LTAxLTA4agUSA1NTSHIFEgNETU1CAgEBSAGYAQE=&hl=ar&curr=SAR"
+       "ret": "2027-01-14",
+       "link": "https://www.aviasales.com/search/DMM3112MIL14011?t=PC17986857001798712400000565DMMSAWBGY17999262001799976900000725BGYSAWDMM_d84b87f13174fc72d060ebab0061ec67_32973&search_date=08112026&expected_price_uuid=01a1b9b8-3b96-8030-acdb-9f42b5717e9b&static_fare_key=TY%7CP1%7CH0%7CL0%7CCH0%7CR0%7CTBC0&itinerary_key=4gCIY8SkDyMlOwbeKkpezw&expected_price_source=share&expected_price_currency=usd&expected_price=402",
+       "google_link": "https://www.google.com/travel/flights/search?tfs=GhoSCjIwMjYtMTItMzFqBRIDRE1NcgUSA0JHWRoaEgoyMDI3LTAxLTE0agUSA0JHWXIFEgNETU1CAgEBSAGYAQE=&hl=ar&curr=SAR"
       }
      ],
      "cheapest": {
-      "date": "2026-12-06",
-      "label": "الأحد 6 ديسمبر 2026",
-      "price": 428.0
+      "date": "2026-12-04",
+      "label": "الجمعة 4 ديسمبر 2026",
+      "price": 738.75
      }
     },
     {
@@ -4185,23 +4151,23 @@
      "days": [
       {
        "date": "2027-01-01",
-       "price": 1766.25,
-       "destination": "PRG",
-       "destination_name": "براغ",
+       "price": 1500.0,
+       "destination": "LHE",
+       "destination_name": "لاهور",
        "verified": false,
-       "ret": "2027-01-14",
-       "link": "https://www.aviasales.com/search/DMM0101PRG14011?t=PC17987703001798810200000785DMMSAWPRG17999367001799976900000550PRGSAWDMM_8d032f9a17cbb62bed39e86bda5e0896_38607&search_date=09112026&expected_price_uuid=01a1be02-f238-8030-6d1b-b0b0314bd077&static_fare_key=TY%7CP1%7CH0%7CL0%7CCH0%7CR0%7CTBC0&itinerary_key=954UzlKC5T3ra8JMguxYgg&expected_price_source=share&expected_price_currency=usd&expected_price=471",
-       "google_link": "https://www.google.com/travel/flights/search?tfs=GhoSCjIwMjctMDEtMDFqBRIDRE1NcgUSA1BSRxoaEgoyMDI3LTAxLTE0agUSA1BSR3IFEgNETU1CAgEBSAGYAQE=&hl=ar&curr=SAR"
+       "ret": "2027-01-17",
+       "link": "https://www.aviasales.com/search/DMM0101LHE17011?t=XY17987856001798805400000210DMMLHE18001908001800199800000270LHEDMM_58984503c140ec21bba78226771deb76_33281&search_date=11112026&expected_price_uuid=01a1c8c4-9b97-8040-2613-76831c49d67c&static_fare_key=TY%7CP0%7CH1%7CL0%7CCH0%7CR0%7CTBC0&itinerary_key=WlOGhOe-zfX1Kaw9xRdAoQ&expected_price_source=share&expected_price_currency=usd&expected_price=400",
+       "google_link": "https://www.google.com/travel/flights/search?tfs=GhoSCjIwMjctMDEtMDFqBRIDRE1NcgUSA0xIRRoaEgoyMDI3LTAxLTE3agUSA0xIRXIFEgNETU1CAgEBSAGYAQE=&hl=ar&curr=SAR"
       },
       {
        "date": "2027-01-02",
-       "price": 2685.0,
-       "destination": "AZN",
-       "destination_name": "أنديچان",
+       "price": 2666.25,
+       "destination": "MRV",
+       "destination_name": "مينرالني ڤودي",
        "verified": false,
-       "ret": "2027-01-18",
-       "link": "https://www.aviasales.com/search/JED0201AZN18011?t=EY17988690001799002800002110JEDAUHTASAZN18002820001800375600001680AZNTASAUHJED_42100875689d79dfd5e97aa7f5ed0450_58443&search_date=03112026&expected_price_uuid=01a1a292-a1c1-8031-2ff4-7b9574878c03&static_fare_key=TY%7CP0%7CH1%7CL0%7CCH0%7CR0%7CTBC0&itinerary_key=MvGotPSTcdNVpQa8CKKpNQ&expected_price_source=share&expected_price_currency=usd&expected_price=716",
-       "google_link": "https://www.google.com/travel/flights/search?tfs=GhoSCjIwMjctMDEtMDJqBRIDSkVEcgUSA0FaThoaEgoyMDI3LTAxLTE4agUSA0FaTnIFEgNKRURCAgEBSAGYAQE=&hl=ar&curr=SAR"
+       "ret": "2027-01-12",
+       "link": "https://www.aviasales.com/search/JED0201MRV12011?t=VF17988702001798980600001840JEDSAWISTMRV17997588001799808600000830MRVISTATHJED_841c7263a3e6cdcd6cc8bba8a39cb60e_58830&search_date=10112026&expected_price_uuid=01a1c54d-7362-8031-2a7f-3f28635237ed&static_fare_key=TY%7CP1%7CH0%7CL0%7CCH0%7CR0%7CTBC0&itinerary_key=op-m4U62nC0cRdzSLRQ1Hg&expected_price_source=share&expected_price_currency=usd&expected_price=711",
+       "google_link": "https://www.google.com/travel/flights/search?tfs=GhoSCjIwMjctMDEtMDJqBRIDSkVEcgUSA01SVhoaEgoyMDI3LTAxLTEyagUSA01SVnIFEgNKRURCAgEBSAGYAQE=&hl=ar&curr=SAR"
       },
       {
        "date": "2027-01-03",
@@ -4215,13 +4181,13 @@
       },
       {
        "date": "2027-01-04",
-       "price": 1031.25,
-       "destination": "ADD",
-       "destination_name": "أديس أبابا",
+       "price": 2782.5,
+       "destination": "KZN",
+       "destination_name": "كازان",
        "verified": false,
-       "ret": "2027-01-16",
-       "link": "https://www.aviasales.com/search/JED0401ADD16011?t=XY17990295001799037600000135JEDADD18000777001800086100000140ADDJED_36ea26ae4ec4e7e8d938afc4eaae5757_22449&search_date=03112026&expected_price_uuid=01a1a0e2-94b1-8030-6007-343ea6565ce1&static_fare_key=TY%7CP0%7CH1%7CL0%7CCH0%7CR0%7CTBC0&itinerary_key=-oGhBMeRHRmehvP6cfvDmA&expected_price_source=share&expected_price_currency=usd&expected_price=275",
-       "google_link": "https://www.google.com/travel/flights/search?tfs=GhoSCjIwMjctMDEtMDRqBRIDSkVEcgUSA0FERBoaEgoyMDI3LTAxLTE2agUSA0FERHIFEgNKRURCAgEBSAGYAQE=&hl=ar&curr=SAR"
+       "ret": "2027-01-18",
+       "link": "https://www.aviasales.com/search/JED0401KZN18011?t=J217990469001799182800002265JEDDXBDWCKZN18002712001800360000001480KZNSVODMEGYDJED_cac7392bde42c0f6b39d98a68a219e97_61608&search_date=10112026&expected_price_uuid=01a1c638-5fba-8030-2956-7eedc26240e1&static_fare_key=TY%7CP0%7CH1%7CL0%7CCH0%7CR0%7CTBC0&itinerary_key=3kv5nN4F_3I6efoofPmwvQ&expected_price_source=share&expected_price_currency=usd&expected_price=742",
+       "google_link": "https://www.google.com/travel/flights/search?tfs=GhoSCjIwMjctMDEtMDRqBRIDSkVEcgUSA0taThoaEgoyMDI3LTAxLTE4agUSA0taTnIFEgNKRURCAgEBSAGYAQE=&hl=ar&curr=SAR"
       },
       {
        "date": "2027-01-05",
@@ -4264,14 +4230,24 @@
        "google_link": "https://www.google.com/travel/flights/search?tfs=GhoSCjIwMjctMDEtMDhqBRIDSkVEcgUSA1RCUxoaEgoyMDI3LTAxLTIzagUSA1RCU3IFEgNKRURCAgEBSAGYAQE=&hl=ar&curr=SAR"
       },
       {
-       "date": "2027-01-10",
-       "price": 1593.75,
-       "destination": "ATZ",
-       "destination_name": "أسيوط",
+       "date": "2027-01-09",
+       "price": 858.75,
+       "destination": "HMB",
+       "destination_name": "سوهاج",
        "verified": false,
        "ret": "2027-01-20",
-       "link": "https://www.aviasales.com/search/JED1001ATZ20011?t=SM17996022001799605200000110JEDATZ18004857001800495900000110ATZJED_b54fbb54ef75bde39383903f4ef15012_35081&search_date=09112026&expected_price_uuid=01a1c178-75eb-8040-6985-eb735fb51056&static_fare_key=TY%7CP0%7CH1%7CL1_1_30%7CCH0%7CR0%7CTBC1&itinerary_key=VfMEsb5oc1vHhJiTihq9Ag&expected_price_source=share&expected_price_currency=usd&expected_price=425",
-       "google_link": "https://www.google.com/travel/flights/search?tfs=GhoSCjIwMjctMDEtMTBqBRIDSkVEcgUSA0FUWhoaEgoyMDI3LTAxLTIwagUSA0FUWnIFEgNKRURCAgEBSAGYAQE=&hl=ar&curr=SAR"
+       "link": "https://www.aviasales.com/search/JED0901HMB20011?t=F317994774001799481000000120JEDHMB18004839001800493500000100HMBJED_cf6e56585690ea07659f4f9f38a59ddb_19043&search_date=10112026&expected_price_uuid=01a1c6e9-03d7-8040-a9c3-ba7e92ee913c&static_fare_key=TY%7CP0%7CH1%7CL0%7CCH0%7CR0%7CTBC0&itinerary_key=gbwqH6xPnFEI8VX0eDnVfQ&expected_price_source=share&expected_price_currency=usd&expected_price=229",
+       "google_link": "https://www.google.com/travel/flights/search?tfs=GhoSCjIwMjctMDEtMDlqBRIDSkVEcgUSA0hNQhoaEgoyMDI3LTAxLTIwagUSA0hNQnIFEgNKRURCAgEBSAGYAQE=&hl=ar&curr=SAR"
+      },
+      {
+       "date": "2027-01-10",
+       "price": 510.0,
+       "destination": "MED",
+       "destination_name": "المدينة المنورة",
+       "verified": false,
+       "ret": "2027-01-21",
+       "link": "https://www.aviasales.com/search/JED1001MED21011?t=SV17996022001799605800000060JEDMED18005268001800531000000070MEDJED_8afaf2b62e5419a10856f02f32b326d2_11280&search_date=10112026&expected_price_uuid=01a1c717-e1f5-8030-2573-32659dc6e263&static_fare_key=TY%7CP0%7CH1%7CL0%7CCH0%7CR0%7CTBC0&itinerary_key=vHSkcCmRYfeCvjDcoctxIg&expected_price_source=share&expected_price_currency=usd&expected_price=136",
+       "google_link": "https://www.google.com/travel/flights/search?tfs=GhoSCjIwMjctMDEtMTBqBRIDSkVEcgUSA01FRBoaEgoyMDI3LTAxLTIxagUSA01FRHIFEgNKRURCAgEBSAGYAQE=&hl=ar&curr=SAR"
       },
       {
        "date": "2027-01-11",
@@ -4315,22 +4291,22 @@
       },
       {
        "date": "2027-01-15",
-       "price": 1998.75,
-       "destination": "BKK",
-       "destination_name": "بانكوك",
+       "price": 1271.25,
+       "destination": "BOM",
+       "destination_name": "مومباي",
        "verified": false,
-       "ret": "2027-01-30",
-       "link": "https://www.aviasales.com/search/JED1501BKK30011?t=RJ18000216001800113400001290JEDAMMBKK18013482001801400400001110BKKAMMJED_91291581f1da4a4285eea0fac1addccd_43622&search_date=05112026&expected_price_uuid=01a1ab17-1924-8040-6cc7-1d9b11558db8&static_fare_key=TY%7CP0%7CH1%7CL1_1_30%7CCH1%7CR0%7CTBC1&itinerary_key=uLTZp-1BokZJ3Am38ckHhw&expected_price_source=share&expected_price_currency=usd&expected_price=533",
-       "google_link": "https://www.google.com/travel/flights/search?tfs=GhoSCjIwMjctMDEtMTVqBRIDSkVEcgUSA0JLSxoaEgoyMDI3LTAxLTMwagUSA0JLS3IFEgNKRURCAgEBSAGYAQE=&hl=ar&curr=SAR"
+       "ret": "2027-01-31",
+       "link": "https://www.aviasales.com/search/JED1501BOM31011?t=IX18000150001800074100000835JEDMCTBOM18013839001801432500000960NMIBLRJED_b40408cfa6c781923037b195b8371ee2_28101&search_date=11112026&expected_price_uuid=01a1c9da-140d-8030-e231-9f0120a0b0c7&static_fare_key=TY%7CP0%7CH0%7CL0%7CCH0%7CR0%7CTBC0&itinerary_key=jt_VkLDaTSzMXI24sPCBPw&expected_price_source=share&expected_price_currency=usd&expected_price=339",
+       "google_link": "https://www.google.com/travel/flights/search?tfs=GhoSCjIwMjctMDEtMTVqBRIDSkVEcgUSA0JPTRoaEgoyMDI3LTAxLTMxagUSA0JPTXIFEgNKRURCAgEBSAGYAQE=&hl=ar&curr=SAR"
       },
       {
        "date": "2027-01-16",
-       "price": 1155.0,
+       "price": 1200.0,
        "destination": "IST",
        "destination_name": "إسطنبول",
        "verified": false,
        "ret": "2027-01-24",
-       "link": "https://www.aviasales.com/search/DMM1601IST24011?t=SV18001404001800183300000715DMMJEDIST18008298001800867600000630ISTJEDDMM_83000af4b1e115bfc7995009c3a861ac_25230&search_date=09112026&expected_price_uuid=01a1bdab-741e-8040-2525-5b8a83db8ae6&static_fare_key=TY%7CP0%7CH1%7CL0%7CCH0%7CR0%7CTBC0&itinerary_key=B-hPYptOyyPVmNHBp4pIVQ&expected_price_source=share&expected_price_currency=usd&expected_price=308",
+       "link": "https://www.aviasales.com/search/DMM1601IST24011?t=SV18001404001800183300000715DMMJEDIST18008298001800867600000630ISTJEDDMM_83000af4b1e115bfc7995009c3a861ac_26592&search_date=11112026&expected_price_uuid=01a1c8c3-d858-8040-ad29-1be5cbf2bd80&static_fare_key=TY%7CP0%7CH1%7CL0%7CCH0%7CR0%7CTBC0&itinerary_key=B-hPYptOyyPVmNHBp4pIVQ&expected_price_source=share&expected_price_currency=usd&expected_price=320",
        "google_link": "https://www.google.com/travel/flights/search?tfs=GhoSCjIwMjctMDEtMTZqBRIDRE1NcgUSA0lTVBoaEgoyMDI3LTAxLTI0agUSA0lTVHIFEgNETU1CAgEBSAGYAQE=&hl=ar&curr=SAR"
       },
       {
@@ -4374,16 +4350,6 @@
        "google_link": "https://www.google.com/travel/flights/search?tfs=GhoSCjIwMjctMDEtMjJqBRIDSkVEcgUSA1VMSBoaEgoyMDI3LTAxLTMwagUSA1VMSHIFEgNKRURCAgEBSAGYAQE=&hl=ar&curr=SAR"
       },
       {
-       "date": "2027-01-27",
-       "price": 1402.5,
-       "destination": "KHI",
-       "destination_name": "كراتشي",
-       "verified": false,
-       "ret": "2027-02-10",
-       "link": "https://www.aviasales.com/search/JED2701KHI10021?t=EY18010776001801104300000325JEDAUHKHI18022947001802342400000915KHIAUHJED_8c8dd7b507794398b8740d690f6bd52f_30564&search_date=04112026&expected_price_uuid=01a1a4b7-6923-8040-aae4-784fda1a72e3&static_fare_key=TY%7CP0%7CH1%7CL0%7CCH0%7CR0%7CTBC0&itinerary_key=RNS4HQ8zFwHbvWA7A80sHQ&expected_price_source=share&expected_price_currency=usd&expected_price=374",
-       "google_link": "https://www.google.com/travel/flights/search?tfs=GhoSCjIwMjctMDEtMjdqBRIDSkVEcgUSA0tISRoaEgoyMDI3LTAyLTEwagUSA0tISXIFEgNKRURCAgEBSAGYAQE=&hl=ar&curr=SAR"
-      },
-      {
        "date": "2027-01-30",
        "price": 2977.5,
        "destination": "CKG",
@@ -4395,9 +4361,9 @@
       }
      ],
      "cheapest": {
-      "date": "2027-01-12",
-      "label": "الثلاثاء 12 يناير 2027",
-      "price": 933.75
+      "date": "2027-01-10",
+      "label": "الأحد 10 يناير 2027",
+      "price": 510.0
      }
     },
     {
@@ -4423,16 +4389,6 @@
        "ret": "2027-02-20",
        "link": "https://www.aviasales.com/search/JED0402MUX20021?t=SV18017301001801752900000260JEDMUX18031413001803153300000320MUXJED_ca58dfca242da958ece5c5b9235b42a4_36661&search_date=05112026&expected_price_uuid=01a1a9de-662e-8040-aa24-d74898027c36&static_fare_key=TY%7CP0%7CH1%7CL1_1_23%7CCH0%7CR0%7CTBC1&itinerary_key=FiXlftNM3LUAWE6pz7TX8g&expected_price_source=share&expected_price_currency=usd&expected_price=448",
        "google_link": "https://www.google.com/travel/flights/search?tfs=GhoSCjIwMjctMDItMDRqBRIDSkVEcgUSA01VWBoaEgoyMDI3LTAyLTIwagUSA01VWHIFEgNKRURCAgEBSAGYAQE=&hl=ar&curr=SAR"
-      },
-      {
-       "date": "2027-02-09",
-       "price": 1387.5,
-       "destination": "SSH",
-       "destination_name": "شرم الشيخ",
-       "verified": false,
-       "ret": "2027-02-17",
-       "link": "https://www.aviasales.com/search/DMM0902SSH17021?t=NP18022140001802263500000885DMMCAISSH18028719001802898600000385SSHCAIDMM_eccfe70a4b1f613fa5835e8197ba4711_30235&search_date=03112026&expected_price_uuid=01a1a28f-ca67-8031-23bc-4c41663fb17d&static_fare_key=TY%7CP1%7CH1%7CL1_1_30%7CCH0%7CR0%7CTBC1&itinerary_key=1YPxsUwFNw5Irr6yc74RTw&expected_price_source=share&expected_price_currency=usd&expected_price=370",
-       "google_link": "https://www.google.com/travel/flights/search?tfs=GhoSCjIwMjctMDItMDlqBRIDRE1NcgUSA1NTSBoaEgoyMDI3LTAyLTE3agUSA1NTSHIFEgNETU1CAgEBSAGYAQE=&hl=ar&curr=SAR"
       },
       {
        "date": "2027-02-10",
@@ -4486,13 +4442,13 @@
       },
       {
        "date": "2027-02-26",
-       "price": 4290.0,
-       "destination": "OSA",
-       "destination_name": "أوساكا",
+       "price": 1878.75,
+       "destination": "MRV",
+       "destination_name": "مينرالني ڤودي",
        "verified": false,
-       "ret": "2027-03-11",
-       "link": "https://www.aviasales.com/search/JED2602OSA11031?t=EK18036405001803752400001505JEDDXBMNLKIX18047772001804884600002150KIXPVGDELJED_b13885d76eacef0972dd19733aa852af_93639&search_date=09112026&expected_price_uuid=01a1bf2e-3274-8030-a318-8f899abedbcf&static_fare_key=TY%7CP0%7CH1%7CL0%7CCH0%7CR0%7CTBC0&itinerary_key=E3PS1wqeaO9ef0UOOFUPzA&expected_price_source=share&expected_price_currency=usd&expected_price=1144",
-       "google_link": "https://www.google.com/travel/flights/search?tfs=GhoSCjIwMjctMDItMjZqBRIDSkVEcgUSA0tJWBoaEgoyMDI3LTAzLTExagUSA0tJWHIFEgNKRURCAgEBSAGYAQE=&hl=ar&curr=SAR"
+       "ret": "2027-03-10",
+       "link": "https://www.aviasales.com/search/JED2602MRV10031?t=VF18036246001803683400000980JEDSAWISTMRV18046710001804733400001040MRVISTATHJED_05563e1efdc1338a09d71f7293bbefaa_41506&search_date=10112026&expected_price_uuid=01a1c5f3-6b8d-8030-23a9-25f8058c1a3e&static_fare_key=TY%7CP1%7CH0%7CL0%7CCH1%7CR0%7CTBC0&itinerary_key=KnDV_5hGyEPJa8ZlfWRzQg&expected_price_source=share&expected_price_currency=usd&expected_price=501",
+       "google_link": "https://www.google.com/travel/flights/search?tfs=GhoSCjIwMjctMDItMjZqBRIDSkVEcgUSA01SVhoaEgoyMDI3LTAzLTEwagUSA01SVnIFEgNKRURCAgEBSAGYAQE=&hl=ar&curr=SAR"
       },
       {
        "date": "2027-02-27",
@@ -4557,23 +4513,33 @@
       },
       {
        "date": "2027-03-08",
-       "price": 2460.0,
-       "destination": "CMN",
-       "destination_name": "الدار البيضاء",
+       "price": 1267.5,
+       "destination": "ANK",
+       "destination_name": "أنقرة",
+       "verified": false,
+       "ret": "2027-03-18",
+       "link": "https://www.aviasales.com/search/JED0803ANK18031?t=VF18044859001804498500000210JEDESB18053766001805389500000215ESBJED_d33681233d5a7c09015375dffe6597fc_28139&search_date=10112026&expected_price_uuid=01a1c71b-07bf-8030-a765-c1bb50d144a1&static_fare_key=TY%7CP1%7CH0%7CL0%7CCH0%7CR0%7CTBC0&itinerary_key=FANCSEZJj1-2oVDSdfEw5g&expected_price_source=share&expected_price_currency=usd&expected_price=338",
+       "google_link": "https://www.google.com/travel/flights/search?tfs=GhoSCjIwMjctMDMtMDhqBRIDSkVEcgUSA0VTQhoaEgoyMDI3LTAzLTE4agUSA0VTQnIFEgNKRURCAgEBSAGYAQE=&hl=ar&curr=SAR"
+      },
+      {
+       "date": "2027-03-09",
+       "price": 1218.75,
+       "destination": "ANK",
+       "destination_name": "أنقرة",
        "verified": false,
        "ret": "2027-03-19",
-       "link": "https://www.aviasales.com/search/DMM0803CMN19031?t=EY18045246001804574100001005DMMAUHCMN18054444001805553900001645CMNAUHDMM_69b8d0af9826349b7ef128e4bdc1a3f1_53681&search_date=05112026&expected_price_uuid=01a1a9ed-c999-8040-62f7-caef5cf6786a&static_fare_key=TY%7CP0%7CH1%7CL0%7CCH0%7CR0%7CTBC0&itinerary_key=BGLAUMVQk4ofvX5ra74EUw&expected_price_source=share&expected_price_currency=usd&expected_price=656",
-       "google_link": "https://www.google.com/travel/flights/search?tfs=GhoSCjIwMjctMDMtMDhqBRIDRE1NcgUSA0NNThoaEgoyMDI3LTAzLTE5agUSA0NNTnIFEgNETU1CAgEBSAGYAQE=&hl=ar&curr=SAR"
+       "link": "https://www.aviasales.com/search/JED0903ANK19031?t=VF18045723001804584900000210JEDESB18054618001805474700000215ESBJED_1c6a11e12125d452c2e33f4a8a2ed00f_27008&search_date=10112026&expected_price_uuid=01a1c718-61fc-8030-6460-93981f3b86f4&static_fare_key=TY%7CP1%7CH0%7CL0%7CCH0%7CR0%7CTBC0&itinerary_key=dM59daY_qHLDQXfUuoTJrQ&expected_price_source=share&expected_price_currency=usd&expected_price=325",
+       "google_link": "https://www.google.com/travel/flights/search?tfs=GhoSCjIwMjctMDMtMDlqBRIDSkVEcgUSA0VTQhoaEgoyMDI3LTAzLTE5agUSA0VTQnIFEgNKRURCAgEBSAGYAQE=&hl=ar&curr=SAR"
       },
       {
        "date": "2027-03-14",
-       "price": 1458.75,
-       "destination": "MCT",
-       "destination_name": "مسقط",
+       "price": 3056.25,
+       "destination": "CPT",
+       "destination_name": "كيب تاون",
        "verified": false,
-       "ret": "2027-03-26",
-       "link": "https://www.aviasales.com/search/JED1403MCT26031?t=EY18050013001805065800001015JEDBAHMCT18060618001806078000000330MCTAUHJED_ff64bad42b458bfe0113223b02880795_31830&search_date=04112026&expected_price_uuid=01a1a5c4-0bda-8030-25e4-785bfd0c745e&static_fare_key=TY%7CP0%7CH1%7CL0%7CCH0%7CR0%7CTBC0&itinerary_key=65s6oTNK9IS7A7SISd0K_A&expected_price_source=share&expected_price_currency=usd&expected_price=389",
-       "google_link": "https://www.google.com/travel/flights/search?tfs=GhoSCjIwMjctMDMtMTRqBRIDSkVEcgUSA01DVBoaEgoyMDI3LTAzLTI2agUSA01DVHIFEgNKRURCAgEBSAGYAQE=&hl=ar&curr=SAR"
+       "ret": "2027-03-27",
+       "link": "https://www.aviasales.com/search/JED1403CPT27031?t=QR18050226001805106600001460JEDDOHCPT18061509001806204000000825CPTDOHJED_f8dfbc13fe581bb07df333e7a932599b_66629&search_date=05112026&expected_price_uuid=01a1aa90-a699-8030-e6aa-b19c94716f76&static_fare_key=TY%7CP1%7CH1%7CL1_2_46%7CCH1%7CR1%7CTBC1&itinerary_key=C8atA3zx3DKB_01PqvuViA&expected_price_source=share&expected_price_currency=usd&expected_price=815",
+       "google_link": "https://www.google.com/travel/flights/search?tfs=GhoSCjIwMjctMDMtMTRqBRIDSkVEcgUSA0NQVBoaEgoyMDI3LTAzLTI3agUSA0NQVHIFEgNKRURCAgEBSAGYAQE=&hl=ar&curr=SAR"
       },
       {
        "date": "2027-03-15",
@@ -4597,12 +4563,12 @@
       },
       {
        "date": "2027-03-19",
-       "price": 960.0,
+       "price": 945.0,
        "destination": "AUH",
        "destination_name": "أبوظبي",
        "verified": false,
        "ret": "2027-03-30",
-       "link": "https://www.aviasales.com/search/JED1903AUH30031?t=SV18054570001805469900000155JEDAUH18064239001806430500000170AUHJED_e57ae22bd7897603b3f964f2bce6fb58_20940&search_date=07112026&expected_price_uuid=01a1b73f-94a3-8030-a5fa-68c3a23e7c1d&static_fare_key=TY%7CP0%7CH0%7CL0%7CCH0%7CR0%7CTBC0&itinerary_key=DrPMGBLpb7ILPzVCPxNrCg&expected_price_source=share&expected_price_currency=usd&expected_price=256",
+       "link": "https://www.aviasales.com/search/JED1903AUH30031?t=SV18054570001805469900000155JEDAUH18064239001806430500000170AUHJED_e57ae22bd7897603b3f964f2bce6fb58_20917&search_date=11112026&expected_price_uuid=01a1c9da-ee52-8030-e8b2-4de0f2a43bc1&static_fare_key=TY%7CP1%7CH1%7CL0%7CCH0%7CR0%7CTBC0&itinerary_key=DrPMGBLpb7ILPzVCPxNrCg&expected_price_source=share&expected_price_currency=usd&expected_price=252",
        "google_link": "https://www.google.com/travel/flights/search?tfs=GhoSCjIwMjctMDMtMTlqBRIDSkVEcgUSA0FVSBoaEgoyMDI3LTAzLTMwagUSA0FVSHIFEgNKRURCAgEBSAGYAQE=&hl=ar&curr=SAR"
       },
       {
@@ -4616,6 +4582,16 @@
        "google_link": "https://www.google.com/travel/flights/search?tfs=GhoSCjIwMjctMDMtMjBqBRIDSkVEcgUSA0tSVBoaEgoyMDI3LTAzLTI5agUSA0tSVHIFEgNKRURCAgEBSAGYAQE=&hl=ar&curr=SAR"
       },
       {
+       "date": "2027-03-21",
+       "price": 877.5,
+       "destination": "ANK",
+       "destination_name": "أنقرة",
+       "verified": false,
+       "ret": "2027-03-31",
+       "link": "https://www.aviasales.com/search/JED2103ANK31031?t=VF18056091001805621700000210JEDESB18065373001806550800000225ESBJED_ea02bbf9fa6fa9734d95b3665afe4d25_19472&search_date=10112026&expected_price_uuid=01a1c727-2c39-8031-6d07-521716fee9d9&static_fare_key=TY%7CP1%7CH0%7CL0%7CCH0%7CR0%7CTBC0&itinerary_key=M_fqDwQaxUsvQxZbfAOaig&expected_price_source=share&expected_price_currency=usd&expected_price=234",
+       "google_link": "https://www.google.com/travel/flights/search?tfs=GhoSCjIwMjctMDMtMjFqBRIDSkVEcgUSA0VTQhoaEgoyMDI3LTAzLTMxagUSA0VTQnIFEgNKRURCAgEBSAGYAQE=&hl=ar&curr=SAR"
+      },
+      {
        "date": "2027-03-24",
        "price": 3161.25,
        "destination": "OVB",
@@ -4627,25 +4603,15 @@
       }
      ],
      "cheapest": {
-      "date": "2027-03-19",
-      "label": "الجمعة 19 مارس 2027",
-      "price": 960.0
+      "date": "2027-03-21",
+      "label": "الأحد 21 مارس 2027",
+      "price": 877.5
      }
     },
     {
      "month": "2027-04",
      "label": "أبريل 2027",
      "days": [
-      {
-       "date": "2027-04-01",
-       "price": 2332.5,
-       "destination": "JKT",
-       "destination_name": "جاكرتا",
-       "verified": false,
-       "ret": "2027-04-09",
-       "link": "https://www.aviasales.com/search/DMM0104JKT09041?t=EY18065544001806611700000715DMMAUHCGK18072291001807261800000785CGKAUHDMM_38e9421680516523c693e3bc9f649219_50729&search_date=03112026&expected_price_uuid=01a1a24d-2eb6-8040-2b6a-c73022588c98&static_fare_key=TY%7CP0%7CH1%7CL0%7CCH0%7CR0%7CTBC0&itinerary_key=DzprHvfF-yZYbo5tGAcD5g&expected_price_source=share&expected_price_currency=usd&expected_price=622",
-       "google_link": "https://www.google.com/travel/flights/search?tfs=GhoSCjIwMjctMDQtMDFqBRIDRE1NcgUSA0NHSxoaEgoyMDI3LTA0LTA5agUSA0NHS3IFEgNETU1CAgEBSAGYAQE=&hl=ar&curr=SAR"
-      },
       {
        "date": "2027-04-02",
        "price": 2493.75,
@@ -4655,6 +4621,16 @@
        "ret": "2027-04-11",
        "link": "https://www.aviasales.com/search/DMM0204MNL11041?t=EK18066546001806731700000985DMMDXBMNL18074673001807497600000805MNLDXBDMM_33f03524564aefd9eb60f77b5790b258_54734&search_date=09112026&expected_price_uuid=01a1bfc7-782b-8030-6a51-cb49ec99a593&static_fare_key=TY%7CP0%7CH1%7CL1_1_40%7CCH0%7CR0%7CTBC1&itinerary_key=8j3ikcJRxkK5vJjgafIxFA&expected_price_source=share&expected_price_currency=usd&expected_price=665",
        "google_link": "https://www.google.com/travel/flights/search?tfs=GhoSCjIwMjctMDQtMDJqBRIDRE1NcgUSA01OTBoaEgoyMDI3LTA0LTExagUSA01OTHIFEgNETU1CAgEBSAGYAQE=&hl=ar&curr=SAR"
+      },
+      {
+       "date": "2027-04-04",
+       "price": 1713.75,
+       "destination": "SJJ",
+       "destination_name": "سراييفو",
+       "verified": false,
+       "ret": "2027-04-13",
+       "link": "https://www.aviasales.com/search/JED0404SJJ13041?t=VF18068082001806834900000505JEDSAWSJJ18076311001807756500002030SJJSAWISTATHJED_587a6057bd48eec13d43bcc4f2f17b70_38011&search_date=10112026&expected_price_uuid=01a1c70c-9cb7-8030-a595-b05e17a07448&static_fare_key=TY%7CP1%7CH0%7CL0%7CCH0%7CR0%7CTBC0&itinerary_key=pjBx9yqTlXKS6Evo4xWOEA&expected_price_source=share&expected_price_currency=usd&expected_price=457",
+       "google_link": "https://www.google.com/travel/flights/search?tfs=GhoSCjIwMjctMDQtMDRqBRIDSkVEcgUSA1NKShoaEgoyMDI3LTA0LTEzagUSA1NKSnIFEgNKRURCAgEBSAGYAQE=&hl=ar&curr=SAR"
       },
       {
        "date": "2027-04-05",
@@ -4758,6 +4734,16 @@
        "google_link": "https://www.google.com/travel/flights/search?tfs=GhoSCjIwMjctMDUtMDdqBRIDRE1NcgUSA0lTQhoaEgoyMDI3LTA1LTIxagUSA0lTQnIFEgNETU1CAgEBSAGYAQE=&hl=ar&curr=SAR"
       },
       {
+       "date": "2027-05-10",
+       "price": 2711.25,
+       "destination": "MCX",
+       "destination_name": "ماخاك كالا",
+       "verified": false,
+       "ret": "2027-05-23",
+       "link": "https://www.aviasales.com/search/JED1005MCX23051?t=FZ18099798001810088400001810JEDDXBMCX18110424001811094300000865MCXDXBJED_ab3d38ce88295334fe6b0b8d00578d2b_60179&search_date=11112026&expected_price_uuid=01a1c992-9db3-8030-a6e7-0437c117786d&static_fare_key=TY%7CP0%7CH1%7CL1_1_25%7CCH0%7CR0%7CTBC1&itinerary_key=lFWkYbgcwkreYB1samuCGg&expected_price_source=share&expected_price_currency=usd&expected_price=723",
+       "google_link": "https://www.google.com/travel/flights/search?tfs=GhoSCjIwMjctMDUtMTBqBRIDSkVEcgUSA01DWBoaEgoyMDI3LTA1LTIzagUSA01DWHIFEgNKRURCAgEBSAGYAQE=&hl=ar&curr=SAR"
+      },
+      {
        "date": "2027-05-15",
        "price": 2265.0,
        "destination": "JKT",
@@ -4797,22 +4783,12 @@
        "ret": "2027-06-21",
        "link": "https://www.aviasales.com/search/DMM1106SEL21061?t=TK18127233001812822000001285DMMJEDISTICN18136200001813710600001870ICNISTDMM_0042978b6c30ef9b8ecb142854f78b6c_61533&search_date=09112026&expected_price_uuid=01a1bdb0-8f7e-8040-247d-4035a75f2931&static_fare_key=TY%7CP0%7CH1%7CL1_1_23%7CCH1%7CR0%7CTBC1&itinerary_key=QceRkTy22mR5BFWc0kkwDg&expected_price_source=share&expected_price_currency=usd&expected_price=751",
        "google_link": "https://www.google.com/travel/flights/search?tfs=GhoSCjIwMjctMDYtMTFqBRIDRE1NcgUSA0lDThoaEgoyMDI3LTA2LTIxagUSA0lDTnIFEgNETU1CAgEBSAGYAQE=&hl=ar&curr=SAR"
-      },
-      {
-       "date": "2027-06-18",
-       "price": 2062.5,
-       "destination": "HKT",
-       "destination_name": "بوكيت",
-       "verified": false,
-       "ret": "2027-07-02",
-       "link": "https://www.aviasales.com/search/JED1806HKT02071?t=AI18133554001813433400001060JEDDELHKT18145137001814561400001035HKTDELJED_a2eb170d02ced48b249a655a2f61ac94_44815&search_date=03112026&expected_price_uuid=01a1a14c-0c7f-8030-671f-7768a790e298&static_fare_key=TY%7CP1%7CH1%7CL1_1_25%7CCH1%7CR1%7CTBC1&itinerary_key=8bzUOn4C6vw7AO_QhLpQZQ&expected_price_source=share&expected_price_currency=usd&expected_price=550",
-       "google_link": "https://www.google.com/travel/flights/search?tfs=GhoSCjIwMjctMDYtMThqBRIDSkVEcgUSA0hLVBoaEgoyMDI3LTA3LTAyagUSA0hLVHIFEgNKRURCAgEBSAGYAQE=&hl=ar&curr=SAR"
       }
      ],
      "cheapest": {
-      "date": "2027-06-18",
-      "label": "الجمعة 18 يونيو 2027",
-      "price": 2062.5
+      "date": "2027-06-08",
+      "label": "الثلاثاء 8 يونيو 2027",
+      "price": 2250.0
      }
     }
    ],
@@ -4940,10 +4916,18 @@
     {
      "d": "2026-11-10",
      "p": 428.0
+    },
+    {
+     "d": "2026-11-11",
+     "p": 502.5
     }
    ],
-   "live_checked": 3,
-   "live_errors": [],
+   "live_checked": 4,
+   "live_errors": [
+    "JED→ESB 2026-12-04: FlightsNotFound: no flights found; received error",
+    "JED→SAW 2026-12-02: FlightsNotFound: no flights found; received error",
+    "DMM→MED 2026-11-28: FlightsNotFound: no flights found; received error"
+   ],
    "errors": []
   },
   {
@@ -5107,9 +5091,9 @@
      "source": "aviasales",
      "origin": "JED",
      "destination": "BAK",
-     "depart": "2026-12-05",
-     "price": 1380.0,
-     "ret": "2026-12-09",
+     "depart": "2026-12-07",
+     "price": 1286.25,
+     "ret": "2026-12-14",
      "origin_airport": "JED",
      "destination_airport": "GYD",
      "airline": "XY",
@@ -5117,34 +5101,77 @@
      "transfers": 0,
      "return_transfers": 0,
      "duration": 540,
-     "link": "https://www.aviasales.com/search/JED0512GYD09121?t=XY17964525001796472000000265JEDGYD17968212001796834100000275GYDJED_65bcb3b9bf7d5c1ddeffa6e91578df89_30149&search_date=08112026&expected_price_uuid=01a1bc05-9caa-8040-aa83-8c5612d4f02d&static_fare_key=TY%7CP0%7CH1%7CL0%7CCH0%7CR0%7CTBC0&itinerary_key=lZ42z42YK3hE-is-EcqATQ&origin_airports=1&destination_airports=0&expected_price_source=share&expected_price_currency=usd&expected_price=368",
-     "google_link": "https://www.google.com/travel/flights/search?tfs=GhoSCjIwMjYtMTItMDVqBRIDSkVEcgUSA0dZRBoaEgoyMDI2LTEyLTA5agUSA0dZRHIFEgNKRURCAQFIAZgBAQ==&hl=ar&curr=SAR",
+     "link": "https://www.aviasales.com/search/JED0712GYD14121?t=XY17966253001796644800000265JEDGYD17972532001797266100000275GYDJED_e9924e711ca76050f15b8b4862ae2ac0_28275&search_date=10112026&expected_price_uuid=01a1c37e-aa97-8031-2d6f-6ec41cc141a5&static_fare_key=TY%7CP0%7CH1%7CL0%7CCH0%7CR0%7CTBC0&itinerary_key=MeHgcb6sv_RGFWoZJWduFw&origin_airports=1&destination_airports=0&expected_price_source=share&expected_price_currency=usd&expected_price=343",
+     "google_link": "https://www.google.com/travel/flights/search?tfs=GhoSCjIwMjYtMTItMDdqBRIDSkVEcgUSA0dZRBoaEgoyMDI2LTEyLTE0agUSA0dZRHIFEgNKRURCAQFIAZgBAQ==&hl=ar&curr=SAR",
      "verified": false,
      "cached_price": null,
      "compare_links": [
       {
        "name": "Trip.com",
-       "url": "https://www.trip.com/flights/jeddah-to-baku/tickets-jed-gyd/?ddate=2026-12-05&rdate=2026-12-09&flighttype=d"
+       "url": "https://www.trip.com/flights/jeddah-to-baku/tickets-jed-gyd/?ddate=2026-12-07&rdate=2026-12-14&flighttype=d"
       },
       {
        "name": "Skyscanner",
-       "url": "https://www.skyscanner.net/transport/flights/jed/gyd/261205/261209/?adultsv2=1&cabinclass=economy"
+       "url": "https://www.skyscanner.net/transport/flights/jed/gyd/261207/261214/?adultsv2=1&cabinclass=economy"
       },
       {
        "name": "Kayak",
-       "url": "https://www.kayak.com/flights/JED-GYD/2026-12-05/2026-12-09?sort=price_a"
+       "url": "https://www.kayak.com/flights/JED-GYD/2026-12-07/2026-12-14?sort=price_a"
       }
      ],
      "discount_name": null,
      "discount_price": null,
      "discount_for_alerts": false,
-     "stay": 4,
+     "stay": 7,
      "origin_name": "جدة",
      "destination_name": "باكو",
      "airline_name": "طيران ناس",
      "stops": "مباشر",
-     "depart_label": "السبت 5 ديسمبر 2026",
-     "ret_label": "الأربعاء 9 ديسمبر 2026"
+     "depart_label": "الاثنين 7 ديسمبر 2026",
+     "ret_label": "الاثنين 14 ديسمبر 2026"
+    },
+    {
+     "source": "aviasales",
+     "origin": "JED",
+     "destination": "BAK",
+     "depart": "2026-12-11",
+     "price": 1290.0,
+     "ret": "2026-12-14",
+     "origin_airport": "JED",
+     "destination_airport": "GYD",
+     "airline": "XY",
+     "flight_number": "627",
+     "transfers": 0,
+     "return_transfers": 0,
+     "duration": 540,
+     "link": "https://www.aviasales.com/search/JED1112GYD14121?t=XY17969709001796990400000265JEDGYD17972532001797266100000275GYDJED_5c8e5a36375d420313fe6705247565db_28342&search_date=09112026&expected_price_uuid=01a1c186-63a0-8031-26d6-3249bb623c8e&static_fare_key=TY%7CP0%7CH1%7CL0%7CCH0%7CR0%7CTBC0&itinerary_key=0f7h_cxtJlEICjTNbEJgPQ&origin_airports=1&destination_airports=0&expected_price_source=share&expected_price_currency=usd&expected_price=344",
+     "google_link": "https://www.google.com/travel/flights/search?tfs=GhoSCjIwMjYtMTItMTFqBRIDSkVEcgUSA0dZRBoaEgoyMDI2LTEyLTE0agUSA0dZRHIFEgNKRURCAQFIAZgBAQ==&hl=ar&curr=SAR",
+     "verified": false,
+     "cached_price": null,
+     "compare_links": [
+      {
+       "name": "Trip.com",
+       "url": "https://www.trip.com/flights/jeddah-to-baku/tickets-jed-gyd/?ddate=2026-12-11&rdate=2026-12-14&flighttype=d"
+      },
+      {
+       "name": "Skyscanner",
+       "url": "https://www.skyscanner.net/transport/flights/jed/gyd/261211/261214/?adultsv2=1&cabinclass=economy"
+      },
+      {
+       "name": "Kayak",
+       "url": "https://www.kayak.com/flights/JED-GYD/2026-12-11/2026-12-14?sort=price_a"
+      }
+     ],
+     "discount_name": null,
+     "discount_price": null,
+     "discount_for_alerts": false,
+     "stay": 3,
+     "origin_name": "جدة",
+     "destination_name": "باكو",
+     "airline_name": "طيران ناس",
+     "stops": "مباشر",
+     "depart_label": "الجمعة 11 ديسمبر 2026",
+     "ret_label": "الاثنين 14 ديسمبر 2026"
     },
     {
      "source": "aviasales",
@@ -5446,49 +5473,6 @@
      "stops": "توقف واحد",
      "depart_label": "الثلاثاء 16 فبراير 2027",
      "ret_label": "الجمعة 26 فبراير 2027"
-    },
-    {
-     "source": "aviasales",
-     "origin": "JED",
-     "destination": "BAK",
-     "depart": "2026-12-05",
-     "price": 1593.75,
-     "ret": "2026-12-12",
-     "origin_airport": "JED",
-     "destination_airport": "GYD",
-     "airline": "XY",
-     "flight_number": "627",
-     "transfers": 0,
-     "return_transfers": 0,
-     "duration": 540,
-     "link": "https://www.aviasales.com/search/JED0512GYD12121?t=XY17964525001796472000000265JEDGYD17970804001797093300000275GYDJED_7e5297f48e191bf294ba8ce745da3e09_34795&search_date=08112026&expected_price_uuid=01a1b9b9-2c92-8030-6df1-80e5e3198f5d&static_fare_key=TY%7CP0%7CH1%7CL0%7CCH0%7CR0%7CTBC0&itinerary_key=MeHgcb6sv_RGFWoZJWduFw&origin_airports=1&destination_airports=0&expected_price_source=share&expected_price_currency=usd&expected_price=425",
-     "google_link": "https://www.google.com/travel/flights/search?tfs=GhoSCjIwMjYtMTItMDVqBRIDSkVEcgUSA0dZRBoaEgoyMDI2LTEyLTEyagUSA0dZRHIFEgNKRURCAQFIAZgBAQ==&hl=ar&curr=SAR",
-     "verified": false,
-     "cached_price": null,
-     "compare_links": [
-      {
-       "name": "Trip.com",
-       "url": "https://www.trip.com/flights/jeddah-to-baku/tickets-jed-gyd/?ddate=2026-12-05&rdate=2026-12-12&flighttype=d"
-      },
-      {
-       "name": "Skyscanner",
-       "url": "https://www.skyscanner.net/transport/flights/jed/gyd/261205/261212/?adultsv2=1&cabinclass=economy"
-      },
-      {
-       "name": "Kayak",
-       "url": "https://www.kayak.com/flights/JED-GYD/2026-12-05/2026-12-12?sort=price_a"
-      }
-     ],
-     "discount_name": null,
-     "discount_price": null,
-     "discount_for_alerts": false,
-     "stay": 7,
-     "origin_name": "جدة",
-     "destination_name": "باكو",
-     "airline_name": "طيران ناس",
-     "stops": "مباشر",
-     "depart_label": "السبت 5 ديسمبر 2026",
-     "ret_label": "السبت 12 ديسمبر 2026"
     }
    ],
    "reference_origin": "RUH",
@@ -5546,9 +5530,9 @@
      "source": "aviasales",
      "origin": "JED",
      "destination": "BAK",
-     "depart": "2026-12-05",
-     "price": 1380.0,
-     "ret": "2026-12-09",
+     "depart": "2026-12-07",
+     "price": 1286.25,
+     "ret": "2026-12-14",
      "origin_airport": "JED",
      "destination_airport": "GYD",
      "airline": "XY",
@@ -5556,38 +5540,38 @@
      "transfers": 0,
      "return_transfers": 0,
      "duration": 540,
-     "link": "https://www.aviasales.com/search/JED0512GYD09121?t=XY17964525001796472000000265JEDGYD17968212001796834100000275GYDJED_65bcb3b9bf7d5c1ddeffa6e91578df89_30149&search_date=08112026&expected_price_uuid=01a1bc05-9caa-8040-aa83-8c5612d4f02d&static_fare_key=TY%7CP0%7CH1%7CL0%7CCH0%7CR0%7CTBC0&itinerary_key=lZ42z42YK3hE-is-EcqATQ&origin_airports=1&destination_airports=0&expected_price_source=share&expected_price_currency=usd&expected_price=368",
-     "google_link": "https://www.google.com/travel/flights/search?tfs=GhoSCjIwMjYtMTItMDVqBRIDSkVEcgUSA0dZRBoaEgoyMDI2LTEyLTA5agUSA0dZRHIFEgNKRURCAQFIAZgBAQ==&hl=ar&curr=SAR",
+     "link": "https://www.aviasales.com/search/JED0712GYD14121?t=XY17966253001796644800000265JEDGYD17972532001797266100000275GYDJED_e9924e711ca76050f15b8b4862ae2ac0_28275&search_date=10112026&expected_price_uuid=01a1c37e-aa97-8031-2d6f-6ec41cc141a5&static_fare_key=TY%7CP0%7CH1%7CL0%7CCH0%7CR0%7CTBC0&itinerary_key=MeHgcb6sv_RGFWoZJWduFw&origin_airports=1&destination_airports=0&expected_price_source=share&expected_price_currency=usd&expected_price=343",
+     "google_link": "https://www.google.com/travel/flights/search?tfs=GhoSCjIwMjYtMTItMDdqBRIDSkVEcgUSA0dZRBoaEgoyMDI2LTEyLTE0agUSA0dZRHIFEgNKRURCAQFIAZgBAQ==&hl=ar&curr=SAR",
      "verified": false,
      "cached_price": null,
      "compare_links": [
       {
        "name": "Trip.com",
-       "url": "https://www.trip.com/flights/jeddah-to-baku/tickets-jed-gyd/?ddate=2026-12-05&rdate=2026-12-09&flighttype=d"
+       "url": "https://www.trip.com/flights/jeddah-to-baku/tickets-jed-gyd/?ddate=2026-12-07&rdate=2026-12-14&flighttype=d"
       },
       {
        "name": "Skyscanner",
-       "url": "https://www.skyscanner.net/transport/flights/jed/gyd/261205/261209/?adultsv2=1&cabinclass=economy"
+       "url": "https://www.skyscanner.net/transport/flights/jed/gyd/261207/261214/?adultsv2=1&cabinclass=economy"
       },
       {
        "name": "Kayak",
-       "url": "https://www.kayak.com/flights/JED-GYD/2026-12-05/2026-12-09?sort=price_a"
+       "url": "https://www.kayak.com/flights/JED-GYD/2026-12-07/2026-12-14?sort=price_a"
       }
      ],
      "discount_name": null,
      "discount_price": null,
      "discount_for_alerts": false,
-     "stay": 4,
+     "stay": 7,
      "origin_name": "جدة",
      "destination_name": "باكو",
      "airline_name": "طيران ناس",
      "stops": "مباشر",
-     "depart_label": "السبت 5 ديسمبر 2026",
-     "ret_label": "الأربعاء 9 ديسمبر 2026",
+     "depart_label": "الاثنين 7 ديسمبر 2026",
+     "ret_label": "الاثنين 14 ديسمبر 2026",
      "ref": {
       "missing": true,
       "origin_name": "الرياض",
-      "google_link": "https://www.google.com/travel/flights/search?tfs=GhoSCjIwMjYtMTItMDVqBRIDUlVIcgUSA0dZRBoaEgoyMDI2LTEyLTA5agUSA0dZRHIFEgNSVUhCAQFIAZgBAQ==&hl=ar&curr=SAR"
+      "google_link": "https://www.google.com/travel/flights/search?tfs=GhoSCjIwMjYtMTItMDdqBRIDUlVIcgUSA0dZRBoaEgoyMDI2LTEyLTE0agUSA0dZRHIFEgNSVUhCAQFIAZgBAQ==&hl=ar&curr=SAR"
      }
     },
     {
@@ -5640,6 +5624,54 @@
     },
     {
      "source": "aviasales",
+     "origin": "JED",
+     "destination": "SJJ",
+     "depart": "2027-04-04",
+     "price": 1713.75,
+     "ret": "2027-04-13",
+     "origin_airport": "JED",
+     "destination_airport": "SJJ",
+     "airline": "VF",
+     "flight_number": "190",
+     "transfers": 1,
+     "return_transfers": 2,
+     "duration": 2535,
+     "link": "https://www.aviasales.com/search/JED0404SJJ13041?t=VF18068082001806834900000505JEDSAWSJJ18076311001807756500002030SJJSAWISTATHJED_587a6057bd48eec13d43bcc4f2f17b70_38011&search_date=10112026&expected_price_uuid=01a1c70c-9cb7-8030-a595-b05e17a07448&static_fare_key=TY%7CP1%7CH0%7CL0%7CCH0%7CR0%7CTBC0&itinerary_key=pjBx9yqTlXKS6Evo4xWOEA&expected_price_source=share&expected_price_currency=usd&expected_price=457",
+     "google_link": "https://www.google.com/travel/flights/search?tfs=GhoSCjIwMjctMDQtMDRqBRIDSkVEcgUSA1NKShoaEgoyMDI3LTA0LTEzagUSA1NKSnIFEgNKRURCAQFIAZgBAQ==&hl=ar&curr=SAR",
+     "verified": false,
+     "cached_price": null,
+     "compare_links": [
+      {
+       "name": "Trip.com",
+       "url": "https://www.trip.com/flights/jeddah-to-sarajevo/tickets-jed-sjj/?ddate=2027-04-04&rdate=2027-04-13&flighttype=d"
+      },
+      {
+       "name": "Skyscanner",
+       "url": "https://www.skyscanner.net/transport/flights/jed/sjj/270404/270413/?adultsv2=1&cabinclass=economy"
+      },
+      {
+       "name": "Kayak",
+       "url": "https://www.kayak.com/flights/JED-SJJ/2027-04-04/2027-04-13?sort=price_a"
+      }
+     ],
+     "discount_name": null,
+     "discount_price": null,
+     "discount_for_alerts": false,
+     "stay": 9,
+     "origin_name": "جدة",
+     "destination_name": "سراييفو",
+     "airline_name": "VF",
+     "stops": "توقف واحد",
+     "depart_label": "الأحد 4 أبريل 2027",
+     "ret_label": "الثلاثاء 13 أبريل 2027",
+     "ref": {
+      "missing": true,
+      "origin_name": "الرياض",
+      "google_link": "https://www.google.com/travel/flights/search?tfs=GhoSCjIwMjctMDQtMDRqBRIDUlVIcgUSA1NKShoaEgoyMDI3LTA0LTEzagUSA1NKSnIFEgNSVUhCAQFIAZgBAQ==&hl=ar&curr=SAR"
+     }
+    },
+    {
+     "source": "aviasales",
      "origin": "DMM",
      "destination": "MUC",
      "depart": "2027-02-01",
@@ -5684,6 +5716,54 @@
       "missing": true,
       "origin_name": "الرياض",
       "google_link": "https://www.google.com/travel/flights/search?tfs=GhoSCjIwMjctMDItMDFqBRIDUlVIcgUSA01VQxoaEgoyMDI3LTAyLTEwagUSA01VQ3IFEgNSVUhCAQFIAZgBAQ==&hl=ar&curr=SAR"
+     }
+    },
+    {
+     "source": "aviasales",
+     "origin": "DMM",
+     "destination": "MAD",
+     "depart": "2026-12-12",
+     "price": 1777.5,
+     "ret": "2026-12-19",
+     "origin_airport": "DMM",
+     "destination_airport": "MAD",
+     "airline": "PC",
+     "flight_number": "613",
+     "transfers": 1,
+     "return_transfers": 1,
+     "duration": 1370,
+     "link": "https://www.aviasales.com/search/DMM1212MAD19121?t=PC17970411001797075600000695DMMSAWMAD17976840001797731700000675MADSAWDMM_57933c93b1c48d7c6d6ca55de0efe4cf_39426&search_date=10112026&expected_price_uuid=01a1c690-3097-8030-e088-d37ad9a57d82&static_fare_key=TY%7CP1%7CH0%7CL0%7CCH0%7CR0%7CTBC0&itinerary_key=cDmWgwAoeqBTRN_SiXUOpA&expected_price_source=share&expected_price_currency=usd&expected_price=474",
+     "google_link": "https://www.google.com/travel/flights/search?tfs=GhoSCjIwMjYtMTItMTJqBRIDRE1NcgUSA01BRBoaEgoyMDI2LTEyLTE5agUSA01BRHIFEgNETU1CAQFIAZgBAQ==&hl=ar&curr=SAR",
+     "verified": false,
+     "cached_price": null,
+     "compare_links": [
+      {
+       "name": "Trip.com",
+       "url": "https://www.trip.com/flights/dammam-to-madrid/tickets-dmm-mad/?ddate=2026-12-12&rdate=2026-12-19&flighttype=d"
+      },
+      {
+       "name": "Skyscanner",
+       "url": "https://www.skyscanner.net/transport/flights/dmm/mad/261212/261219/?adultsv2=1&cabinclass=economy"
+      },
+      {
+       "name": "Kayak",
+       "url": "https://www.kayak.com/flights/DMM-MAD/2026-12-12/2026-12-19?sort=price_a"
+      }
+     ],
+     "discount_name": null,
+     "discount_price": null,
+     "discount_for_alerts": false,
+     "stay": 7,
+     "origin_name": "الدمام",
+     "destination_name": "مدريد",
+     "airline_name": "بيغاسوس",
+     "stops": "توقف واحد",
+     "depart_label": "السبت 12 ديسمبر 2026",
+     "ret_label": "السبت 19 ديسمبر 2026",
+     "ref": {
+      "missing": true,
+      "origin_name": "الرياض",
+      "google_link": "https://www.google.com/travel/flights/search?tfs=GhoSCjIwMjYtMTItMTJqBRIDUlVIcgUSA01BRBoaEgoyMDI2LTEyLTE5agUSA01BRHIFEgNSVUhCAQFIAZgBAQ==&hl=ar&curr=SAR"
      }
     },
     {
@@ -5780,54 +5860,6 @@
       "missing": true,
       "origin_name": "الرياض",
       "google_link": "https://www.google.com/travel/flights/search?tfs=GhoSCjIwMjYtMTItMDNqBRIDUlVIcgUSA0JDThoaEgoyMDI2LTEyLTEyagUSA0JDTnIFEgNSVUhCAQFIAZgBAQ==&hl=ar&curr=SAR"
-     }
-    },
-    {
-     "source": "aviasales",
-     "origin": "JED",
-     "destination": "KRK",
-     "depart": "2026-12-01",
-     "price": 2201.25,
-     "ret": "2026-12-09",
-     "origin_airport": "JED",
-     "destination_airport": "KRK",
-     "airline": "VF",
-     "flight_number": "192",
-     "transfers": 2,
-     "return_transfers": 1,
-     "duration": 2030,
-     "link": "https://www.aviasales.com/search/JED0112KRK09121?t=VF17961036001796146200000830JEDSAWISTWAWKRK17967984001796877600001200KRKISTSAWJED_f8f5690c0c46ab502c56ee631ccff510_47948&search_date=03112026&expected_price_uuid=01a1a299-040b-8030-6c34-e224e0cf88b0&static_fare_key=TY%7CP1%7CH0%7CL0%7CCH0%7CR0%7CTBC0&itinerary_key=PaTQt5BDTDdw41QBQ5QBVA&expected_price_source=share&expected_price_currency=usd&expected_price=587",
-     "google_link": "https://www.google.com/travel/flights/search?tfs=GhoSCjIwMjYtMTItMDFqBRIDSkVEcgUSA0tSSxoaEgoyMDI2LTEyLTA5agUSA0tSS3IFEgNKRURCAQFIAZgBAQ==&hl=ar&curr=SAR",
-     "verified": false,
-     "cached_price": null,
-     "compare_links": [
-      {
-       "name": "Trip.com",
-       "url": "https://www.trip.com/flights/jeddah-to-krakow/tickets-jed-krk/?ddate=2026-12-01&rdate=2026-12-09&flighttype=d"
-      },
-      {
-       "name": "Skyscanner",
-       "url": "https://www.skyscanner.net/transport/flights/jed/krk/261201/261209/?adultsv2=1&cabinclass=economy"
-      },
-      {
-       "name": "Kayak",
-       "url": "https://www.kayak.com/flights/JED-KRK/2026-12-01/2026-12-09?sort=price_a"
-      }
-     ],
-     "discount_name": null,
-     "discount_price": null,
-     "discount_for_alerts": false,
-     "stay": 8,
-     "origin_name": "جدة",
-     "destination_name": "كراكوف",
-     "airline_name": "VF",
-     "stops": "توقفان",
-     "depart_label": "الثلاثاء 1 ديسمبر 2026",
-     "ret_label": "الأربعاء 9 ديسمبر 2026",
-     "ref": {
-      "missing": true,
-      "origin_name": "الرياض",
-      "google_link": "https://www.google.com/travel/flights/search?tfs=GhoSCjIwMjYtMTItMDFqBRIDUlVIcgUSA0tSSxoaEgoyMDI2LTEyLTA5agUSA0tSS3IFEgNSVUhCAQFIAZgBAQ==&hl=ar&curr=SAR"
      }
     },
     {
@@ -5930,11 +5962,10 @@
    "missing_destinations": [
     "لشبونة",
     "بودابست",
-    "مدريد",
+    "كراكوف",
     "باكو",
     "سالزبورغ",
-    "زغرب",
-    "سراييفو"
+    "زغرب"
    ],
    "calendar": [
     {
@@ -5983,13 +6014,13 @@
       },
       {
        "date": "2026-12-05",
-       "price": 1380.0,
+       "price": 1593.75,
        "destination": "BAK",
        "destination_name": "باكو",
        "verified": false,
-       "ret": "2026-12-09",
-       "link": "https://www.aviasales.com/search/JED0512GYD09121?t=XY17964525001796472000000265JEDGYD17968212001796834100000275GYDJED_65bcb3b9bf7d5c1ddeffa6e91578df89_30149&search_date=08112026&expected_price_uuid=01a1bc05-9caa-8040-aa83-8c5612d4f02d&static_fare_key=TY%7CP0%7CH1%7CL0%7CCH0%7CR0%7CTBC0&itinerary_key=lZ42z42YK3hE-is-EcqATQ&origin_airports=1&destination_airports=0&expected_price_source=share&expected_price_currency=usd&expected_price=368",
-       "google_link": "https://www.google.com/travel/flights/search?tfs=GhoSCjIwMjYtMTItMDVqBRIDSkVEcgUSA0dZRBoaEgoyMDI2LTEyLTA5agUSA0dZRHIFEgNKRURCAQFIAZgBAQ==&hl=ar&curr=SAR"
+       "ret": "2026-12-12",
+       "link": "https://www.aviasales.com/search/JED0512GYD12121?t=XY17964525001796472000000265JEDGYD17970804001797093300000275GYDJED_7e5297f48e191bf294ba8ce745da3e09_34795&search_date=08112026&expected_price_uuid=01a1b9b9-2c92-8030-6df1-80e5e3198f5d&static_fare_key=TY%7CP0%7CH1%7CL0%7CCH0%7CR0%7CTBC0&itinerary_key=MeHgcb6sv_RGFWoZJWduFw&origin_airports=1&destination_airports=0&expected_price_source=share&expected_price_currency=usd&expected_price=425",
+       "google_link": "https://www.google.com/travel/flights/search?tfs=GhoSCjIwMjYtMTItMDVqBRIDSkVEcgUSA0dZRBoaEgoyMDI2LTEyLTEyagUSA0dZRHIFEgNKRURCAQFIAZgBAQ==&hl=ar&curr=SAR"
       },
       {
        "date": "2026-12-06",
@@ -6003,33 +6034,23 @@
       },
       {
        "date": "2026-12-07",
-       "price": 1954.0,
+       "price": 1286.25,
        "destination": "BAK",
        "destination_name": "باكو",
-       "verified": true,
+       "verified": false,
        "ret": "2026-12-14",
        "link": "https://www.aviasales.com/search/JED0712GYD14121?t=XY17966253001796644800000265JEDGYD17972532001797266100000275GYDJED_e9924e711ca76050f15b8b4862ae2ac0_28275&search_date=10112026&expected_price_uuid=01a1c37e-aa97-8031-2d6f-6ec41cc141a5&static_fare_key=TY%7CP0%7CH1%7CL0%7CCH0%7CR0%7CTBC0&itinerary_key=MeHgcb6sv_RGFWoZJWduFw&origin_airports=1&destination_airports=0&expected_price_source=share&expected_price_currency=usd&expected_price=343",
        "google_link": "https://www.google.com/travel/flights/search?tfs=GhoSCjIwMjYtMTItMDdqBRIDSkVEcgUSA0dZRBoaEgoyMDI2LTEyLTE0agUSA0dZRHIFEgNKRURCAQFIAZgBAQ==&hl=ar&curr=SAR"
       },
       {
        "date": "2026-12-08",
-       "price": 1691.25,
-       "destination": "BAK",
-       "destination_name": "باكو",
-       "verified": false,
-       "ret": "2026-12-15",
-       "link": "https://www.aviasales.com/search/JED0812GYD15121?t=QR17967201001796758500000580JEDDOHGYD17973678001797472200001800GYDDOHJED_2927686c4fb4f8289b7bc8f20f1ea3f1_36855&search_date=04112026&expected_price_uuid=01a1a5bb-f7d2-8031-6546-68259eed4783&static_fare_key=TY%7CP1%7CH1%7CL1_1_25%7CCH0%7CR0%7CTBC1&itinerary_key=kL_ezfP2m_Qnh7kRlzwhfg&origin_airports=1&destination_airports=0&expected_price_source=share&expected_price_currency=usd&expected_price=451",
-       "google_link": "https://www.google.com/travel/flights/search?tfs=GhoSCjIwMjYtMTItMDhqBRIDSkVEcgUSA0dZRBoaEgoyMDI2LTEyLTE1agUSA0dZRHIFEgNKRURCAQFIAZgBAQ==&hl=ar&curr=SAR"
-      },
-      {
-       "date": "2026-12-09",
-       "price": 1920.0,
+       "price": 1965.0,
        "destination": "PRG",
        "destination_name": "براغ",
        "verified": false,
-       "ret": "2026-12-18",
-       "link": "https://www.aviasales.com/search/JED0912PRG18121?t=PC17967942001796823000000600JEDSAWPRG17975991001797647100000680PRGSAWJED_6c0017a0b116e6ad417f665b8f3b05ed_41833&search_date=03112026&expected_price_uuid=01a1a3a3-4f50-8040-ae21-694013da5c90&static_fare_key=TY%7CP0%7CH0%7CL0%7CCH0%7CR0%7CTBC0&itinerary_key=Px610Xxdu8TndiMLZ4mLqg&expected_price_source=share&expected_price_currency=usd&expected_price=512",
-       "google_link": "https://www.google.com/travel/flights/search?tfs=GhoSCjIwMjYtMTItMDlqBRIDSkVEcgUSA1BSRxoaEgoyMDI2LTEyLTE4agUSA1BSR3IFEgNKRURCAQFIAZgBAQ==&hl=ar&curr=SAR"
+       "ret": "2026-12-19",
+       "link": "https://www.aviasales.com/search/JED0812PRG19121?t=VF17967084001796735700000575JEDSAWPRG17976897001797785100001470PRGSAWESBJED_bfc55416fd4e79d1d0568e5f1b24875e_42925&search_date=08112026&expected_price_uuid=01a1bb1b-fe98-8040-a6c1-790720318904&static_fare_key=TY%7CP0%7CH0%7CL0%7CCH0%7CR0%7CTBC0&itinerary_key=_UDVabiS3R0HHjR3NXC6WQ&expected_price_source=share&expected_price_currency=usd&expected_price=524",
+       "google_link": "https://www.google.com/travel/flights/search?tfs=GhoSCjIwMjYtMTItMDhqBRIDSkVEcgUSA1BSRxoaEgoyMDI2LTEyLTE5agUSA1BSR3IFEgNKRURCAQFIAZgBAQ==&hl=ar&curr=SAR"
       },
       {
        "date": "2026-12-10",
@@ -6043,10 +6064,10 @@
       },
       {
        "date": "2026-12-11",
-       "price": 1804.0,
+       "price": 1290.0,
        "destination": "BAK",
        "destination_name": "باكو",
-       "verified": true,
+       "verified": false,
        "ret": "2026-12-14",
        "link": "https://www.aviasales.com/search/JED1112GYD14121?t=XY17969709001796990400000265JEDGYD17972532001797266100000275GYDJED_5c8e5a36375d420313fe6705247565db_28342&search_date=09112026&expected_price_uuid=01a1c186-63a0-8031-26d6-3249bb623c8e&static_fare_key=TY%7CP0%7CH1%7CL0%7CCH0%7CR0%7CTBC0&itinerary_key=0f7h_cxtJlEICjTNbEJgPQ&origin_airports=1&destination_airports=0&expected_price_source=share&expected_price_currency=usd&expected_price=344",
        "google_link": "https://www.google.com/travel/flights/search?tfs=GhoSCjIwMjYtMTItMTFqBRIDSkVEcgUSA0dZRBoaEgoyMDI2LTEyLTE0agUSA0dZRHIFEgNKRURCAQFIAZgBAQ==&hl=ar&curr=SAR"
@@ -6073,13 +6094,13 @@
       },
       {
        "date": "2026-12-14",
-       "price": 3161.25,
-       "destination": "JKT",
-       "destination_name": "جاكرتا",
+       "price": 1856.25,
+       "destination": "MAD",
+       "destination_name": "مدريد",
        "verified": false,
-       "ret": "2026-12-26",
-       "link": "https://www.aviasales.com/search/JED1412JKT26121?t=SV17972535001797302700000580JEDCGK17983062001798327500000595CGKJED_02244ee5092c12a080340a41404c1d48_69549&search_date=10112026&expected_price_uuid=01a1c415-8e7f-8031-6f2e-89035bc5c48a&static_fare_key=TY%7CP0%7CH1%7CL1_1_23%7CCH0%7CR0%7CTBC1&itinerary_key=0S1LcUWS632uZf1C3yJ0Jg&expected_price_source=share&expected_price_currency=usd&expected_price=843",
-       "google_link": "https://www.google.com/travel/flights/search?tfs=GhoSCjIwMjYtMTItMTRqBRIDSkVEcgUSA0NHSxoaEgoyMDI2LTEyLTI2agUSA0NHS3IFEgNKRURCAQFIAZgBAQ==&hl=ar&curr=SAR"
+       "ret": "2026-12-25",
+       "link": "https://www.aviasales.com/search/DMM1412MAD25121?t=EY17972880001797361500001345DMMAUHMAD17982024001798246800000620MADSAWDMM_59623516bb9d2c32d6dc28be5de59ec1_41166&search_date=10112026&expected_price_uuid=01a1c691-2b16-8031-6b06-ee3ff2a6d3da&static_fare_key=TY%7CP1%7CH0%7CL0%7CCH0%7CR0%7CTBC0&itinerary_key=ntHZO5AIEu-HCTbf_sjFNg&expected_price_source=share&expected_price_currency=usd&expected_price=495",
+       "google_link": "https://www.google.com/travel/flights/search?tfs=GhoSCjIwMjYtMTItMTRqBRIDRE1NcgUSA01BRBoaEgoyMDI2LTEyLTI1agUSA01BRHIFEgNETU1CAQFIAZgBAQ==&hl=ar&curr=SAR"
       },
       {
        "date": "2026-12-15",
@@ -6182,6 +6203,16 @@
        "google_link": "https://www.google.com/travel/flights/search?tfs=GhoSCjIwMjYtMTItMjZqBRIDSkVEcgUSA0dZRBoaEgoyMDI3LTAxLTAyagUSA0dZRHIFEgNKRURCAQFIAZgBAQ==&hl=ar&curr=SAR"
       },
       {
+       "date": "2026-12-27",
+       "price": 1822.5,
+       "destination": "BAK",
+       "destination_name": "باكو",
+       "verified": false,
+       "ret": "2027-01-02",
+       "link": "https://www.aviasales.com/search/JED2712GYD02011?t=XY17983533001798372800000265JEDGYD17988948001798907700000275GYDJED_1343eb094d7c1573de958a24b916ea65_40435&search_date=11112026&expected_price_uuid=01a1c981-4472-8031-6c19-ea1f2640a773&static_fare_key=TY%7CP0%7CH1%7CL0%7CCH0%7CR0%7CTBC0&itinerary_key=kFJPt6BaN1Ip2QoxwViGTw&origin_airports=1&destination_airports=0&expected_price_source=share&expected_price_currency=usd&expected_price=486",
+       "google_link": "https://www.google.com/travel/flights/search?tfs=GhoSCjIwMjYtMTItMjdqBRIDSkVEcgUSA0dZRBoaEgoyMDI3LTAxLTAyagUSA0dZRHIFEgNKRURCAQFIAZgBAQ==&hl=ar&curr=SAR"
+      },
+      {
        "date": "2026-12-28",
        "price": 1961.25,
        "destination": "BAK",
@@ -6203,9 +6234,9 @@
       }
      ],
      "cheapest": {
-      "date": "2026-12-05",
-      "label": "السبت 5 ديسمبر 2026",
-      "price": 1380.0
+      "date": "2026-12-07",
+      "label": "الاثنين 7 ديسمبر 2026",
+      "price": 1286.25
      }
     },
     {
@@ -6324,16 +6355,6 @@
        "google_link": "https://www.google.com/travel/flights/search?tfs=GhoSCjIwMjctMDItMTZqBRIDSkVEcgUSA0dZRBoaEgoyMDI3LTAyLTI1agUSA0dZRHIFEgNKRURCAQFIAZgBAQ==&hl=ar&curr=SAR"
       },
       {
-       "date": "2027-02-24",
-       "price": 1987.5,
-       "destination": "BAK",
-       "destination_name": "باكو",
-       "verified": false,
-       "ret": "2027-03-06",
-       "link": "https://www.aviasales.com/search/JED2402GYD06031?t=GF18035052001803564600000930JEDBAHGYD18043461001804392600000835GYDTBSBAHJED_398c20acb8e40c5699a5403dd1ab46ec_43306&search_date=04112026&expected_price_uuid=01a1a570-d8f7-8030-6102-3e358df7fb12&static_fare_key=TY%7CP1%7CH1%7CL1_1_25%7CCH1%7CR1%7CTBC1&itinerary_key=WFFGrKoqoPVXs5kClzizKw&origin_airports=1&destination_airports=0&expected_price_source=share&expected_price_currency=usd&expected_price=530",
-       "google_link": "https://www.google.com/travel/flights/search?tfs=GhoSCjIwMjctMDItMjRqBRIDSkVEcgUSA0dZRBoaEgoyMDI3LTAzLTA2agUSA0dZRHIFEgNKRURCAQFIAZgBAQ==&hl=ar&curr=SAR"
-      },
-      {
        "date": "2027-02-25",
        "price": 2838.75,
        "destination": "DPS",
@@ -6386,20 +6407,20 @@
      "label": "أبريل 2027",
      "days": [
       {
-       "date": "2027-04-01",
-       "price": 2332.5,
-       "destination": "JKT",
-       "destination_name": "جاكرتا",
+       "date": "2027-04-04",
+       "price": 1713.75,
+       "destination": "SJJ",
+       "destination_name": "سراييفو",
        "verified": false,
-       "ret": "2027-04-09",
-       "link": "https://www.aviasales.com/search/DMM0104JKT09041?t=EY18065544001806611700000715DMMAUHCGK18072291001807261800000785CGKAUHDMM_38e9421680516523c693e3bc9f649219_50729&search_date=03112026&expected_price_uuid=01a1a24d-2eb6-8040-2b6a-c73022588c98&static_fare_key=TY%7CP0%7CH1%7CL0%7CCH0%7CR0%7CTBC0&itinerary_key=DzprHvfF-yZYbo5tGAcD5g&expected_price_source=share&expected_price_currency=usd&expected_price=622",
-       "google_link": "https://www.google.com/travel/flights/search?tfs=GhoSCjIwMjctMDQtMDFqBRIDRE1NcgUSA0NHSxoaEgoyMDI3LTA0LTA5agUSA0NHS3IFEgNETU1CAQFIAZgBAQ==&hl=ar&curr=SAR"
+       "ret": "2027-04-13",
+       "link": "https://www.aviasales.com/search/JED0404SJJ13041?t=VF18068082001806834900000505JEDSAWSJJ18076311001807756500002030SJJSAWISTATHJED_587a6057bd48eec13d43bcc4f2f17b70_38011&search_date=10112026&expected_price_uuid=01a1c70c-9cb7-8030-a595-b05e17a07448&static_fare_key=TY%7CP1%7CH0%7CL0%7CCH0%7CR0%7CTBC0&itinerary_key=pjBx9yqTlXKS6Evo4xWOEA&expected_price_source=share&expected_price_currency=usd&expected_price=457",
+       "google_link": "https://www.google.com/travel/flights/search?tfs=GhoSCjIwMjctMDQtMDRqBRIDSkVEcgUSA1NKShoaEgoyMDI3LTA0LTEzagUSA1NKSnIFEgNKRURCAQFIAZgBAQ==&hl=ar&curr=SAR"
       }
      ],
      "cheapest": {
-      "date": "2027-04-01",
-      "label": "الخميس 1 أبريل 2027",
-      "price": 2332.5
+      "date": "2027-04-04",
+      "label": "الأحد 4 أبريل 2027",
+      "price": 1713.75
      }
     },
     {
@@ -6579,11 +6600,16 @@
     {
      "d": "2026-11-10",
      "p": 1245.0
+    },
+    {
+     "d": "2026-11-11",
+     "p": 1245.0
     }
    ],
    "live_checked": 3,
    "live_errors": [
-    "DMM→GVA 2027-02-13: TypeError: 'NoneType' object is not subscriptable"
+    "DMM→GVA 2027-02-13: FlightsNotFound: no flights found; received error",
+    "JED→GYD 2026-12-07: FlightsNotFound: no flights found; received error"
    ],
    "errors": []
   }
@@ -6592,138 +6618,153 @@
  "deals": {
   "special": [
    {
-    "id": "89580e080e41024f27adb955d0786b46",
+    "id": "9edf6abc439125233d229f05e65a3df5",
     "origin": "JED",
-    "destination": "AHB",
+    "destination": "IST",
+    "airline": "PC",
+    "airline_title": "Pegasus Airlines",
+    "depart": "2027-09-28",
+    "ret": null,
+    "price": 341.25,
+    "title": "Flight deals from Jeddah to Istanbul",
+    "link": "https://www.aviasales.com/search/JED2809IST1?t=PC18220992001822112700000225JEDSAW_9edf6abc439125233d229f05e65a3df5_7553&search_date=11112026&expected_price_uuid=01a1ca31-da32-8031-6a07-8ce2e43d466e&static_fare_key=TY%7CP1%7CH0%7CL0%7CCH0%7CR0%7CTBC0&itinerary_key=uySS7sryxpzlFsm9efHxoQ&expected_price_source=share&expected_price_currency=usd&expected_price=91",
+    "origin_name": "جدة",
+    "destination_name": "إسطنبول",
+    "relevant": true
+   },
+   {
+    "id": "4d3ef5d703a41f5e1bf614202e0d3357",
+    "origin": "JED",
+    "destination": "DXB",
+    "airline": "J9",
+    "airline_title": "Jazeera Airways",
+    "depart": "2027-04-15",
+    "ret": null,
+    "price": 348.75,
+    "title": "Flight deals from Jeddah to Dubai",
+    "link": "https://www.aviasales.com/search/JED1504DXB1?t=J918077829001807804800000305JEDKWIDXB_4d3ef5d703a41f5e1bf614202e0d3357_7673&search_date=11112026&expected_price_uuid=01a1c9c6-bfde-8031-2df2-bec441eeffe3&static_fare_key=TY%7CP0%7CH1%7CL0%7CCH1%7CR0%7CTBC0&itinerary_key=bMMb_hPNIAncN_MedGK-Hw&expected_price_source=share&expected_price_currency=usd&expected_price=93",
+    "origin_name": "جدة",
+    "destination_name": "دبي",
+    "relevant": true
+   },
+   {
+    "id": "32fd6dc75a182e40255a00f836ad4095",
+    "origin": "JED",
+    "destination": "DEL",
     "airline": "XY",
     "airline_title": "Flynas",
-    "depart": "2026-11-14",
+    "depart": "2026-11-18",
     "ret": null,
-    "price": 285.0,
-    "title": "Flight deals from Jeddah to Abha",
-    "link": "https://www.aviasales.com/search/JED1411AHB1?t=XY17946381001794642600000075JEDAHB_89580e080e41024f27adb955d0786b46_6258&search_date=10112026&expected_price_uuid=01a1c50d-15f8-8030-64cd-eee6e01a8359&static_fare_key=TY%7CP0%7CH1%7CL1_1_10%7CCH0%7CR0%7CTBC1&itinerary_key=36pvfcqpjVIQIEaXpcqF_w&expected_price_source=share&expected_price_currency=usd&expected_price=76",
+    "price": 615.0,
+    "title": "Flight deals from Jeddah to New Delhi",
+    "link": "https://www.aviasales.com/search/JED1811DEL1?t=XY17950056001795058400000730JEDDMMDEL_32fd6dc75a182e40255a00f836ad4095_13609&search_date=11112026&expected_price_uuid=01a1c9f6-d126-8030-e630-7426f45c44c8&static_fare_key=TY%7CP0%7CH1%7CL0%7CCH1%7CR0%7CTBC0&itinerary_key=9ecdj2cB-zWzLwQ73Y0d2Q&expected_price_source=share&expected_price_currency=usd&expected_price=164",
     "origin_name": "جدة",
-    "destination_name": "أبها",
+    "destination_name": "دلهي",
     "relevant": true
    },
    {
-    "id": "3f3aec740b25c357b74bc62f86ec9b89",
-    "origin": "JED",
-    "destination": "HRG",
+    "id": "ea02b651cb832607bc6f723c2ca273a3",
+    "origin": "DMM",
+    "destination": "HMB",
     "airline": "SM",
     "airline_title": "Air Cairo",
-    "depart": "2026-11-19",
+    "depart": "2026-11-20",
     "ret": null,
-    "price": 465.0,
-    "title": "Flight deals from Jeddah to Hurghada",
-    "link": "https://www.aviasales.com/search/JED1911HRG1?t=SM17950533001795055700000100JEDHRG_3f3aec740b25c357b74bc62f86ec9b89_10205&search_date=10112026&expected_price_uuid=01a1c45f-491f-8031-2033-e8074da62df6&static_fare_key=TY%7CP0%7CH1%7CL1_1_23%7CCH0%7CR0%7CTBC1&itinerary_key=yTCEomB9i2w3ZkEJHjUw5g&expected_price_source=share&expected_price_currency=usd&expected_price=124",
-    "origin_name": "جدة",
-    "destination_name": "الغردقة",
+    "price": 630.0,
+    "title": "Flight deals from Dammam to Sohag",
+    "link": "https://www.aviasales.com/search/DMM2011HMB1?t=SM17951580001795165200000180DMMHMB_ea02b651cb832607bc6f723c2ca273a3_13992&search_date=11112026&expected_price_uuid=01a1c9a5-d09f-8040-2449-6bcb510150ca&static_fare_key=TY%7CP0%7CH1%7CL1_1_30%7CCH1%7CR1%7CTBC1&itinerary_key=t7Nghh0BJVcwrpasS27tXA&expected_price_source=share&expected_price_currency=usd&expected_price=168",
+    "origin_name": "الدمام",
+    "destination_name": "سوهاج",
     "relevant": true
    },
    {
-    "id": "e00e18984ee5344a22a19db8adb37422",
-    "origin": "JED",
-    "destination": "GUW",
-    "airline": "PC",
-    "airline_title": "Pegasus Airlines",
-    "depart": "2026-12-10",
-    "ret": null,
-    "price": 686.25,
-    "title": "Flight deals from Jeddah to Atyrau",
-    "link": "https://www.aviasales.com/search/JED1012GUW1?t=PC17968806001796957400001160JEDSAWGUW_e00e18984ee5344a22a19db8adb37422_15067&search_date=10112026&expected_price_uuid=01a1c4aa-4a51-8031-65e1-63e745a8a024&static_fare_key=TY%7CP1%7CH0%7CL0%7CCH0%7CR0%7CTBC0&itinerary_key=Q9FZC0IGZ4I3Q6jHl-OwJA&expected_price_source=share&expected_price_currency=usd&expected_price=183",
-    "origin_name": "جدة",
-    "destination_name": "أتيراو",
-    "relevant": true
-   },
-   {
-    "id": "947b9c684971b95fa4e41257b0c04d65",
-    "origin": "JED",
-    "destination": "BER",
-    "airline": "PC",
-    "airline_title": "Pegasus Airlines",
-    "depart": "2026-12-23",
-    "ret": null,
-    "price": 888.75,
-    "title": "Flight deals from Jeddah to Berlin",
-    "link": "https://www.aviasales.com/search/JED2312BER1?t=PC17979918001798023300000645JEDSAWBER_947b9c684971b95fa4e41257b0c04d65_19521&search_date=10112026&expected_price_uuid=01a1c46d-738b-8030-6d0b-122a41a99d0d&static_fare_key=TY%7CP1%7CH0%7CL1_1_20%7CCH0%7CR0%7CTBC1&itinerary_key=VWQL2BI3DJANRrPkLKQ00g&expected_price_source=share&expected_price_currency=usd&expected_price=237",
-    "origin_name": "جدة",
-    "destination_name": "برلين",
-    "relevant": true
-   },
-   {
-    "id": "dcef87a4134a48acfa499ebda29553d2",
-    "origin": "JED",
-    "destination": "BSZ",
-    "airline": "VF",
-    "airline_title": "Ajet",
-    "depart": "2027-01-29",
-    "ret": null,
-    "price": 967.5,
-    "title": "Flight deals from Jeddah to Bishkek",
-    "link": "https://www.aviasales.com/search/JED2901BSZ1?t=VF18012447001801295400000665JEDESBBSZ_dcef87a4134a48acfa499ebda29553d2_21299&search_date=10112026&expected_price_uuid=01a1c3ed-2f46-8030-a027-9cd3d5ef7ed1&static_fare_key=TY%7CP1%7CH0%7CL0%7CCH0%7CR0%7CTBC0&itinerary_key=OWnqCGqLD7_YcMeV5QDhEA&expected_price_source=share&expected_price_currency=usd&expected_price=258",
-    "origin_name": "جدة",
-    "destination_name": "بيشكك",
-    "relevant": true
-   },
-   {
-    "id": "6da611706f95fae8176abbb1a016875e",
+    "id": "8e7c9f520f5bddf98cbbb4e9c099f6b9",
     "origin": "JED",
     "destination": "ALA",
     "airline": "VF",
     "airline_title": "Ajet",
-    "depart": "2026-11-29",
+    "depart": "2026-11-14",
     "ret": null,
-    "price": 967.5,
+    "price": 930.0,
     "title": "Flight deals from Jeddah to Almaty",
-    "link": "https://www.aviasales.com/search/JED2911ALA1?t=VF17959743001796021100000660JEDESBALA_6da611706f95fae8176abbb1a016875e_21353&search_date=10112026&expected_price_uuid=01a1c4f5-1528-8030-a404-50b585ce2ac8&static_fare_key=TY%7CP1%7CH0%7CL0%7CCH0%7CR0%7CTBC0&itinerary_key=qEUhj3SYZi61X5X_l-Hnlw&expected_price_source=share&expected_price_currency=usd&expected_price=258",
+    "link": "https://www.aviasales.com/search/JED1411ALA1?t=VF17946795001794725100000640JEDESBALA_8e7c9f520f5bddf98cbbb4e9c099f6b9_20617&search_date=11112026&expected_price_uuid=01a1c999-4135-8031-27c4-65bbf736b76a&static_fare_key=TY%7CP1%7CH0%7CL0%7CCH0%7CR0%7CTBC0&itinerary_key=JBnmpNj7sgzb4Xr65xvANQ&expected_price_source=share&expected_price_currency=usd&expected_price=248",
     "origin_name": "جدة",
     "destination_name": "ألماتي",
     "relevant": true
    },
    {
-    "id": "fa4f93fe8bb1df4ea57ea9207fa583e1",
+    "id": "e9966b0fe18a889c00eeeb1b83306b35",
     "origin": "JED",
-    "destination": "NQZ",
+    "destination": "DYU",
     "airline": "VF",
     "airline_title": "Ajet",
-    "depart": "2027-03-14",
+    "depart": "2026-11-13",
     "ret": null,
-    "price": 1151.25,
-    "title": "Flight deals from Jeddah to Astana",
-    "link": "https://www.aviasales.com/search/JED1403NQZ1?t=VF18050463001805091900000640JEDESBNQZ_fa4f93fe8bb1df4ea57ea9207fa583e1_25293&search_date=10112026&expected_price_uuid=01a1c493-9357-8030-6f4a-a3af21444bd9&static_fare_key=TY%7CP0%7CH0%7CL0%7CCH1%7CR0%7CTBC0&itinerary_key=aq_PqVNoC2YnucCyINTzPA&expected_price_source=share&expected_price_currency=usd&expected_price=307",
+    "price": 945.0,
+    "title": "Flight deals from Jeddah to Dushanbe",
+    "link": "https://www.aviasales.com/search/JED1311DYU1?t=VF17945499001794617700001010JEDESBGYDDYU_e9966b0fe18a889c00eeeb1b83306b35_20857&search_date=11112026&expected_price_uuid=01a1c9e9-6b88-8031-65b1-6899d01a151c&static_fare_key=TY%7CP1%7CH0%7CL0%7CCH0%7CR0%7CTBC0&itinerary_key=0pN0vs75Z1cHsA11-u0v_w&expected_price_source=share&expected_price_currency=usd&expected_price=252",
     "origin_name": "جدة",
-    "destination_name": "أستانا",
+    "destination_name": "دوشانبيه",
     "relevant": true
    },
    {
-    "id": "abf4d287640d6ef19ede50af6f5cce11",
+    "id": "4f930b5e81a0f34f593b5b9ee4212982",
     "origin": "JED",
-    "destination": "FEG",
-    "airline": "HY",
-    "airline_title": "Uzbekistan Airways",
-    "depart": "2026-12-09",
+    "destination": "EBB",
+    "airline": "XY",
+    "airline_title": "Flynas",
+    "depart": "2027-01-19",
     "ret": null,
-    "price": 1653.75,
-    "title": "Flight deals from Jeddah to Fergana",
-    "link": "https://www.aviasales.com/search/JED0912FEG1?t=HY17968590001796905200000650JEDTASFEG_abf4d287640d6ef19ede50af6f5cce11_36374&search_date=10112026&expected_price_uuid=01a1c477-73ec-8031-2041-05763c0cba87&static_fare_key=TY%7CP1%7CH0%7CL0%7CCH0%7CR0%7CTBC0&itinerary_key=2CzBdw89-0Ea_2rCzh0TCw&expected_price_source=share&expected_price_currency=usd&expected_price=441",
+    "price": 971.25,
+    "title": "Flight deals from Jeddah to Entebbe",
+    "link": "https://www.aviasales.com/search/JED1901EBB1?t=XY18003996001800413100000225JEDEBB_4f930b5e81a0f34f593b5b9ee4212982_21507&search_date=11112026&expected_price_uuid=01a1c9e7-7589-8030-2108-15ace134024b&static_fare_key=TY%7CP0%7CH0%7CL0%7CCH0%7CR0%7CTBC0&itinerary_key=eGFiXwc_2QXb5Vg6T6drhw&expected_price_source=share&expected_price_currency=usd&expected_price=259",
     "origin_name": "جدة",
-    "destination_name": "فرجانة",
+    "destination_name": "إنتيبي",
     "relevant": true
    },
    {
-    "id": "82f2ba29fa7eb0eb504978dace36cd40",
+    "id": "3346015209745b1e5b2eaf03d6d0939b",
     "origin": "JED",
-    "destination": "CAN",
-    "airline": "SV",
-    "airline_title": "Saudia",
+    "destination": "BSZ",
+    "airline": "VF",
+    "airline_title": "Ajet",
+    "depart": "2027-01-15",
+    "ret": null,
+    "price": 982.5,
+    "title": "Flight deals from Jeddah to Bishkek",
+    "link": "https://www.aviasales.com/search/JED1501BSZ1?t=VF18000351001800085800000665JEDESBBSZ_3346015209745b1e5b2eaf03d6d0939b_21726&search_date=11112026&expected_price_uuid=01a1c9ea-1b2a-8030-2ac9-8bfdf8562065&static_fare_key=TY%7CP1%7CH0%7CL0%7CCH0%7CR0%7CTBC0&itinerary_key=OWnqCGqLD7_YcMeV5QDhEA&expected_price_source=share&expected_price_currency=usd&expected_price=262",
+    "origin_name": "جدة",
+    "destination_name": "بيشكك",
+    "relevant": true
+   },
+   {
+    "id": "589b5f16ee7c9a7b7a82cd82e4f6d5e8",
+    "origin": "JED",
+    "destination": "NMA",
+    "airline": "XY",
+    "airline_title": "Flynas",
     "depart": "2026-11-16",
     "ret": null,
-    "price": 2058.75,
-    "title": "Flight deals from Jeddah to Guangzhou",
-    "link": "https://www.aviasales.com/search/JED1611CAN1?t=SV17948604001794922200000730JEDDMMCAN_82f2ba29fa7eb0eb504978dace36cd40_45397&search_date=10112026&expected_price_uuid=01a1c507-75f3-8030-abf3-3e183910d05e&static_fare_key=TY%7CP0%7CH1%7CL1_1_23%7CCH0%7CR0%7CTBC1&itinerary_key=fHMwV_qCdJtrKWmMhhqvDQ&expected_price_source=share&expected_price_currency=usd&expected_price=549",
+    "price": 1177.5,
+    "title": "Flight deals from Jeddah to Namangan",
+    "link": "https://www.aviasales.com/search/JED1611NMA1?t=XY17948604001794916800000820JEDMEDNMA_589b5f16ee7c9a7b7a82cd82e4f6d5e8_26157&search_date=11112026&expected_price_uuid=01a1c909-bea4-8030-6f85-ed5095c7cddb&static_fare_key=TY%7CP0%7CH1%7CL1_1_15%7CCH0%7CR0%7CTBC1&itinerary_key=uRa4grB9MpDiZJyQqp5NxA&expected_price_source=share&expected_price_currency=usd&expected_price=314",
     "origin_name": "جدة",
-    "destination_name": "قوانغتشو",
+    "destination_name": "نمنكان",
+    "relevant": true
+   },
+   {
+    "id": "058b64e9aa25ed0c464cb912aca1c73f",
+    "origin": "JED",
+    "destination": "MRU",
+    "airline": "6E",
+    "airline_title": "IndiGo",
+    "depart": "2026-12-15",
+    "ret": null,
+    "price": 1376.25,
+    "title": "Flight deals from Jeddah to Mauritius",
+    "link": "https://www.aviasales.com/search/JED1512MRU1?t=6E17973078001797409800001640JEDBLRMRU_058b64e9aa25ed0c464cb912aca1c73f_30417&search_date=11112026&expected_price_uuid=01a1c9f9-a253-8031-6299-95c47fa9d715&static_fare_key=TY%7CP1%7CH1%7CL1_1_30%7CCH0%7CR0%7CTBC1&itinerary_key=cJsixn9GsgbibFW4QmmKqQ&expected_price_source=share&expected_price_currency=usd&expected_price=367",
+    "origin_name": "جدة",
+    "destination_name": "موريشيوس",
     "relevant": true
    }
   ],
